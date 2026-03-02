@@ -38,7 +38,6 @@ if subject_type == "自分のキャラクターを使う（画像アップロー
 st.header("3. デザインの方向性")
 composition = st.selectbox("図解・構図の構造", ["Zの法則", "Fの法則", "左右分割", "中央配置"])
 
-# 🚨 ここ！一切省略せずに全部入れたよ！！！
 style = st.selectbox("メインテイスト（画風）", [
     "ほのぼの可愛い水彩画風",
     "かわい系（ちびキャラ・パステル）",
@@ -54,12 +53,13 @@ style = st.selectbox("メインテイスト（画風）", [
 
 mood = st.select_slider("雰囲気のトーン", options=["ふんわり", "ナチュラル", "普通", "ドラマチック", "ビビッド"])
 
-# --- 🚀 プロンプト生成 ---
-if st.button("🔥 オリジナル・プロンプトを錬成する"):
+# --- 🚀 プロンプト生成（命令書の錬成） ---
+if st.button("🔥 画像生成の命令書（命令書）を錬成する"): # ボタン名も変更
+    # ここが重要！Geminiに画像を生成させるための指示（JSON）
     data_for_gemini = {
-        "role": "Exclusive AI Creative Director",
-        "objective": f"Generate a high-quality prompt for {use_case}",
-        "format": "json",
+        "role": "Exclusive AI Image Generation Expert", # ロールをより直接的に
+        "objective": f"Generate the actual image with high-quality Typography based on the user input for {use_case}", # 目的を画像生成へ
+        "format": "image", # 出力フォーマットを画像へ
         "design_concept": {
             "style": style,
             "composition_structure": composition,
@@ -71,7 +71,12 @@ if st.button("🔥 オリジナル・プロンプトを錬成する"):
             "details": details.split('\n') if details else [],
             "subject": "Use the attached image for the character" if subject_type == "自分のキャラクターを使う（画像アップロード）" else subject_type
         },
-        "instruction": "Make it stand out on social media. Follow the structure and style exactly."
+        "instruction": ( # 指示を具体的に、強力に
+            "Make the image stand out on social media. Follow the structure and style exactly. "
+            "CRITICAL: Integrates the provided Japanese texts (Title and Details) exactly as they are into the image design. "
+            "Ensure the typography is clear, readable, and aesthetic, becoming part of the artwork. "
+            "Text errors, omissions, or garbled characters are unacceptable."
+        )
     }
 
     st.success("✨ あなただけのオリジナルプロンプト（命令書）が完成しました！")
