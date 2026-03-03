@@ -51,7 +51,7 @@ composition_dict = {
         "CRITICAL ANTI-REDUNDANCY: Absolutely zero word-for-word repetition. The total count of labels must equal the list length plus new categories. "
         "The cat should be interacting with the tree. NO REPEATING TEXT."
     ),
-    "同心円型（波紋）（中心から外に広がる影響や重要度を表現）": "A concentric circles infographic layout, like ripples expanding outwards, to clearly show influence, scope, or importance.",
+    "放射型（中心から外に広がる）": "A concentric circles infographic layout, like ripples expanding outwards, to clearly show influence, scope, or importance.",
     "ルービックキューブ（立体ブロック）（複雑な要素の組み合わせを表現）": "A conceptual composition visualizing a multi-element structure as an interlocking, complex 3D Rubik's cube puzzle block.",
     "--- ストーリー4コマ・カルーセル絵巻（スワイプ前提の物語展開） ---": "A narrative composition structured for an Instagram carousel, where each image is a strictly connected 'panel' in a continuous 4-コマ story or continuous絵巻 (picture scroll).",
     "数字・データビジュアル（大きな数字で事実をガツンと伝える）": "A graphic composition focusing heavily on very large, bold numbers to powerfully present facts.",
