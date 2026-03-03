@@ -41,14 +41,14 @@ composition_dict = {
         "Clear labels for '0%' and '100%' must be visible. Include subtle emotional icons. DO NOT repeat any text. "
         "Prioritize seamless, tight character-text proximity. The overall feel is balanced and instructional." # 👈 密着と分かりやすさを強調！
         ),
-   "深掘りツリー（理由や方法を枝分かれさせて解説）": (
+  "深掘りツリー（「なぜ？」「どうやる？」を枝分けして解決）": (
         "An organic, tree-like infographic (like a growing plant with branches). "
         "The Title is the root or main trunk. "
-        "CRITICAL RULE: The AI MUST analyze the flat list of items and automatically group them into 2-3 logical 'main branches'. " # 👈 AIに勝手に分類させる！
-        "For example, if the list contains food items and environment items, create two separate branches. "
-        "Each item from the list should be a 'leaf' or 'fruit' at the end of a branch. "
-        "The character (cat) should be interacting with the tree (e.g., watering it, sitting under it). "
-        "Use connecting lines that look like vines or branches. NO REPEATING TEXT."
+        "AI TASK: Analyze the items and group them into 2-3 logical categories (e.g., Causes, Methods, or Themes). "
+        "PLACEMENT RULE: Create a branch for each category. Items belong as 'leaves' at the end of their respective branch. "
+        "CRITICAL: Avoid redundant labels. If a word is used as a category name, DO NOT repeat it as a separate leaf. " # 👈 重複禁止ルール！
+        "The cat should be interacting with the tree (e.g., thinking with a magnifying glass or watering it). "
+        "The layout must clearly show how one big theme (Why/How) breaks down into specific details. NO REPEATING TEXT."
     ),
     "同心円型（波紋）（中心から外に広がる影響や重要度を表現）": "A concentric circles infographic layout, like ripples expanding outwards, to clearly show influence, scope, or importance.",
     "ルービックキューブ（立体ブロック）（複雑な要素の組み合わせを表現）": "A conceptual composition visualizing a multi-element structure as an interlocking, complex 3D Rubik's cube puzzle block.",
