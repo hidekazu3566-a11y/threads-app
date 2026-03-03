@@ -65,7 +65,7 @@ genre = st.selectbox("ターゲットジャンル", ["指定なし", "美容", "
 
 # --- 2. 伝える内容 ---
 st.header("2. 伝える内容")
-text_strictness = st.radio("アレンジ", ["🚫 厳格（文字のみ）", "✨ おまかせ（追加OK）"])
+text_strictness = st.radio("テキストのアレンジ", ["🚫 指定した文字だけを厳格に入れる（勝手な追加NG）", "✨ AIにいい感じのサブタイトル等の追加をお任せする"])
 
 content_list = []
 for i in range(num_images):
