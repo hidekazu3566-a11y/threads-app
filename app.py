@@ -41,7 +41,15 @@ composition_dict = {
         "Clear labels for '0%' and '100%' must be visible. Include subtle emotional icons. DO NOT repeat any text. "
         "Prioritize seamless, tight character-text proximity. The overall feel is balanced and instructional." # 👈 密着と分かりやすさを強調！
         ),
-    "ロジックツリー（「なぜ？」「どうやって？」を枝状に分解）": "A branchedロジックツリー or issue tree infographic layout strictly decomposing a main concept into detailed 'Why?' or 'How?' steps.",
+   "深掘りツリー（理由や方法を枝分かれさせて解説）": (
+        "An organic, tree-like infographic (like a growing plant with branches). "
+        "The Title is the root or main trunk. "
+        "CRITICAL RULE: The AI MUST analyze the flat list of items and automatically group them into 2-3 logical 'main branches'. " # 👈 AIに勝手に分類させる！
+        "For example, if the list contains food items and environment items, create two separate branches. "
+        "Each item from the list should be a 'leaf' or 'fruit' at the end of a branch. "
+        "The character (cat) should be interacting with the tree (e.g., watering it, sitting under it). "
+        "Use connecting lines that look like vines or branches. NO REPEATING TEXT."
+    ),
     "同心円型（波紋）（中心から外に広がる影響や重要度を表現）": "A concentric circles infographic layout, like ripples expanding outwards, to clearly show influence, scope, or importance.",
     "ルービックキューブ（立体ブロック）（複雑な要素の組み合わせを表現）": "A conceptual composition visualizing a multi-element structure as an interlocking, complex 3D Rubik's cube puzzle block.",
     "--- ストーリー4コマ・カルーセル絵巻（スワイプ前提の物語展開） ---": "A narrative composition structured for an Instagram carousel, where each image is a strictly connected 'panel' in a continuous 4-コマ story or continuous絵巻 (picture scroll).",
