@@ -48,13 +48,12 @@ text_strictness = st.radio("テキストの追加アレンジ", [
 content_list = []
 for i in range(num_images):
     with st.expander(f"📝 {i+1}枚目のテキスト入力", expanded=(i==0)):
-        # 💡 ここを修正！自動生成指示は完全に削除！入力された文字を絶対に使います！
         img_title = st.text_area(f"タイトル・見出し", key=f"title_{i}", placeholder="例：メンタルが強い人は\n（改行できます）", height=68)
         img_details = st.text_area(f"具体的なテキスト（詳細・箇条書きなど）", key=f"details_{i}", placeholder="視点の切り替えが上手い\n出来ないより出来ることを考える\n小さな一歩を認められる")
         
         content_list.append({
             "slide_number": i+1,
-            "title": img_title, # 入力された文字をそのまま渡す
+            "title": img_title,
             "details": img_details.split('\n') if img_details else []
         })
 
@@ -106,8 +105,6 @@ with col5:
     ])
 
 with col6:
-    # 💡 あなたのアイデア「下敷きはおまかせがいい」を反映！
-    # V8の全項目を復活させた上で、一番上に「✨おまかせ」を追加し、デフォルトにしました！
     text_background = st.selectbox("文字の下敷き（座布団）", [
         "✨ おまかせ（AIが一番読みやすいデザインを自動で選ぶ！）",
         "🏷️ タイトルのみ強調（見出しだけリボンやバナー風にする）",
@@ -120,7 +117,6 @@ with col6:
         "なし（文字のみ・背景に溶け込ませる）"
     ])
     
-    # 不透明度スライダーもちゃんと復活！「なし」と「おまかせ」以外の時に出ます。
     if text_background not in ["なし（文字のみ・背景に溶け込ませる）", "✨ おまかせ（AIが一番読みやすいデザインを自動で選ぶ！）"]:
         bg_opacity = st.slider("下敷きの不透明度（透け感）", min_value=10, max_value=100, value=70, step=10, format="%d%%")
         st.caption("100%でくっきり、数字が小さいほど背景が透けます✨")
@@ -131,13 +127,39 @@ brand_color = st.text_input("あなたのテーマカラー（任意）", placeh
 
 # --- 4. デザインの方向性 ---
 st.header("4. デザインの方向性")
+
+# 💡 あなたが考えてくれた「最強・神構図リスト」をそのまま実装したよ！
 composition = st.selectbox("神・構図リスト（目的で選んでね！）", [
-    "Zの法則（王道スタイル）：視線を左上から右下へ誘導。",
-    "左右分割（テキスト左・キャラ右）：情報をしっかり整理！",
-    "中央ドカン！（放射・中央配置）：インパクト重視！",
-    "上下分割（タイトル上・キャラ下）：雑誌の表紙風安定スタイル。",
-    "ビフォーアフター（変化で魅せる！）：違いをクッキリ見せる！",
-    "タイムライン（手順・流れ）：ステップや歴史を順番に！"
+    "--- 👀 視線・構図・レイアウト系（美しさと見やすさの型） ---",
+    "Zの法則・Fの法則（視線誘導の王道）",
+    "三分割法・黄金比・白銀比（安定と美しさの比率）",
+    "中央集中型・日の丸構図（視線をど真ん中に集める）",
+    "対角線・斜め分割（動きとリズム、スピード感を出す）",
+    "額縁構図（外枠で囲って中央を際立たせる）",
+    "グリッド・チェッカーボード（整列や市松模様で統一感を出す）",
+    "破れグリッド・非対称バランス（あえて崩しておしゃれ感や動きを出す）",
+    "余白重視（ネガティブスペース）（空白を活かして上品さや高級感を演出）",
+    "シンメトリー（左右対称）（誠実さや静寂を伝える）",
+    "トライアングル（三角構図）（圧倒的な安定感や成長を出す）",
+    "--- 🧠 情報整理・分析系（新しい切り口の図解） ---",
+    "SWOT分析図（強み・弱み・機会・脅威の4ブロック）",
+    "ジャーニーマップ（時系列と感情の起伏を波で表現）",
+    "レーダーチャート（クモの巣）（複数の評価軸で総合力を可視化）",
+    "スペクトル・グラデーション（0〜100%など段階的な変化を表現）",
+    "ロジックツリー（「なぜ？」「どうやって？」を枝状に分解）",
+    "同心円型（波紋）（中心から外に広がる影響や重要度を表現）",
+    "ルービックキューブ（立体ブロック）（複雑な要素の組み合わせを表現）",
+    "--- 💫 演出・エモーション系（感情を動かす見せ方） ---",
+    "ストーリー4コマ・カルーセル絵巻（スワイプ前提の物語展開）",
+    "数字・データビジュアル（大きな数字で事実をガツンと伝える）",
+    "ヒーローショット・ズームイン（主役を全画面でドーンと見せる、細部を拡大する）",
+    "重ね合わせ（レイヤー）（写真や文字を重ねて奥行きや深みを出す）",
+    "シルエット・逆光（余韻や神秘的なムードを演出）",
+    "鏡面・リフレクション（水面などの反射で二面性や夢幻的な美しさを出す）",
+    "タロットカード・星座マッピング（占い・スピリチュアルな独自の世界観）",
+    "モノクロ＋1色スポットライト（白黒の中で1点だけカラーにして強烈に強調）",
+    "問い→答え開示（リビール）（疑問を投げてスワイプで答えを出す）",
+    "タイポグラフィ主役（文字そのものをアートとして見せる）"
 ])
 
 style = st.selectbox("メインテイスト（画風）", [
@@ -156,7 +178,6 @@ if st.button("🪄 読者の心を動かす図解プロンプトを生成する"
     
     final_color = brand_color if brand_color else "Auto-select the best colors based on genre and emotion."
     
-    # 🚫 勝手な文字NGの時は、一文字も足さないように裏側の英語指示をキツくしたよ！
     if text_strictness == "🚫 指定した文字だけを厳格に入れる（勝手な追加NG）":
         text_rule = "CRITICAL: DO NOT add any extra text, titles, or subtitles. Use ONLY the exact text provided in the content_list. Do not generate a title if it is empty."
     else:
@@ -167,19 +188,15 @@ if st.button("🪄 読者の心を動かす図解プロンプトを生成する"
     else:
         subject_instruction = subject_type
 
-    # 💡 下敷き「おまかせ」の時の、AIへの具体的な指示を裏側に実装！
     if text_background == "✨ おまかせ（AIが一番読みやすいデザインを自動で選ぶ！）":
-        # ここ重要。AIに「吹き出し、パネルなど、構成に合わせてお前がいい感じの下敷きデザインを選べ」と指示。
         bg_instruction = "Auto-select the best readable text box styles (e.g., speech bubbles, clean panels) that fit the composition and emotional goal."
     elif text_background == "🏷️ タイトルのみ強調（見出しだけリボンやバナー風にする）":
         bg_instruction = "Apply a stylish background (like a banner or ribbon) ONLY to the title. Keep detail texts clean without heavy backgrounds."
     elif text_background == "なし（文字のみ・背景に溶け込ませる）":
         bg_instruction = "None (text only)"
     else:
-        # それ以外（雲、テープなど）は、選んだスタイルと不透明度をそのまま指示
         bg_instruction = f"Style: {text_background}, Opacity: {bg_opacity}"
 
-    # 🚨 バグ修正！ここを "image_generation" に戻したから、絶対に画像が出る！！
     data_for_gemini = {
         "role": "Exclusive AI Image Generation Expert",
         "format": "image_generation",
@@ -192,7 +209,7 @@ if st.button("🪄 読者の心を動かす図解プロンプトを生成する"
                 "font_style": font_choice,
                 "alignment": text_align
             },
-            "text_background": bg_instruction, # ここに洗練された下敷き指示が入る！
+            "text_background": bg_instruction,
             "composition_structure": composition,
             "brand_color_theme": final_color,
             "emotional_goal": emotion,
