@@ -6,35 +6,33 @@ st.set_page_config(page_title="図解プロンプトメーカー", layout="cente
 st.title("🧵 図解プロンプトメーカー")
 st.write("専門用語は不要。「どう見せたいか」を選ぶだけで、あなたの想いを形にする最高の図解が作れます✨")
 
-# --- UIとAIへの英語指示の変換辞書（ここを最強に強化！） ---
-
-# 🤔 構図・レイアウト系の AIへの強力な英語指示
+# --- UIとAIへの英語指示の変換辞書 ---
 composition_dict = {
     "Zの法則・Fの法則（視線誘導の王道）": "A strong visual hierarchy designed to guide the viewer's eye in a clear Z-shaped or F-shaped pattern across the image.",
-    "三分割法・黄金比・白銀比（安定と美しさの比率）": "CRITICAL RULE: Strict Rule of Thirds composition. DO NOT CENTER THE CHARACTER (the cat). THE CHARACTER MUST BE PLACED EXCLUSIVELY ON ONE OF THE FOUR GRID INTERSECTION POINTS (e.g., lower-right or lower-left). TEXT ELEMENTS (title, details) MUST BE ARRANGED IN THE REMAINING NON-FOCAL GRID SECTIONS TO BALANCE THE NEGATIVE SPACE. Zero centered objects.", # 🚨 ここを Imagen Imagen！猫を交点に強制配置！中央NG！
+    "三分割法・黄金比・白銀比（安定と美しさの比率）": "Strict composition adherence to the Rule of Thirds or Golden Ratio logic to place key elements and focus. TEXT ELEMENTS (title, details) MUST BE ARRANGED to balance the negative space. Zero centered objects. ABSOLUTELY NO VISIBLE GRID LINES OR CROSSHAIRS.", # 🚨 ここ Imagen Imagen「絶対に線を引くな！」と最強に念押し！
     "中央集中型・日の丸構図（視線をど真ん中に集める）": "A precise direct centered composition with all focus exclusively on the central subject and title, minimal distractions.",
     "対角線・斜め分割（動きとリズム、スピード感を出す）": "A dynamic composition with key elements arranged strictly along strong diagonal lines, conveying movement and speed.",
-    "額縁構図（外枠で囲って中央を際立たせる）": "CRITICAL RULE: A visible, distinct decorative frame or border surrounding the entire composition, emphasizing the central content. The frame style must match the chosen genre and art style (e.g., whimsical branches, a simple clean line, or an ornate gold border).",
+    "額縁構図（外枠で囲って中央を際立たせる）": "CRITICAL RULE: A visible, distinct decorative frame or border surrounding the entire composition, emphasizing the central content. The frame style must match the chosen genre and art style.",
     "グリッド・チェッカーボード（整列や市松模様で統一感を出す）": "A clean, organized composition structured by a precise grid or checkerboard layout, conveying a strong sense of unity and structure.",
     "破れグリッド・非対称バランス（あえて崩しておしゃれ感や動きを出す）": "An intentional imperfect grid layout with asymmetrical balance, creating an edgy, stylish, and dynamic visual feel.",
     "余白重視（ネガティブスペース）（空白を活かして上品さや高級感を演出）": "A minimalist composition prioritizing a very large amount of clean negative space, creating a profound sense of elegance, luxury, and focus.",
     "シンメトリー（左右対称）（誠実さや静寂を伝える）": "A perfectly symmetrical composition, creating a sense of visual integrity, solemnity, and peace.",
     "トライアングル（三角構図）（圧倒的な安定感や成長を出す）": "A stable composition based on a strictly adhered to visible or implied triangle structure, conveying extreme stability and growth.",
-    "SWOT分析図（強み・弱み・機会・脅威の4ブロック）": "A clean infographic layout divided into four distinct, numbered quadrants clearly labeled Strength, Weakness, Opportunity, and Threat.",
-    "ジャーニーマップ（時系列と感情の起伏を波で表現）": "A chronological infographic timeline showing emoij-based emotional ups and downs along a visual wave-like chart.",
+    "--- SWOT分析図（強み・弱み・機会・脅威の4ブロック） ---": "A clean infographic layout divided into four distinct, numbered quadrants clearly labeled Strength, Weakness, Opportunity, and Threat.",
+    "--- ジャーニーマップ（時系列と感情の起伏を波で表現） ---": "A chronological infographic timeline showing emoij-based emotional ups and downs along a visual wave-like chart.",
     "レーダーチャート（クモの巣）（複数の評価軸で総合力を可視化）": "A precise radar chart infographic (spider chart) showing multiple evaluation axes to visualize overall strength.",
     "スペクトル・グラデーション（0〜100%など段階的な変化を表現）": "A visual spectrum or gradient infographic showing a progressive, phased change, strictly labeled from 0% to 100%.",
     "ロジックツリー（「なぜ？」「どうやって？」を枝状に分解）": "A branchedロジックツリー or issue tree infographic layout strictly decomposing a main concept into detailed 'Why?' or 'How?' steps.",
     "同心円型（波紋）（中心から外に広がる影響や重要度を表現）": "A concentric circles infographic layout, like ripples expanding outwards, to clearly show influence, scope, or importance.",
     "ルービックキューブ（立体ブロック）（複雑な要素の組み合わせを表現）": "A conceptual composition visualizing a multi-element structure as an interlocking, complex 3D Rubik's cube puzzle block.",
-    "ストーリー4コマ・カルーセル絵巻（スワイプ前提の物語展開）": "A narrative composition structured for an Instagram carousel, where each image is a strictly connected 'panel' in a continuous 4-コマ story or continuous絵巻 (picture scroll).",
+    "--- ストーリー4コマ・カルーセル絵巻（スワイプ前提の物語展開） ---": "A narrative composition structured for an Instagram carousel, where each image is a strictly connected 'panel' in a continuous 4-コマ story or continuous絵巻 (picture scroll).",
     "数字・データビジュアル（大きな数字で事実をガツンと伝える）": "A graphic composition focusing heavily on very large, bold numbers to powerfully present facts.",
     "ヒーローショット・ズームイン（主役を全画面でドーンと見せる、細部を拡大する）": "An epic hero shot where the main subject and title fill the entire screen, with extreme detail, zoom-in focus, and impact.",
     "重ね合わせ（レイヤー）（写真や文字を重ねて奥行きや深みを出す）": "A layered composition with multiple overlapping elements of photo, character, and text, creating profound depth and dimension.",
     "シルエット・逆光（余韻や神秘的なムードを演出）": "A moody composition using strong backlighting and strictly silhouettes to create lingering emotion and profound mystery.",
     "鏡面・リフレクション（水面などの反射で二面性や夢幻的な美しさを出す）": "A dreamlike composition with a perfect mirror-like reflection (e.g., in water), creating a powerful sense of dreamlike beauty and integrity.",
     "タロットカード・星座マッピング（占い・スピリチュアルな独自の世界観）": "A mystical composition adhering strictly to a tarot card-like or celestial constellation-mapping worldview, with symbolic elements.",
-    "モノクロ＋1色スポットライト（白黒の中で1点だけカラーにして強烈に強調）": "A dramatic composition in mostly monochrome, with strictly one specific element or character highlighted in a single, vibrant, contrasting color.",
+    "モノクロ＋1色スポットライト（白黒の中で点だけカラーにして強烈に強調）": "A dramatic composition in mostly monochrome, with strictly one specific element or character highlighted in a single, vibrant, contrasting color.",
     "問い→答え開示（リビール）（疑問を投げてスワイプで答えを出す）": "A teaser composition designed strictly for a multi-image reveal, where the first image poses a powerful question and subsequent images reveal the clear answer.",
     "タイポグラフィ主役（文字そのものをアートとして見せる）": "An artful typography-first composition where the title text is treated as the main visual artwork, with character and background integrated seamlessly."
 }
@@ -81,7 +79,6 @@ text_strictness = st.radio("テキストの追加アレンジ", [
 content_list = []
 for i in range(num_images):
     with st.expander(f"📝 {i+1}枚目のテキスト入力", expanded=(i==0)):
-        # 💡 ここを修正！自動生成指示は完全に削除！入力された文字を絶対に使います！
         img_title = st.text_area(f"タイトル・見出し", key=f"title_{i}", placeholder="例：メンタルが強い人は\n（改行できます）", height=68)
         img_details = st.text_area(f"具体的なテキスト（詳細・箇条書きなど）", key=f"details_{i}", placeholder="視点の切り替えが上手い\n出来ないより出来ることを考える\n小さな一歩を認められる")
         
@@ -162,19 +159,14 @@ brand_color = st.text_input("あなたのテーマカラー（任意）", placeh
 # --- 4. デザインの方向性 ---
 st.header("4. デザインの方向性")
 
-# 💡 あなたの「最強・神構図リスト」UI
-# 見出しは選択肢に入れないように、辞書のキーから見出しを削ったリストを作る
 comp_options = [k for k in composition_dict.keys()]
 
-# 三分割法をデフォルトにするようにindexを調整
 if "Zの法則・Fの法則（視線誘導の王道）" in comp_options:
     comp_index = comp_options.index("Zの法則・Fの法則（視線誘導の王道）")
 else:
     comp_index = 0
 
 composition_ui = st.selectbox("神・構図リスト（目的で選んでね！）", comp_options, index=comp_index)
-
-# 🚨 ここが超重要！日本語をAIへの強力な英語指示に変換！
 composition_instruction = composition_dict.get(composition_ui, "")
 
 style = st.selectbox("メインテイスト（画風）", [
@@ -212,8 +204,11 @@ if st.button("🪄 読者の心を動かす図解プロンプトを生成する"
     else:
         bg_instruction = f"Style: {text_background}, Opacity: {bg_opacity}"
 
+    # 💡 🚨 ここが超修正ポイント！「配置」こそが神！Imagenへの命令を最強に書き換え！🚨
+    placement_instruction = f"{char_placement}. CRITICAL RULE: This requested character placement has the HIGHEST absolute priority. The design and 'composition_structure' MUST adapt to this specific character location. Do not move the character to fit a grid; move the design to fit the character."
+
     data_for_gemini = {
-        "role": "Exclusive AI Image Generation Expert",
+        "role": "Exclusive AI Creative Director",
         "format": "image_generation",
         "objective": f"Generate {num_images} high-quality images for {use_case}",
         "design_concept": {
@@ -225,7 +220,7 @@ if st.button("🪄 読者の心を動かす図解プロンプトを生成する"
                 "alignment": text_align
             },
             "text_background": bg_instruction,
-            "composition_structure": composition_instruction, # 🚨 ここに強力な英語指示が渡る！
+            "composition_structure": composition_instruction,
             "brand_color_theme": final_color,
             "emotional_goal": emotion,
             "aspect_ratio": ratio
@@ -233,7 +228,7 @@ if st.button("🪄 読者の心を動かす図解プロンプトを生成する"
         "content_per_image": content_list,
         "character_instructions": {
             "subject": subject_instruction,
-            "placement": char_placement
+            "placement": placement_instruction # 🚨 喧嘩した時は「配置」を優先するルールを発動！
         },
         "generation_rules": [
             f"Generate exactly {num_images} images based on the content_per_image array.",
@@ -243,6 +238,6 @@ if st.button("🪄 読者の心を動かす図解プロンプトを生成する"
         ]
     }
 
-    st.success(f"✨ {num_images}枚分のプロンプトが完成したよ！黒い枠の中身だけをコピーしてね！")
+    st.success(f"✨ {num_images}枚分の最強プロンプトが完成したよ！黒い枠の中身だけをコピーしてね！")
     st.code(json.dumps(data_for_gemini, indent=4, ensure_ascii=False), language='json')
     st.balloons()
