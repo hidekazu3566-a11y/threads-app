@@ -34,7 +34,13 @@ composition_dict = {
         "ONLY render the label text itself. For example, if the input is 'Power 80', the image should show a bar at 80% length but ONLY display the word 'Power'. "
         "Use vibrant, distinct colors for each bar and ensure a clean, modern gaming UI feel. NO REPEATING TEXT."
     ),
-    "スペクトル・グラデーション（0〜100%など段階的な変化を表現）": "A visual spectrum or gradient infographic showing a progressive, phased change, strictly labeled from 0% to 100%.",
+   "スペクトル・グラデーション（0〜100%など段階的な変化を表現）": (
+        "A full-background gradient infographic on textured paper, flowing smoothly from cool blue (representing low/0%) on the far left to hot red (representing high/100%) on the far right. " # 👈 「背景全体を青から赤へ」に修正！
+        "The number of steps MUST EXACTLY MATCH the content list, arranged horizontally from left to right along this color spectrum. " # 👈 「横に並べる」と指示！
+        "A central cat protagonist is integrated tightly with each step's corresponding text box. " # 👈 一体感を維持！
+        "Clear labels for '0%' and '100%' must be visible. Include subtle emotional icons. DO NOT repeat any text. "
+        "Prioritize seamless, tight character-text proximity. The overall feel is balanced and instructional." # 👈 密着と分かりやすさを強調！
+        ),
     "ロジックツリー（「なぜ？」「どうやって？」を枝状に分解）": "A branchedロジックツリー or issue tree infographic layout strictly decomposing a main concept into detailed 'Why?' or 'How?' steps.",
     "同心円型（波紋）（中心から外に広がる影響や重要度を表現）": "A concentric circles infographic layout, like ripples expanding outwards, to clearly show influence, scope, or importance.",
     "ルービックキューブ（立体ブロック）（複雑な要素の組み合わせを表現）": "A conceptual composition visualizing a multi-element structure as an interlocking, complex 3D Rubik's cube puzzle block.",
