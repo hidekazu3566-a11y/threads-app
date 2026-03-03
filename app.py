@@ -26,6 +26,7 @@ composition_dict = {
         "Arrange the character-text pairs sequentially along a clean, smooth wavy path that progresses clearly from left to right across the screen. "
         "Each character and text pair must be tightly integrated as a single visual unit, especially at the start and end of the path. "
         "Include emotional sun/cloud/heart icons and a 'SUCCESS!' element at the final point. NO REPEATING TEXT. Reiterate: STRICT left-to-right horizontal linear sequence."
+       ),
     "ステータス画面風（ゲームみたいに能力を可視化）": (
         "A game-inspired character status screen layout where the character (cat) is the protagonist. "
         "CRITICAL GAUGE RULE: The length (fill-level) of each horizontal status bar MUST strictly correlate with the numerical value provided at the end of each text item (e.g., 'Power 80' or 'Speed (5)'). Higher numbers produce longer, fuller bars. "
