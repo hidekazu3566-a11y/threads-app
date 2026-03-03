@@ -20,10 +20,7 @@ composition_dict = {
     "シンメトリー（左右対称）（誠実さや静寂を伝える）": "A perfectly symmetrical composition, creating a sense of visual integrity and peace.",
     "トライアングル（三角構図）（圧倒的な安定感や成長を出す）": "CRITICAL RULE: Implied triangle composition created ONLY by element placement. NO VISIBLE TRIANGLES. Apex character, base text blocks.",
     "4分割・ブロック配置（情報を4つのエリアに分ける）": "A clean infographic layout divided into four distinct, equal quadrants. Arrange text elements sequentially. ABSOLUTELY NO DUPLICATE TEXT IN BLOCKS. Each block must have unique content.",
-    
-    # 💡 🚨 ここを大改造！ジャーニーマップを汎用的な「ステップ・感情フロー」に変更！🚨
     "ステップ・感情フロー（手順と気持ちの変化を見せる）": "A chronological infographic showing a sequence of steps or a 'journey'. Use a wavy path or line connecting unique icons and text blocks. Include visual indicators of emotional high/low points (e.g., small heart or star icons) along the path. Each step MUST have unique, non-repeating text.",
-    
     "レーダーチャート（クモの巣）（複数の評価軸で総合力を可視化）": "A precise radar chart infographic (spider chart) showing multiple evaluation axes.",
     "ロジックツリー（「なぜ？」「どうやって？」を枝状に分解）": "A branched issue tree infographic layout strictly decomposing a main concept.",
     "--- ストーリー4コマ・カルーセル絵巻 ---": "A narrative composition structured for a continuous story or carousel spread.",
@@ -36,6 +33,20 @@ composition_dict = {
     "モノクロ＋1色スポットライト（強烈に強調）": "mostly monochrome with strictly one specific element highlighted in a single vibrant color.",
     "問い→答え開示（スワイプ前提のギミック）": "A teaser composition where the main image poses a question, designed for a swipe-to-reveal effect.",
     "タイポグラフィ主役（文字をアートとして見せる）": "An artful typography-first composition where the text itself is the main visual art."
+}
+
+# --- 画風の変換辞書 ---
+style_dict = {
+    "ほのぼの可愛い水彩画風": "Soft, warm watercolor illustration style with gentle brush strokes and pastel tones.",
+    "かわい系（ちびキャラ・パステル）": "Cute chibi character style with pastel color palette and kawaii aesthetics.",
+    "ビジネス系（誠実・青基調・信頼感）": "Professional corporate style with a blue-based color scheme conveying trust and reliability.",
+    "超リアルな実写写真": "Hyper-realistic photographic style, indistinguishable from a real photograph.",
+    "おしゃれな3Dアニメ風": "Stylish 3D anime-inspired rendering with smooth shading and vibrant colors.",
+    "レトロなフィルム写真風": "Vintage retro film photography style with grain, warm tones, and nostalgic atmosphere.",
+    "スタイリッシュなベクターアート": "Clean, modern vector art style with flat design elements and bold shapes.",
+    "エモい写真風": "Emotional, atmospheric photography style with cinematic lighting and mood.",
+    "ゲーム風ドット絵": "Retro pixel art style inspired by classic video games.",
+    "ネオンサイン系": "Neon sign aesthetic with glowing lights against a dark background."
 }
 
 # --- 1. 基本設定（用途・サイズ・ジャンル・枚数） ---
@@ -72,6 +83,11 @@ with col4:
 
 # --- 4. デザインの方向性 ---
 st.header("3. デザインと構図 🎨")
+
+# 🎨 メインテイスト（画風）
+style = st.selectbox("メインテイスト（画風）", list(style_dict.keys()))
+style_instruction = style_dict.get(style, "")
+
 comp_options = [k for k in composition_dict.keys()]
 comp_ui = st.selectbox("神・構図リスト", comp_options)
 comp_instruction = composition_dict.get(comp_ui, "")
@@ -84,11 +100,11 @@ with col6:
 
 # --- 🚀 生成 ---
 if st.button("🪄 プロンプト生成"):
-    # 🚨 重複禁止と文字サイズメリハリを最強に！
     data = {
         "role": "Exclusive AI Image Generation Expert",
         "format": "image_generation",
         "design_concept": {
+            "style": style_instruction,
             "composition": comp_instruction,
             "typography": f"{font}, title must be much LARGER than details. NO DUPLICATE TEXT ALLOWED.",
             "text_background": text_bg,
