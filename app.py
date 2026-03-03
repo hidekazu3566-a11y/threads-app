@@ -20,7 +20,13 @@ composition_dict = {
     "シンメトリー（左右対称）（誠実さや静寂を伝える）": "A perfectly symmetrical composition, creating a sense of visual integrity, solemnity, and peace.",
     "トライアングル（三角構図）（圧倒的な安定感や成長を出す）": "CRITICAL RULE: Strict implied triangle composition created ONLY by the non-linear, dynamic placement of elements. ABSOLUTELY NO VISIBLE TRIANGLE SHAPES, OUTLINES, ARROWS, OR CONNECTING LINES. The connection between elements must be completely invisible and purely psychological. Conveying extreme stability through powerful diagonal flow. Focal point (e.g., character/cat) MUST BE PLACED at a dynamically staggered apex, and supporting elements (e.g., text blocks) MUST BE ARRANGED to form a distinct, wide base. DO NOT draw any lines between the character and the text. DO NOT align character and text blocks vertically; use strong diagonal angles to create a visual pyramid flow.",
     "4分割・ブロック配置（情報を4つのエリアに分ける）": "A clean, structured infographic layout divided into four distinct, equal quadrants. TEXT ELEMENTS are ARRANGED sequentially. CRITICAL: DO NOT add any extra numbering icons or labels if the input text already includes numbers. Place the provided text exactly as it is within each block.",
-    "--- ジャーニーマップ（時系列と感情の起伏を波で表現） ---": "A chronological infographic timeline showing emoij-based emotional ups and downs along a visual wave-like chart.",
+    "サクセス・ストーリー（成功への道のりと感情の変化）": (
+        "A chronological infographic showing a sequence of steps toward a successful goal. "
+        "The number of focal points on the wavy path MUST EXACTLY MATCH the number of items in the content list. "
+        "Use a flowing, wavy line to connect unique icons and text blocks, representing a 'journey'. "
+        "Include visual indicators of emotional high and low points (e.g., small sun, heart, or star icons) along the path. "
+        "CRITICAL: DO NOT repeat any text. Each step MUST have its own unique, non-repeating description from the list."
+    ),
     "レーダーチャート（クモの巣）（複数の評価軸で総合力を可視化）": "A precise radar chart infographic (spider chart) showing multiple evaluation axes to visualize overall strength.",
     "スペクトル・グラデーション（0〜100%など段階的な変化を表現）": "A visual spectrum or gradient infographic showing a progressive, phased change, strictly labeled from 0% to 100%.",
     "ロジックツリー（「なぜ？」「どうやって？」を枝状に分解）": "A branchedロジックツリー or issue tree infographic layout strictly decomposing a main concept into detailed 'Why?' or 'How?' steps.",
