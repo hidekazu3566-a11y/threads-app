@@ -15,12 +15,18 @@ composition_dict = {
     "対角線・斜め分割（動きとリズム、スピード感を出す）": "A dynamic composition with key elements arranged strictly along strong diagonal lines, conveying movement and speed.",
     "額縁構図（外枠で囲って中央を際立たせる）": "CRITICAL RULE: A visible, distinct decorative frame or border surrounding the entire composition, emphasizing the central content. The frame style must match the chosen genre and art style.",
     "マス目・タイル配置（均等に枠を分けて情報を整理する）": "A clean, organized composition structured by a precise grid or tile layout, conveying a strong sense of unity and structure.",
-    "破れグリッド・非対称バランス（あえて崩しておしゃれ感や動きを出す）": "An intentional imperfect grid layout with asymmetrical balance, creating an edgy, stylish, and dynamic visual feel.",
+    "破れグリッド・非対称バランス（あえて崩しておしゃれ感や動きを出す）": "CRITICAL RULE: Extreme 'broken grid' editorial collage layout. TEXT BOXES MUST HAVE TORN PAPER EDGES and appear like paper scraps pinned to a background. THE CHARACTER AND TEXT BOXES MUST HEAVILY OVERLAP each other to create depth. Use asymmetrical, irregular placement where elements break out of an invisible grid. The overall feel must be like a creative, layered scrapbook or a high-fashion magazine spread with watercolor textures. Add decorative elements like small flowers, leaves, or cute doodles in the empty spaces to balance the composition.",
     "余白重視（ネガティブスペース）（空白を活かして上品さや高級感を演出）": "A minimalist composition prioritizing a very large amount of clean negative space, creating a profound sense of elegance, luxury, and focus.",
     "シンメトリー（左右対称）（誠実さや静寂を伝える）": "A perfectly symmetrical composition, creating a sense of visual integrity, solemnity, and peace.",
     "トライアングル（三角構図）（圧倒的な安定感や成長を出す）": "CRITICAL RULE: Strict implied triangle composition created ONLY by the non-linear, dynamic placement of elements. ABSOLUTELY NO VISIBLE TRIANGLE SHAPES, OUTLINES, ARROWS, OR CONNECTING LINES. The connection between elements must be completely invisible and purely psychological. Conveying extreme stability through powerful diagonal flow. Focal point (e.g., character/cat) MUST BE PLACED at a dynamically staggered apex, and supporting elements (e.g., text blocks) MUST BE ARRANGED to form a distinct, wide base. DO NOT draw any lines between the character and the text. DO NOT align character and text blocks vertically; use strong diagonal angles to create a visual pyramid flow.",
-    "4分割・ブロック配置（情報を4つのエリアに分ける）": "A clean, structured infographic layout divided into four distinct, equal quadrants or numbered blocks. TEXT ELEMENTS (from the details list) are ARRANGED sequentially within these four sections, ensuring a clear and balanced division of information. No specific labeling (like SWOT) is required; use generic numbering (1, 2, 3, 4) or simple titles based on the text provided.",
-    "--- ジャーニーマップ（時系列と感情の起伏を波で表現） ---": "A chronological infographic timeline showing emoij-based emotional ups and downs along a visual wave-like chart.",
+    "4分割・ブロック配置（情報を4つのエリアに分ける）": "A clean, structured infographic layout divided into four distinct, equal quadrants. TEXT ELEMENTS are ARRANGED sequentially. CRITICAL: DO NOT add any extra numbering icons or labels if the input text already includes numbers. Place the provided text exactly as it is within each block.",
+    "サクセス・ストーリー（成功への道のりと感情の変化）": (
+        "A chronological infographic showing a sequence of steps toward a successful goal. "
+        "The number of focal points on the wavy path MUST EXACTLY MATCH the number of items in the content list. "
+        "Use a flowing, wavy line to connect unique icons and text blocks, representing a 'journey'. "
+        "Include visual indicators of emotional high and low points (e.g., small sun, heart, or star icons) along the path. "
+        "CRITICAL: DO NOT repeat any text. Each step MUST have its own unique, non-repeating description from the list."
+    ),
     "レーダーチャート（クモの巣）（複数の評価軸で総合力を可視化）": "A precise radar chart infographic (spider chart) showing multiple evaluation axes to visualize overall strength.",
     "スペクトル・グラデーション（0〜100%など段階的な変化を表現）": "A visual spectrum or gradient infographic showing a progressive, phased change, strictly labeled from 0% to 100%.",
     "ロジックツリー（「なぜ？」「どうやって？」を枝状に分解）": "A branchedロジックツリー or issue tree infographic layout strictly decomposing a main concept into detailed 'Why?' or 'How?' steps.",
