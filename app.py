@@ -16,6 +16,7 @@ composition_dict = {
     "額縁構図（外枠で囲って中央を際立たせる）": "CRITICAL RULE: A visible, distinct decorative frame or border surrounding the entire composition, emphasizing the central content. The frame style must match the chosen genre and art style.",
     "マス目・タイル配置（均等に枠を分けて情報を整理する）": "A clean, organized composition structured by a precise grid or tile layout, conveying a strong sense of unity and structure.",
     "破れグリッド・非対称バランス（あえて崩しておしゃれ感や動きを出す）": "CRITICAL RULE: Extreme 'broken grid' editorial collage layout. TEXT BOXES MUST HAVE TORN PAPER EDGES and appear like paper scraps pinned to a background. THE CHARACTER AND TEXT BOXES MUST HEAVILY OVERLAP each other to create depth. Use asymmetrical, irregular placement where elements break out of an invisible grid. The overall feel must be like a creative, layered scrapbook or a high-fashion magazine spread with watercolor textures.",
+    
 
     "余白重視（ネガティブスペース）（空白を活かして上品さや高級感を演出）": "A minimalist composition prioritizing a very large amount of clean negative space, creating a profound sense of elegance, luxury, and focus.",
     "シンメトリー（左右対称）（誠実さや静寂を伝える）": "A perfectly symmetrical composition, creating a sense of visual integrity, solemnity, and peace.",
