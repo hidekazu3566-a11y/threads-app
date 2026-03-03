@@ -42,18 +42,14 @@ composition_dict = {
         "Prioritize seamless, tight character-text proximity. The overall feel is balanced and instructional." # 👈 密着と分かりやすさを強調！
         ),
 "深掘りツリー（「なぜ？」「どうやる？」を枝分けして解説）": (
-        "An organic, tree-like infographic (like a growing plant with branches) on textured paper, inspired by image_11.png. "
-        "The Title '何故猫はこんなに可愛いのか' is the root or main trunk. "
-        "AI TASK: Analyze and group the 7 detailed items into logical categories. BUT DO NOT render category names as text on the image. " # 👈 カテゴリー名をテキストとして出させない！
-        "PLACEMENT RULE: Create a branch for each category. Items belong as 'leaves' at the end of their respective branch. "
-        "Each branch must use a distinct, high-contrast color for instant recognition. " # 👈 高コントラストでグループを区別！
-        "CRITICAL TEXT RULE: Generate the EXACT text provided in the content_list, verbatim, including bullet points. " # 👈 指定テキストだけを使う！
-        "Use ONLY the exact 7 items: '• まんまるな大きな目', '• ふわふわで柔らかい毛並み', '• ピンク色のぷにぷに肉球', '• ゴロゴロと鳴く甘え声', '• ツンデレな性格のギャップ', '• 不意に見せるドジなしぐさ', '• 一緒に寝てくれる温もり'. " # 👈 具体的に項目を列挙して念押し！
-        "DO NOT add any extra numbering (1., 2.), '0%', '100%', 'SUCCESS!', or any labels not in the exact content_list. " # 👈 不要な文字（0%, SUCCESS!, AI勝手生成）を排除！
-        "The cat character (consistent with image_0.png to image_10.png) is at the base of the trunk, holding a magnifying glass and analyzing. " # 👈 猫は探偵ポーズで基部に固定！
-        "LAYOUT RULE: Elements (text boxes, icons) MUST NOT overlap each other, the tree, or the cat. Establish a clear visual hierarchy with ample negative space around all text to ensure flawless legibility. " # 👈 被りを完全禁止、可読性最優先！
-        "CONNECTING RULE: The connection between the leaves and branches must be completely invisible and purely psychological. NO visible connecting lines or vines. " # 👈 枝と葉っぱを繋がない！
-        "NO REPEATING TEXT."
+        "An organic, tree-like infographic with a strict visual hierarchy. "
+        "The Title is the root/trunk. "
+        "AI TASK: Analyze the input details and group them into 2-3 logical categories based on the context. "
+        "CRITICAL VISUAL RULE: The category names (groups) MUST be placed inside distinct 'wooden signboards' or 'framed plaques' at the start of each branch. "
+        "Individual detail items MUST be small 'leaves' or 'fruits' growing from these specific signboards. "
+        "The shape of signboards and leaves MUST be completely different to show hierarchy. " # 👈 形を絶対変えるルール
+        "CRITICAL ANTI-REDUNDANCY RULE: Every word or phrase from the content list MUST ONLY appear once. NEVER repeat a leaf's text as a category name. " # 👈 言葉を指定せず「重複禁止」だけを指示
+        "The cat should be interacting with the tree. Use high-contrast colors for each branch. NO REPEATING TEXT."
     ),
     "同心円型（波紋）（中心から外に広がる影響や重要度を表現）": "A concentric circles infographic layout, like ripples expanding outwards, to clearly show influence, scope, or importance.",
     "ルービックキューブ（立体ブロック）（複雑な要素の組み合わせを表現）": "A conceptual composition visualizing a multi-element structure as an interlocking, complex 3D Rubik's cube puzzle block.",
