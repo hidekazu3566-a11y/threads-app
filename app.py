@@ -49,9 +49,61 @@ style_dict = {
     "ネオンサイン系": "Neon sign aesthetic with glowing lights against a dark background."
 }
 
+# --- 書体の変換辞書 ---
+font_dict = {
+    "おまかせ": "Automatically choose the best font style to match the overall design.",
+    "ゴシック": "Bold, clean sans-serif Gothic font style.",
+    "明朝": "Elegant serif Mincho font style.",
+    "丸ゴシック": "Soft, rounded Gothic font style.",
+    "手書き風": "Casual handwritten font style."
+}
+
+# --- 文字の下敷きの変換辞書 ---
+text_bg_dict = {
+    "✨ おまかせ": "Automatically choose the best text background style to match the design.",
+    "🏷️ タイトルのみ強調": "Highlight only the title text with a label-style background.",
+    "☁️ 雲": "Soft cloud-shaped background behind the text.",
+    "⬜️ 角丸": "Rounded rectangle background behind the text.",
+    "なし": "No text background. Place text directly on the image."
+}
+
+# --- 配置の変換辞書 ---
+placement_dict = {
+    "おまかせ": "Automatically choose the best placement for the character.",
+    "右下": "Place the character in the bottom-right area.",
+    "左下": "Place the character in the bottom-left area.",
+    "中央": "Place the character in the center."
+}
+
+# --- テキストアレンジの変換辞書 ---
+text_strictness_dict = {
+    "🚫 指定した文字だけを厳格に入れる（勝手な追加NG）": "STRICT TEXT RULE: Use ONLY the exact text provided by the user. Do NOT add, modify, or generate any extra text, subtitles, labels, or captions.",
+    "✨ AIにいい感じのサブタイトル等の追加をお任せする": "You may add fitting subtitles, captions, or supplementary text to enhance the design."
+}
+
+# --- 用途の変換辞書 ---
+use_case_dict = {
+    "図解（SNS・プレゼン用）": "Infographic for social media or presentations.",
+    "サムネイル（YouTube・記事用）": "Thumbnail for YouTube or article headers.",
+    "汎用画像生成（自由設定）": "General purpose image generation."
+}
+
+# --- ジャンルの変換辞書 ---
+genre_dict = {
+    "指定なし": "No specific genre.",
+    "美容": "Beauty and cosmetics theme.",
+    "健康": "Health and wellness theme.",
+    "恋愛": "Romance and relationships theme.",
+    "育児": "Parenting and childcare theme.",
+    "スピリチュアル": "Spiritual and mindfulness theme.",
+    "マネー": "Money and finance theme.",
+    "ビジネス": "Business and corporate theme.",
+    "エンタメ": "Entertainment theme."
+}
+
 # --- 1. 基本設定（用途・サイズ・ジャンル・枚数） ---
 st.header("1. 作りたい画像の設定")
-use_case = st.selectbox("用途", ["図解（SNS・プレゼン用）", "サムネイル（YouTube・記事用）", "汎用画像生成（自由設定）"])
+use_case = st.selectbox("用途", list(use_case_dict.keys()))
 
 col1, col2 = st.columns(2)
 with col1:
@@ -61,11 +113,11 @@ with col1:
 with col2:
     num_images = st.selectbox("出力枚数", list(range(1, 11)))
 
-genre = st.selectbox("ターゲットジャンル", ["指定なし", "美容", "健康", "恋愛", "育児", "スピリチュアル", "マネー", "ビジネス", "エンタメ"])
+genre = st.selectbox("ターゲットジャンル", list(genre_dict.keys()))
 
 # --- 2. 伝える内容 ---
 st.header("2. 伝える内容")
-text_strictness = st.radio("テキストのアレンジ", ["🚫 指定した文字だけを厳格に入れる（勝手な追加NG）", "✨ AIにいい感じのサブタイトル等の追加をお任せする"])
+text_strictness = st.radio("テキストのアレンジ", list(text_strictness_dict.keys()))
 
 content_list = []
 for i in range(num_images):
@@ -79,7 +131,7 @@ col3, col4 = st.columns(2)
 with col3:
     subject = st.selectbox("被写体", ["自分のキャラ（画像添付）", "AIにおまかせ", "なし"])
 with col4:
-    placement = st.selectbox("配置", ["おまかせ", "右下", "左下", "中央"])
+    placement = st.selectbox("配置", list(placement_dict.keys()))
 
 # --- 4. デザインの方向性 ---
 st.header("3. デザインと構図 🎨")
@@ -94,33 +146,35 @@ comp_instruction = composition_dict.get(comp_ui, "")
 
 col5, col6 = st.columns(2)
 with col5:
-    font = st.selectbox("書体", ["おまかせ", "ゴシック", "明朝", "丸ゴシック", "手書き風"])
+    font = st.selectbox("書体", list(font_dict.keys()))
 with col6:
-    text_bg = st.selectbox("文字の下敷き", ["✨ おまかせ", "🏷️ タイトルのみ強調", "☁️ 雲", "⬜️ 角丸", "なし"])
+    text_bg = st.selectbox("文字の下敷き", list(text_bg_dict.keys()))
 
 # --- 🚀 生成 ---
 if st.button("🪄 プロンプト生成"):
-    # 被写体の条件分岐：自分のキャラの場合はキャラだけ使い背景は使わない指示を出す
+    # 被写体の条件分岐
     subject_instruction = (
         "Use the attached image ONLY for the character's identity. Do NOT use the original background."
         if subject == "自分のキャラ（画像添付）"
-        else subject
+        else ("Let the AI choose the best character." if subject == "AIにおまかせ" else "No character subject.")
     )
 
     data = {
         "role": "Exclusive AI Image Generation Expert",
         "format": "image_generation",
+        "use_case": use_case_dict.get(use_case, ""),
+        "genre": genre_dict.get(genre, ""),
+        "text_strictness": text_strictness_dict.get(text_strictness, ""),
         "design_concept": {
             "style": style_instruction,
             "composition": comp_instruction,
-            "typography": f"{font}, title must be much LARGER than details. NO DUPLICATE TEXT ALLOWED.",
-            "text_background": text_bg,
+            "typography": f"{font_dict.get(font, '')}, title must be much LARGER than details. NO DUPLICATE TEXT ALLOWED.",
+            "text_background": text_bg_dict.get(text_bg, ""),
             "aspect_ratio": ratio
         },
         "content": content_list,
-        "character": {"subject": subject_instruction, "placement": placement},
-        "rules": ["NO REPEATING TEXT.", "Distinct visual hierarchy.", "Unique icons for steps."]
+        "character": {"subject": subject_instruction, "placement": placement_dict.get(placement, "")},
+        "rules": ["NO REPEATING TEXT.", "Distinct visual hierarchy.", "Unique icons for steps.", "Do NOT render any Japanese text that is not explicitly provided in the content fields."]
     }
     st.success("完成！コピーしてGeminiに貼ってね✨")
     st.code(json.dumps(data, indent=4, ensure_ascii=False), language='json')
-    
