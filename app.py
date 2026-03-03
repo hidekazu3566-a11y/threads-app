@@ -97,7 +97,6 @@ with col5:
         "手書き風（エモい・親近感・パーソナル）"
     ])
     
-    # 💡 新機能！文字の揃え位置！
     text_align = st.selectbox("文字の揃え位置", [
         "おまかせ（デザインに合わせて最適化）",
         "左揃え（箇条書きや長文にピッタリ）",
@@ -117,7 +116,6 @@ with col6:
         "すりガラス風（スタイリッシュ）"
     ])
     
-    # 💡 新機能！下敷きが「なし」じゃない時だけ、不透明度スライダーを出す！
     if text_background != "なし（文字のみ・スッキリ見せる）":
         bg_opacity = st.slider("下敷きの不透明度（透け感）", min_value=10, max_value=100, value=70, step=10, format="%d%%")
         st.caption("100%でくっきり、数字が小さいほど背景が透けます✨")
@@ -158,6 +156,12 @@ if st.button("🪄 読者の心を動かす図解プロンプトを生成する"
     else:
         text_rule = "Feel free to add highly relevant, short subtitles or catchphrases to enhance the design if it fits the context. Respect line breaks in the title."
 
+    # 🚨 ここが超重要！キャラ単体だけを抜き出す最強の縛りルール！
+    if subject_type == "自分のキャラクターを使う（画像アップロード）":
+        subject_instruction = "CRITICAL RULE: Extract and reproduce ONLY the character itself from the attached image. You MUST strictly EXCLUDE all props, objects (like laptops, desks, cups, plants), and the original background. The character must be drawn completely alone without any of their original items."
+    else:
+        subject_instruction = subject_type
+
     data_for_gemini = {
         "role": "Exclusive AI Creative Director",
         "objective": f"Generate {num_images} high-quality images for {use_case}",
@@ -181,12 +185,13 @@ if st.button("🪄 読者の心を動かす図解プロンプトを生成する"
         },
         "content_per_image": content_list,
         "character_instructions": {
-            "subject": "Use the attached image ONLY for the character's identity. Do NOT use the original background." if subject_type == "自分のキャラクターを使う（画像アップロード）" else subject_type,
+            "subject": subject_instruction,
             "placement": char_placement
         },
         "generation_rules": [
             f"Generate exactly {num_images} images based on the content_per_image array.",
             "Generate completely NEW backgrounds and poses suitable for the concepts. Keep the character consistent but in fresh contexts.",
+            "NEVER draw any props or items from the reference image.", # 念押しの荷物禁止令
             text_rule
         ]
     }
