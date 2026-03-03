@@ -18,11 +18,8 @@ composition_dict = {
     "破れグリッド・非対称バランス（あえて崩しておしゃれ感や動きを出す）": "An intentional imperfect grid layout with asymmetrical balance, creating an edgy, stylish, and dynamic visual feel.",
     "余白重視（ネガティブスペース）（空白を活かして上品さや高級感を演出）": "A minimalist composition prioritizing a very large amount of clean negative space, creating a profound sense of elegance, luxury, and focus.",
     "シンメトリー（左右対称）（誠実さや静寂を伝える）": "A perfectly symmetrical composition, creating a sense of visual integrity, solemnity, and peace.",
-    "トライアングル（三角構図）（圧倒的な安定感や成長を出す）": "CRITICAL RULE: Strict implied triangle composition created ONLY by the non-linear, dynamic placement of elements. ABSOLUTELY NO VISIBLE TRIANGLE SHAPES OR OUTLINES. Conveying extreme stability and harmonized structure through powerful diagonal flow. Focal point (e.g., character/cat) MUST BE PLACED at a dynamically staggered apex, and supporting elements (e.g., text blocks) MUST BE ARRANGED to form a distinct, wide base with clear diagonal lines connecting to the apex. DO NOT align character and text blocks vertically; use strong diagonal angles to create a visual pyramid flow.",
-    
-    # 💡 🚨 ここを大改造！SWOTを汎用的な「4分割」に変更！🚨
+    "トライアングル（三角構図）（圧倒的な安定感や成長を出す）": "CRITICAL RULE: Strict implied triangle composition created ONLY by the non-linear, dynamic placement of elements. ABSOLUTELY NO VISIBLE TRIANGLE SHAPES, OUTLINES, ARROWS, OR CONNECTING LINES. The connection between elements must be completely invisible and purely psychological. Conveying extreme stability through powerful diagonal flow. Focal point (e.g., character/cat) MUST BE PLACED at a dynamically staggered apex, and supporting elements (e.g., text blocks) MUST BE ARRANGED to form a distinct, wide base. DO NOT draw any lines between the character and the text. DO NOT align character and text blocks vertically; use strong diagonal angles to create a visual pyramid flow.",
     "4分割・ブロック配置（情報を4つのエリアに分ける）": "A clean, structured infographic layout divided into four distinct, equal quadrants or numbered blocks. TEXT ELEMENTS (from the details list) are ARRANGED sequentially within these four sections, ensuring a clear and balanced division of information. No specific labeling (like SWOT) is required; use generic numbering (1, 2, 3, 4) or simple titles based on the text provided.",
-    
     "--- ジャーニーマップ（時系列と感情の起伏を波で表現） ---": "A chronological infographic timeline showing emoij-based emotional ups and downs along a visual wave-like chart.",
     "レーダーチャート（クモの巣）（複数の評価軸で総合力を可視化）": "A precise radar chart infographic (spider chart) showing multiple evaluation axes to visualize overall strength.",
     "スペクトル・グラデーション（0〜100%など段階的な変化を表現）": "A visual spectrum or gradient infographic showing a progressive, phased change, strictly labeled from 0% to 100%.",
@@ -245,4 +242,3 @@ if st.button("🪄 読者の心を動かす図解プロンプトを生成する"
     st.success(f"✨ {num_images}枚分の最強プロンプトが完成したよ！黒い枠の中身だけをコピーしてね！")
     st.code(json.dumps(data_for_gemini, indent=4, ensure_ascii=False), language='json')
     st.balloons()
-
