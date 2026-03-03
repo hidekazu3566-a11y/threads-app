@@ -18,8 +18,8 @@ composition_dict = {
     "破れグリッド・非対称バランス（あえて崩しておしゃれ感や動きを出す）": "CRITICAL RULE: Extreme 'broken grid' editorial layout. TEXT BOXES, SHAPES, AND THE CHARACTER MUST HEAVILY OVERLAP AND INTERSECT. Completely destroy traditional straight alignment. Use a highly dynamic, asymmetrical collage style (like a modern fashion magazine spread). Elements must break out of their invisible boundaries. ZERO neat rows or simple stacking.",
     "余白重視（ネガティブスペース）（空白を活かして上品さや高級感を演出）": "A minimalist composition prioritizing a very large amount of clean negative space, creating a profound sense of elegance, luxury, and focus.",
     "シンメトリー（左右対称）（誠実さや静寂を伝える）": "A perfectly symmetrical composition, creating a sense of visual integrity, solemnity, and peace.",
-    # 💡 🚨 ここを大改造！Imagen Imagen「物理的な三角形禁止」と「配置によるピラミッド形成」！🚨
-    "トライアングル（三角構図）（圧倒的な安定感や成長を出す）": "CRITICAL RULE: Absolute implied triangle composition created ONLY by the placement of elements. ABSOLUTELY NO VISIBLE TRIANGLE SHAPES, OUTLINES, OR FRAMES. Conveying extreme stability and harmonized structure. Focal point (e.g., character/cat) at the apex, and supporting elements (e.g., text blocks) at the base intersections to form a visual pyramid.",
+    # 💡 🚨 ここを極限まで強化！Imagen Imagen「斜めの視線」を強制発動！🚨
+    "トライアングル（三角構図）（圧倒的な安定感や成長を出す）": "CRITICAL RULE: Strict implied triangle composition created ONLY by the non-linear, dynamic placement of elements. ABSOLUTELY NO VISIBLE TRIANGLE SHAPES OR OUTLINES. Conveying extreme stability and harmonized structure through powerful diagonal flow. Focal point (e.g., character/cat) MUST BE PLACED at a dynamically staggered apex, and supporting elements (e.g., text blocks) MUST BE ARRANGED to form a distinct, wide base with clear diagonal lines connecting to the apex. DO NOT align character and text blocks vertically; use strong diagonal angles to create a visual pyramid flow.",
     "--- SWOT分析図（強み・弱み・機会・脅威の4ブロック） ---": "A clean infographic layout divided into four distinct, numbered quadrants clearly labeled Strength, Weakness, Opportunity, and Threat.",
     "--- ジャーニーマップ（時系列と感情の起伏を波で表現） ---": "A chronological infographic timeline showing emoij-based emotional ups and downs along a visual wave-like chart.",
     "レーダーチャート（クモの巣）（複数の評価軸で総合力を可視化）": "A precise radar chart infographic (spider chart) showing multiple evaluation axes to visualize overall strength.",
@@ -81,7 +81,6 @@ text_strictness = st.radio("テキストの追加アレンジ", [
 content_list = []
 for i in range(num_images):
     with st.expander(f"📝 {i+1}枚目のテキスト入力", expanded=(i==0)):
-        # 💡 ここを修正！自動生成指示は完全に削除！入力された文字を絶対に使います！
         img_title = st.text_area(f"タイトル・見出し", key=f"title_{i}", placeholder="例：メンタルが強い人は\n（改行できます）", height=68)
         img_details = st.text_area(f"具体的なテキスト（詳細・箇条書きなど）", key=f"details_{i}", placeholder="視点の切り替えが上手い\n出来ないより出来ることを考える\n小さな一歩を認められる")
         
@@ -165,7 +164,7 @@ st.header("4. デザインの方向性")
 comp_options = [k for k in composition_dict.keys()]
 
 if "Zの法則（左上から右下へ視線を誘導・王道）" in comp_options:
-    comp_index = comp_options.index("Zの法則（左上から右下へ視線を誘導・王道）")
+    comp_index = comp_options.index("Zの法則（左上から右上へ視線を誘導・王道）")
 else:
     comp_index = 0
 
