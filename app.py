@@ -27,7 +27,13 @@ composition_dict = {
         "Each character and text pair must be tightly integrated as a single visual unit, especially at the start and end of the path. "
         "Include emotional sun/cloud/heart icons and a 'SUCCESS!' element at the final point. NO REPEATING TEXT. Reiterate: STRICT left-to-right horizontal linear sequence."
     ),
-    "レーダーチャート（クモの巣）（複数の評価軸で総合力を可視化）": "A precise radar chart infographic (spider chart) showing multiple evaluation axes to visualize overall strength.",
+    "ステータス画面風（ゲームみたいに能力を可視化）": (
+        "A game-inspired character status or profile screen layout. "
+        "Each item in the details list MUST be presented as a horizontal parameter bar (like HP, MP, or EXP bars in an RPG). "
+        "The character (cat) should be placed prominently next to these bars, looking like a hero in a selection screen. "
+        "Use vibrant, distinct colors for each bar and include a small, relevant icon at the start of each bar. "
+        "The background should have a subtle UI/HUD feel. CRITICAL: NO REPEATING TEXT. Use the exact labels provided."
+    ),
     "スペクトル・グラデーション（0〜100%など段階的な変化を表現）": "A visual spectrum or gradient infographic showing a progressive, phased change, strictly labeled from 0% to 100%.",
     "ロジックツリー（「なぜ？」「どうやって？」を枝状に分解）": "A branchedロジックツリー or issue tree infographic layout strictly decomposing a main concept into detailed 'Why?' or 'How?' steps.",
     "同心円型（波紋）（中心から外に広がる影響や重要度を表現）": "A concentric circles infographic layout, like ripples expanding outwards, to clearly show influence, scope, or importance.",
