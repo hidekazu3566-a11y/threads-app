@@ -52,7 +52,14 @@ composition_dict = {
         "The cat should be interacting with the tree. NO REPEATING TEXT."
     ),
     "放射型（中心から外に広がる）": "A concentric circles infographic layout, like ripples expanding outwards, to clearly show influence, scope, or importance.",
-    "ルービックキューブ（立体ブロック）（複雑な要素の組み合わせを表現）": "A conceptual composition visualizing a multi-element structure as an interlocking, complex 3D Rubik's cube puzzle block.",
+    "ルービックキューブ（立体ブロック）（複雑な要素の組み合わせを表現）": (
+        "A complex 3D Rubik's cube structure composition. The Title is prominent at the top. "
+        "The individual faces of the cube are illustrated panels. "
+        "CRITICAL TEXT RULE: The content list is a STRICT SINGLE-USE INVENTORY. Once a text item is placed on a panel, it is EXHAUSTED and MUST NOT be used again. "
+        "ILLUSTRATIVE FILLING RULE: DO NOT repeat any text. If a panel needs filling, instead of repeating text, add a theme-relevant small illustrative element (icon, prop, or decorative object). " # 👈 これが新しい魔法！
+        "Example (for cute cats theme): Replace exhausted panels with illustrations like a balls of yarn, paw prints, fish bones, or specific objects related to the theme, keeping the visuals fresh. "
+        "INTEGRATION: The cat characters should be actively interacting with the block panels. Ensure clean, instructional aesthetics with clear text hierarchy. "
+    ),
     "--- ストーリー4コマ・カルーセル絵巻（スワイプ前提の物語展開） ---": "A narrative composition structured for an Instagram carousel, where each image is a strictly connected 'panel' in a continuous 4-コマ story or continuous絵巻 (picture scroll).",
     "数字・データビジュアル（大きな数字で事実をガツンと伝える）": "A graphic composition focusing heavily on very large, bold numbers to powerfully present facts.",
     "ヒーローショット・ズームイン（主役を全画面でドーンと見せる、細部を拡大する）": "An epic hero shot where the main subject and title fill the entire screen, with extreme detail, zoom-in focus, and impact.",
