@@ -18,7 +18,6 @@ composition_dict = {
     "破れグリッド・非対称バランス（あえて崩しておしゃれ感や動きを出す）": "CRITICAL RULE: Extreme 'broken grid' editorial layout. TEXT BOXES, SHAPES, AND THE CHARACTER MUST HEAVILY OVERLAP AND INTERSECT. Completely destroy traditional straight alignment. Use a highly dynamic, asymmetrical collage style (like a modern fashion magazine spread). Elements must break out of their invisible boundaries. ZERO neat rows or simple stacking.",
     "余白重視（ネガティブスペース）（空白を活かして上品さや高級感を演出）": "A minimalist composition prioritizing a very large amount of clean negative space, creating a profound sense of elegance, luxury, and focus.",
     "シンメトリー（左右対称）（誠実さや静寂を伝える）": "A perfectly symmetrical composition, creating a sense of visual integrity, solemnity, and peace.",
-    # 💡 🚨 ここを極限まで強化！Imagen Imagen「斜めの視線」を強制発動！🚨
     "トライアングル（三角構図）（圧倒的な安定感や成長を出す）": "CRITICAL RULE: Strict implied triangle composition created ONLY by the non-linear, dynamic placement of elements. ABSOLUTELY NO VISIBLE TRIANGLE SHAPES OR OUTLINES. Conveying extreme stability and harmonized structure through powerful diagonal flow. Focal point (e.g., character/cat) MUST BE PLACED at a dynamically staggered apex, and supporting elements (e.g., text blocks) MUST BE ARRANGED to form a distinct, wide base with clear diagonal lines connecting to the apex. DO NOT align character and text blocks vertically; use strong diagonal angles to create a visual pyramid flow.",
     "--- SWOT分析図（強み・弱み・機会・脅威の4ブロック） ---": "A clean infographic layout divided into four distinct, numbered quadrants clearly labeled Strength, Weakness, Opportunity, and Threat.",
     "--- ジャーニーマップ（時系列と感情の起伏を波で表現） ---": "A chronological infographic timeline showing emoij-based emotional ups and downs along a visual wave-like chart.",
@@ -163,8 +162,9 @@ st.header("4. デザインの方向性")
 
 comp_options = [k for k in composition_dict.keys()]
 
+# 💡 🚨 修正ポイント！ここを「右下」に統一したからもうエラー出ない！ 🚨
 if "Zの法則（左上から右下へ視線を誘導・王道）" in comp_options:
-    comp_index = comp_options.index("Zの法則（左上から右上へ視線を誘導・王道）")
+    comp_index = comp_options.index("Zの法則（左上から右下へ視線を誘導・王道）")
 else:
     comp_index = 0
 
