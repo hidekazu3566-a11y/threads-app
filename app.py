@@ -1,24 +1,28 @@
 import streamlit as st
 import json
 
-st.set_page_config(page_title="プロンプトメーカー 真・進化版", layout="centered")
+st.set_page_config(page_title="図解プロンプトメーカー", layout="centered")
 
-st.title("🧵 プロンプトメーカー 真・進化版")
-st.write("専門用語は不要！「どう見せたいか」を選ぶだけで、競合超えの最高な画像が作れるよ✨")
+st.title("🧵 図解プロンプトメーカー")
+st.write("専門用語は不要。「どう見せたいか」を選ぶだけで、あなたの想いを形にする最高の図解が作れます✨")
 
 # --- 1. 基本設定（用途・サイズ・ジャンル・枚数） ---
 st.header("1. 作りたい画像の設定")
 use_case = st.selectbox("用途", [
     "図解（SNS・プレゼン用）", 
     "サムネイル（YouTube・記事用）", 
-    "汎用画像生成（自由設定）", 
-    "Threads画像投稿", 
-    "Instagram投稿"
+    "汎用画像生成（自由設定）"
 ])
 
 col1, col2 = st.columns(2)
 with col1:
-    ratio = st.selectbox("キャンバス比率", ["1:1 (正方形)", "4:5 (縦長)", "16:9 (横長)", "9:16 (縦長フル)"])
+    ratio_selection = st.selectbox("キャンバス比率", ["1:1 (正方形)", "4:5 (縦長)", "16:9 (横長)", "9:16 (縦長フル)", "その他（自由入力）"])
+    # 「その他」を選んだ時だけ、自由入力の枠を出す魔法！
+    if ratio_selection == "その他（自由入力）":
+        ratio = st.text_input("比率を入力（例：3:4、2:1など）", value="3:4")
+    else:
+        ratio = ratio_selection
+
 with col2:
     num_images = st.selectbox("出力枚数", list(range(1, 11)))
 
@@ -37,7 +41,6 @@ genre = st.selectbox("ターゲットジャンル・世界観", [
 # --- 2. 伝える内容とキャラクター ---
 st.header("2. 伝える内容と被写体")
 
-# 💡 新機能：テキストのアレンジ度合いを選べる！
 text_strictness = st.radio("テキストの追加アレンジ", [
     "🚫 指定した文字だけを厳格に入れる（勝手な追加NG）",
     "✨ AIにいい感じのサブタイトル等の追加をお任せする"
@@ -46,7 +49,8 @@ text_strictness = st.radio("テキストの追加アレンジ", [
 content_list = []
 for i in range(num_images):
     with st.expander(f"📝 {i+1}枚目のテキスト入力", expanded=(i==0)):
-        img_title = st.text_input(f"タイトル・見出し", key=f"title_{i}", placeholder="例：メンタルが強い人は")
+        # text_areaに変更したから、エンターキーで改行できるよ！
+        img_title = st.text_area(f"タイトル・見出し", key=f"title_{i}", placeholder="例：メンタルが強い人は\n（改行できます）", height=68)
         img_details = st.text_area(f"具体的なテキスト（詳細・箇条書きなど）", key=f"details_{i}", placeholder="仲間がいる\n考えすぎない")
         
         content_list.append({
@@ -55,7 +59,6 @@ for i in range(num_images):
             "details": img_details.split('\n') if img_details else []
         })
 
-# 💡 新機能：キャラの配置を選べる！
 col3, col4 = st.columns(2)
 with col3:
     subject_type = st.selectbox("メインの被写体（キャラクター）", [
@@ -78,7 +81,7 @@ if subject_type == "自分のキャラクターを使う（画像アップロー
 # --- 3. 感情トリガーとブランドカラー ---
 st.header("3. 読者の感情とブランドカラー 🎨")
 emotion = st.selectbox("読者にどうなってほしい？（感情トリガー）", [
-    "🤖 おまかせ（AIに最適な感情表現を任せる）", # デフォルトをおまかせに！
+    "🤖 おまかせ（AIに最適な感情表現を任せる）",
     "💡「なるほど！」と思わず保存・メモしたくなる",
     "🥺 共感してウルっとくる・勇気が出る",
     "😂 クスッと笑える・ツッコミたくなる",
@@ -108,16 +111,14 @@ style = st.selectbox("メインテイスト（画風）", [
 ])
 
 # --- 🚀 プロンプト生成（命令書の錬成） ---
-if st.button("🔥 競合越えのオリジナル・プロンプトを錬成する"):
+if st.button("🪄 読者の心を動かす図解プロンプトを生成する"):
     
-    # 色の指定がなければAIにお任せ
     final_color = brand_color if brand_color else "Auto-select the best colors based on genre and emotion."
     
-    # テキストアレンジの厳格さルールの設定
     if text_strictness == "🚫 指定した文字だけを厳格に入れる（勝手な追加NG）":
-        text_rule = "CRITICAL: DO NOT add any extra text or subtitles. Use ONLY the exact title and details provided in the content_list."
+        text_rule = "CRITICAL: DO NOT add any extra text or subtitles. Use ONLY the exact title and details provided in the content_list. Respect line breaks in the title."
     else:
-        text_rule = "Feel free to add highly relevant, short subtitles or catchphrases to enhance the design if it fits the context."
+        text_rule = "Feel free to add highly relevant, short subtitles or catchphrases to enhance the design if it fits the context. Respect line breaks in the title."
 
     data_for_gemini = {
         "role": "Exclusive AI Creative Director",
