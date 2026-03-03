@@ -41,14 +41,16 @@ composition_dict = {
         "Clear labels for '0%' and '100%' must be visible. Include subtle emotional icons. DO NOT repeat any text. "
         "Prioritize seamless, tight character-text proximity. The overall feel is balanced and instructional." # 👈 密着と分かりやすさを強調！
         ),
- "深掘りツリー（「なぜ？」「どうやる？」を枝分けして解決）": (
-        "An organic, tree-like infographic (like a growing plant with branches). "
-        "The Title is the root or main trunk. "
-        "AI TASK: Analyze the items and group them into 2-3 logical categories (e.g., Causes, Methods, or Themes). "
-        "PLACEMENT RULE: Create a branch for each category. Items belong as 'leaves' at the end of their respective branch. "
-        "CRITICAL ANTI-REDUNDANCY RULE: The word used as a category name MUST be visually and conceptually distinct from the words used in the individual leaf items. DO NOT reuse any part of the leaf text as a category label. Ensure all nodes are uniquely labeled with input text. " # 👈 ここを最強に厳格にする指示に変える！
-        "The cat should be interacting with the tree (e.g., thinking with a magnifying glass or watering it). "
-        "The layout must clearly show how one big theme (Why/How) breaks down into specific details. NO REPEATING TEXT."
+"深掘りツリー（「なぜ？」「どうやる？」を枝分けして解説）": (
+        "An organic, tree-like infographic with clear visual hierarchy. "
+        "The Title is the root/trunk. "
+        "AI TASK: Group items into 2-3 logical categories (e.g., Visuals, Personality). "
+        "VISUAL DISTINCTION RULE: The category labels MUST look completely different from detail items. " # 👈 カテゴリーを「看板」にする！
+        "Category names MUST be inside large, bold containers like 'wooden signposts' or 'framed plaques' at the base of branches. "
+        "Individual detail items MUST be smaller, lighter 'leaves' or 'fruits' sprouting from those signs. "
+        "Use high-contrast colors for each main branch to make the groups instantly recognizable at a glance. "
+        "The cat should be interacting with the tree (e.g., using a magnifying glass to inspect a leaf). "
+        "CRITICAL: NO repeating text between categories and leaves. Make it super easy to tell what is a group and what is a detail."
     ),
     "同心円型（波紋）（中心から外に広がる影響や重要度を表現）": "A concentric circles infographic layout, like ripples expanding outwards, to clearly show influence, scope, or importance.",
     "ルービックキューブ（立体ブロック）（複雑な要素の組み合わせを表現）": "A conceptual composition visualizing a multi-element structure as an interlocking, complex 3D Rubik's cube puzzle block.",
