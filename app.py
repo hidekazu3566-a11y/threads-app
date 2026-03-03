@@ -15,8 +15,8 @@ composition_dict = {
     "対角線・斜め分割（動きとリズム、スピード感を出す）": "A dynamic composition with key elements arranged strictly along strong diagonal lines, conveying movement and speed.",
     "額縁構図（外枠で囲って中央を際立たせる）": "CRITICAL RULE: A visible, distinct decorative frame or border surrounding the entire composition, emphasizing the central content. The frame style must match the chosen genre and art style.",
     "マス目・タイル配置（均等に枠を分けて情報を整理する）": "A clean, organized composition structured by a precise grid or tile layout, conveying a strong sense of unity and structure.",
-    # 💡 破れグリッドの指示を「ズラす・重ねる」と具体的に強化！
-    "破れグリッド・非対称バランス（あえて崩しておしゃれ感や動きを出す）": "An intentional 'broken grid' layout with staggered elements, slightly overlapping text boxes, and dynamic asymmetrical balance, creating an edgy, stylish, and modern visual feel.",
+    # 🚨 ここを大改造！「重ねろ！コラージュしろ！整列させるな！」とブチギレ指示！
+    "破れグリッド・非対称バランス（あえて崩しておしゃれ感や動きを出す）": "CRITICAL RULE: Extreme 'broken grid' editorial layout. TEXT BOXES, SHAPES, AND THE CHARACTER MUST HEAVILY OVERLAP AND INTERSECT. Completely destroy traditional straight alignment. Use a highly dynamic, asymmetrical collage style (like a modern fashion magazine spread). Elements must break out of their invisible boundaries. ZERO neat rows or simple stacking.",
     "余白重視（ネガティブスペース）（空白を活かして上品さや高級感を演出）": "A minimalist composition prioritizing a very large amount of clean negative space, creating a profound sense of elegance, luxury, and focus.",
     "シンメトリー（左右対称）（誠実さや静寂を伝える）": "A perfectly symmetrical composition, creating a sense of visual integrity, solemnity, and peace.",
     "トライアングル（三角構図）（圧倒的な安定感や成長を出す）": "A stable composition based on a strictly adhered to visible or implied triangle structure, conveying extreme stability and growth.",
@@ -236,7 +236,6 @@ if st.button("🪄 読者の心を動かす図解プロンプトを生成する"
             "Generate completely NEW backgrounds and poses. Keep the character consistent but in fresh contexts.",
             "NEVER draw any props or items from the reference image.",
             text_rule,
-            # 🚨 ここが超重要！タイトルと詳細テキストの文字サイズに絶対的なメリハリをつける！
             "CRITICAL TYPOGRAPHY RULE: Establish a strict visual hierarchy. The main 'title' MUST be visually dominant, significantly LARGER and BOLDER than the 'details' text."
         ]
     }
