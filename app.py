@@ -100,6 +100,13 @@ with col6:
 
 # --- 🚀 生成 ---
 if st.button("🪄 プロンプト生成"):
+    # 被写体の条件分岐：自分のキャラの場合はキャラだけ使い背景は使わない指示を出す
+    subject_instruction = (
+        "Use the attached image ONLY for the character's identity. Do NOT use the original background."
+        if subject == "自分のキャラ（画像添付）"
+        else subject
+    )
+
     data = {
         "role": "Exclusive AI Image Generation Expert",
         "format": "image_generation",
@@ -111,8 +118,9 @@ if st.button("🪄 プロンプト生成"):
             "aspect_ratio": ratio
         },
         "content": content_list,
-        "character": {"subject": subject, "placement": placement},
+        "character": {"subject": subject_instruction, "placement": placement},
         "rules": ["NO REPEATING TEXT.", "Distinct visual hierarchy.", "Unique icons for steps."]
     }
     st.success("完成！コピーしてGeminiに貼ってね✨")
     st.code(json.dumps(data, indent=4, ensure_ascii=False), language='json')
+    
