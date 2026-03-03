@@ -77,7 +77,7 @@ for i in range(num_images):
 # --- 3. 被写体と配置 ---
 col3, col4 = st.columns(2)
 with col3:
-    subject = st.selectbox("被写体", ["AIにおまかせ", "自分のキャラ（画像添付）", "なし"])
+    subject = st.selectbox("被写体", ["自分のキャラ（画像添付）", "AIにおまかせ", "なし"])
 with col4:
     placement = st.selectbox("配置", ["おまかせ", "右下", "左下", "中央"])
 
