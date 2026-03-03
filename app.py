@@ -41,12 +41,12 @@ composition_dict = {
         "Clear labels for '0%' and '100%' must be visible. Include subtle emotional icons. DO NOT repeat any text. "
         "Prioritize seamless, tight character-text proximity. The overall feel is balanced and instructional." # 👈 密着と分かりやすさを強調！
         ),
-  "深掘りツリー（「なぜ？」「どうやる？」を枝分けして解決）": (
+ "深掘りツリー（「なぜ？」「どうやる？」を枝分けして解決）": (
         "An organic, tree-like infographic (like a growing plant with branches). "
         "The Title is the root or main trunk. "
         "AI TASK: Analyze the items and group them into 2-3 logical categories (e.g., Causes, Methods, or Themes). "
         "PLACEMENT RULE: Create a branch for each category. Items belong as 'leaves' at the end of their respective branch. "
-        "CRITICAL: Avoid redundant labels. If a word is used as a category name, DO NOT repeat it as a separate leaf. " # 👈 重複禁止ルール！
+        "CRITICAL ANTI-REDUNDANCY RULE: The word used as a category name MUST be visually and conceptually distinct from the words used in the individual leaf items. DO NOT reuse any part of the leaf text as a category label. Ensure all nodes are uniquely labeled with input text. " # 👈 ここを最強に厳格にする指示に変える！
         "The cat should be interacting with the tree (e.g., thinking with a magnifying glass or watering it). "
         "The layout must clearly show how one big theme (Why/How) breaks down into specific details. NO REPEATING TEXT."
     ),
