@@ -4,7 +4,7 @@ import json
 st.set_page_config(page_title="図解プロンプトメーカー", layout="centered")
 
 st.title("🧵 図解プロンプトメーカー")
-st.write("専門用語は不要。「どう見せたいか」を選ぶだけで、あなたの想いを形にする最高の図解が作れます✨")
+st.write("専門用語は不要。「どう見せたいか」を選ぶだけで、あなたの想りを形にする最高の図解が作れます✨")
 
 # --- UIとAIへの英語指示の変換辞書 ---
 composition_dict = {
@@ -15,11 +15,14 @@ composition_dict = {
     "対角線・斜め分割（動きとリズム、スピード感を出す）": "A dynamic composition with key elements arranged strictly along strong diagonal lines, conveying movement and speed.",
     "額縁構図（外枠で囲って中央を際立たせる）": "CRITICAL RULE: A visible, distinct decorative frame or border surrounding the entire composition, emphasizing the central content. The frame style must match the chosen genre and art style.",
     "マス目・タイル配置（均等に枠を分けて情報を整理する）": "A clean, organized composition structured by a precise grid or tile layout, conveying a strong sense of unity and structure.",
-    "破れグリッド・非対称バランス（あえて崩しておしゃれ感や動きを出す）": "CRITICAL RULE: Extreme 'broken grid' editorial layout. TEXT BOXES, SHAPES, AND THE CHARACTER MUST HEAVILY OVERLAP AND INTERSECT. Completely destroy traditional straight alignment. Use a highly dynamic, asymmetrical collage style (like a modern fashion magazine spread). Elements must break out of their invisible boundaries. ZERO neat rows or simple stacking.",
+    "破れグリッド・非対称バランス（あえて崩しておしゃれ感や動きを出す）": "An intentional imperfect grid layout with asymmetrical balance, creating an edgy, stylish, and dynamic visual feel.",
     "余白重視（ネガティブスペース）（空白を活かして上品さや高級感を演出）": "A minimalist composition prioritizing a very large amount of clean negative space, creating a profound sense of elegance, luxury, and focus.",
     "シンメトリー（左右対称）（誠実さや静寂を伝える）": "A perfectly symmetrical composition, creating a sense of visual integrity, solemnity, and peace.",
     "トライアングル（三角構図）（圧倒的な安定感や成長を出す）": "CRITICAL RULE: Strict implied triangle composition created ONLY by the non-linear, dynamic placement of elements. ABSOLUTELY NO VISIBLE TRIANGLE SHAPES OR OUTLINES. Conveying extreme stability and harmonized structure through powerful diagonal flow. Focal point (e.g., character/cat) MUST BE PLACED at a dynamically staggered apex, and supporting elements (e.g., text blocks) MUST BE ARRANGED to form a distinct, wide base with clear diagonal lines connecting to the apex. DO NOT align character and text blocks vertically; use strong diagonal angles to create a visual pyramid flow.",
-    "--- SWOT分析図（強み・弱み・機会・脅威の4ブロック） ---": "A clean infographic layout divided into four distinct, numbered quadrants clearly labeled Strength, Weakness, Opportunity, and Threat.",
+    
+    # 💡 🚨 ここを大改造！SWOTを汎用的な「4分割」に変更！🚨
+    "4分割・ブロック配置（情報を4つのエリアに分ける）": "A clean, structured infographic layout divided into four distinct, equal quadrants or numbered blocks. TEXT ELEMENTS (from the details list) are ARRANGED sequentially within these four sections, ensuring a clear and balanced division of information. No specific labeling (like SWOT) is required; use generic numbering (1, 2, 3, 4) or simple titles based on the text provided.",
+    
     "--- ジャーニーマップ（時系列と感情の起伏を波で表現） ---": "A chronological infographic timeline showing emoij-based emotional ups and downs along a visual wave-like chart.",
     "レーダーチャート（クモの巣）（複数の評価軸で総合力を可視化）": "A precise radar chart infographic (spider chart) showing multiple evaluation axes to visualize overall strength.",
     "スペクトル・グラデーション（0〜100%など段階的な変化を表現）": "A visual spectrum or gradient infographic showing a progressive, phased change, strictly labeled from 0% to 100%.",
@@ -162,7 +165,6 @@ st.header("4. デザインの方向性")
 
 comp_options = [k for k in composition_dict.keys()]
 
-# 💡 🚨 修正ポイント！ここを「右下」に統一したからもうエラー出ない！ 🚨
 if "Zの法則（左上から右下へ視線を誘導・王道）" in comp_options:
     comp_index = comp_options.index("Zの法則（左上から右下へ視線を誘導・王道）")
 else:
