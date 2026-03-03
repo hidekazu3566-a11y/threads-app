@@ -6,7 +6,7 @@ st.set_page_config(page_title="図解プロンプトメーカー", layout="cente
 st.title("🧵 図解プロンプトメーカー")
 st.write("専門用語は不要。「どう見せたいか」を選ぶだけで、あなたの想いを形にする最高の図解が作れます✨")
 
-# --- UIとAIへの英語指示の変換辞書（全項目をダイエットなし・最長指示で完全復旧！） ---
+# --- UIとAIへの英語指示の変換辞書（V1から今までの「正解」を全復旧） ---
 composition_dict = {
     "Zの法則（左上から右下へ視線を誘導・王道）": "CRITICAL: A definitive Z-shaped visual path. Guide the eye strictly from Top-Left to Top-Right, then diagonally down to Bottom-Left, and finally to Bottom-Right. Elements MUST be positioned to reinforce this specific scanning pattern. Ensure strong visual weight at each corner of the Z-path to anchor the viewer's attention. [cite: 2026-03-04]",
     "Fの法則（上から下へ項目を読ませる・リスト向け）": "CRITICAL: A definitive F-shaped scanning pattern. Focus on a strong horizontal line at the top, followed by a shorter horizontal line further down, and a clear vertical line along the left side. This is a strict hierarchy for information processing. Arrange headers, bullets, and icons to perfectly mimic an F-shaped eye-tracking heat map. [cite: 2026-03-04]",
@@ -35,7 +35,7 @@ composition_dict = {
     "タイポグラフィ主役（文字そのものをアートとして見せる）": "An artful typography-first composition where the title text is treated as the main visual artwork, with character and background integrated seamlessly into the letterforms themselves."
 }
 
-# --- Streamlit アプリ本体 ---
+# --- 1. 基本設定 ---
 st.header("1. 作りたい画像の設定")
 use_case = st.selectbox("用途", ["図解（SNS・プレゼン用）", "サムネイル（YouTube・記事用）", "汎用画像生成（自由設定）"])
 col1, col2 = st.columns(2)
@@ -46,6 +46,7 @@ with col2:
     num_images = st.selectbox("出力枚数", list(range(1, 11)))
 genre = st.selectbox("ターゲットジャンル", ["指定なし", "1. 美容・コスメ", "2. 健康・ダイエット", "3. 恋愛・婚活", "4. 育児・ファミリー", "5. スピリチュアル・占い", "6. マネー・投資", "7. ビジネス・自己啓発", "8. エンタメ・ゲーム"])
 
+# --- 2. 伝える内容 ---
 st.header("2. 伝える内容")
 text_strictness = st.radio("テキストのアレンジ", ["🚫 指定した文字だけを厳格に入れる（勝手な追加NG）", "✨ AIにいい感じのサブタイトル等の追加をお任せする"])
 content_list = []
@@ -55,12 +56,14 @@ for i in range(num_images):
         details = st.text_area(f"詳細テキスト（1項目ずつ改行）", key=f"d_{i}", placeholder="1. 視点の切り替えが上手い\n2. 溜め込まない\n3. 自分を責めない")
         content_list.append({"slide_number": i+1, "title": title, "details": details.split('\n') if details else []})
 
+# --- 3. 被写体と配置 ---
 col3, col4 = st.columns(2)
 with col3:
-    subject = st.selectbox("メインの被写体", ["AIにおまかせ", "自分のキャラクターを使う（画像アップロード）", "入れない"])
+    subject_type = st.selectbox("メインの被写体", ["AIにおまかせ", "自分のキャラクターを使う（画像アップロード）", "入れない"])
 with col4:
     char_placement = st.selectbox("キャラクターの配置位置", ["おまかせ", "右下に配置", "左下に配置", "中央に大きく配置", "見切れるように配置"])
 
+# --- 4. デザインの方向性 ---
 st.header("3. デザインと構図 🎨")
 comp_options = list(composition_dict.keys())
 comp_ui = st.selectbox("神・構図リスト", comp_options)
@@ -72,8 +75,14 @@ with col5:
 with col6:
     text_bg = st.selectbox("文字の下敷き", ["✨ おまかせ", "🏷️ タイトルのみ強調", "☁️ 雲の形", "⬜️ 角丸長方形", "なし"])
 
+# --- 🚀 生成（魂の監査・全お説教再実装） ---
 if st.button("🪄 読者の心を動かすプロンプトを生成"):
-    # 🚨 配置指示もお説教モードで復活！
+    # 💡 🚨 魂の復旧！キャラクター抽出の厳格ルール 🚨 💡
+    if subject_type == "自分のキャラクターを使う（画像アップロード）":
+        subject_instruction = "CRITICAL RULE: Extract and reproduce ONLY the character itself from the attached image. You MUST strictly EXCLUDE all props, objects (like laptops, desks, cups, plants), and the original background."
+    else:
+        subject_instruction = subject_type
+
     placement_instruction = f"{char_placement}. CRITICAL RULE: This character placement has HIGHEST absolute priority. The design must adapt to this location. DO NOT move the character to fit a grid; move the design to fit the character."
     
     data = {
@@ -86,7 +95,7 @@ if st.button("🪄 読者の心を動かすプロンプトを生成"):
             "aspect_ratio": ratio
         },
         "content_per_image": content_list,
-        "character_instructions": {"subject": subject, "placement": placement_instruction},
+        "character_instructions": {"subject": subject_instruction, "placement": placement_instruction},
         "rules": [
             "CRITICAL: Generate EXACTLY the number of sections as detail items provided.",
             "ABSOLUTELY NO DUPLICATE TEXT across steps or blocks. Each element must have unique content.",
@@ -94,5 +103,5 @@ if st.button("🪄 読者の心を動かすプロンプトを生成"):
             "Visual hierarchy must be crystal clear: Large Title, Smaller Details."
         ]
     }
-    st.success("完璧！あんたの全こだわりを1文字も漏らさず復旧した究極版だよ✨")
+    st.success("究極の完全復旧！全てのこだわりを1文字も漏らさず詰め込んだよ✨")
     st.code(json.dumps(data, indent=4, ensure_ascii=False), language='json')
