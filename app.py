@@ -44,12 +44,12 @@ composition_dict = {
 "深掘りツリー（「なぜ？」「どうやる？」を枝分けして解説）": (
         "An organic, tree-like infographic with a strict visual hierarchy. "
         "The Title is the root/trunk. "
-        "AI TASK: Analyze the input details and group them into 2-3 logical categories based on the context. "
-        "CRITICAL VISUAL RULE: The category names (groups) MUST be placed inside distinct 'wooden signboards' or 'framed plaques' at the start of each branch. "
-        "Individual detail items MUST be small 'leaves' or 'fruits' growing from these specific signboards. "
-        "The shape of signboards and leaves MUST be completely different to show hierarchy. " # 👈 形を絶対変えるルール
-        "CRITICAL ANTI-REDUNDANCY RULE: Every word or phrase from the content list MUST ONLY appear once. NEVER repeat a leaf's text as a category name. " # 👈 言葉を指定せず「重複禁止」だけを指示
-        "The cat should be interacting with the tree. Use high-contrast colors for each branch. NO REPEATING TEXT."
+        "AI TASK: Treat the content list as a STRICT INVENTORY of unique items. " # 👈 「在庫（インベントリ）」として扱わせる
+        "PLACEMENT RULE: Each item from the list is a SINGLE-USE asset. Once an item is placed, it is EXHAUSTED and MUST NOT be used again in any other part of the image. " # 👈 「一回使ったら在庫切れ」ルール
+        "CRITICAL VISUAL HIERARCHY: Group names MUST be in 'Wooden Signboards'. Detail items MUST be 'Leaves'. "
+        "CATEGORY CREATION: AI must generate BRIEF, UNIQUE category names (e.g., 'Nature', 'Actions') that are NOT present in the detail list. " # 👈 「看板の文字はリストから選ぶな、AIが新しく考えろ」と指示
+        "CRITICAL ANTI-REDUNDANCY: Absolutely zero word-for-word repetition. The total count of labels must equal the list length plus new categories. "
+        "The cat should be interacting with the tree. NO REPEATING TEXT."
     ),
     "同心円型（波紋）（中心から外に広がる影響や重要度を表現）": "A concentric circles infographic layout, like ripples expanding outwards, to clearly show influence, scope, or importance.",
     "ルービックキューブ（立体ブロック）（複雑な要素の組み合わせを表現）": "A conceptual composition visualizing a multi-element structure as an interlocking, complex 3D Rubik's cube puzzle block.",
