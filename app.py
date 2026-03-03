@@ -48,12 +48,13 @@ text_strictness = st.radio("テキストの追加アレンジ", [
 content_list = []
 for i in range(num_images):
     with st.expander(f"📝 {i+1}枚目のテキスト入力", expanded=(i==0)):
+        # 💡 ここを修正！自動生成指示は完全に削除！入力された文字を絶対に使います！
         img_title = st.text_area(f"タイトル・見出し", key=f"title_{i}", placeholder="例：メンタルが強い人は\n（改行できます）", height=68)
         img_details = st.text_area(f"具体的なテキスト（詳細・箇条書きなど）", key=f"details_{i}", placeholder="視点の切り替えが上手い\n出来ないより出来ることを考える\n小さな一歩を認められる")
         
         content_list.append({
             "slide_number": i+1,
-            "title": img_title,
+            "title": img_title, # 入力された文字をそのまま渡す
             "details": img_details.split('\n') if img_details else []
         })
 
@@ -105,18 +106,22 @@ with col5:
     ])
 
 with col6:
+    # 💡 あなたのアイデア「下敷きはおまかせがいい」を反映！
+    # V8の全項目を復活させた上で、一番上に「✨おまかせ」を追加し、デフォルトにしました！
     text_background = st.selectbox("文字の下敷き（座布団）", [
-        "なし（文字のみ・スッキリ見せる）",
-        "シンプルな半透明の角丸長方形（王道）",
-        "モワモワした雲の形（ポップ・かわいい）",
-        "ペンキでサッと塗ったブラシ風（エモい）",
-        "付箋・マスキングテープ風（メモ感）",
-        "破れた紙・ノートの切れ端風（レトロ）",
-        "リボン・タイトルバナー風（見出し強調）",
-        "すりガラス風（スタイリッシュ）"
+        "✨ おまかせ（AIが一番読みやすいデザインを自動で選ぶ！）",
+        "🏷️ タイトルのみ強調（見出しだけリボンやバナー風にする）",
+        "☁️ モワモワした雲の形（ポップ・かわいい）",
+        "⬛️ ペンキでサッと塗ったブラシ風（エモい）",
+        "📌 付箋・マスキングテープ風（メモ感）",
+        "📄 破れた紙・ノートの切れ端風（レトロ）",
+        "⬜️ シンプルな角丸長方形（王道・スッキリ）",
+        "すりガラス風（スタイリッシュ）",
+        "なし（文字のみ・背景に溶け込ませる）"
     ])
     
-    if text_background != "なし（文字のみ・スッキリ見せる）":
+    # 不透明度スライダーもちゃんと復活！「なし」と「おまかせ」以外の時に出ます。
+    if text_background not in ["なし（文字のみ・背景に溶け込ませる）", "✨ おまかせ（AIが一番読みやすいデザインを自動で選ぶ！）"]:
         bg_opacity = st.slider("下敷きの不透明度（透け感）", min_value=10, max_value=100, value=70, step=10, format="%d%%")
         st.caption("100%でくっきり、数字が小さいほど背景が透けます✨")
     else:
@@ -151,21 +156,34 @@ if st.button("🪄 読者の心を動かす図解プロンプトを生成する"
     
     final_color = brand_color if brand_color else "Auto-select the best colors based on genre and emotion."
     
+    # 🚫 勝手な文字NGの時は、一文字も足さないように裏側の英語指示をキツくしたよ！
     if text_strictness == "🚫 指定した文字だけを厳格に入れる（勝手な追加NG）":
-        text_rule = "CRITICAL: DO NOT add any extra text or subtitles. Use ONLY the exact title and details provided in the content_list. Respect line breaks in the title."
+        text_rule = "CRITICAL: DO NOT add any extra text, titles, or subtitles. Use ONLY the exact text provided in the content_list. Do not generate a title if it is empty."
     else:
-        text_rule = "Feel free to add highly relevant, short subtitles or catchphrases to enhance the design if it fits the context. Respect line breaks in the title."
+        text_rule = "Feel free to add highly relevant, short subtitles or catchphrases to enhance the design if it fits the context."
 
-    # 🚨 ここが超重要！キャラ単体だけを抜き出す最強の縛りルール！
     if subject_type == "自分のキャラクターを使う（画像アップロード）":
-        subject_instruction = "CRITICAL RULE: Extract and reproduce ONLY the character itself from the attached image. You MUST strictly EXCLUDE all props, objects (like laptops, desks, cups, plants), and the original background. The character must be drawn completely alone without any of their original items."
+        subject_instruction = "CRITICAL RULE: Extract and reproduce ONLY the character itself from the attached image. You MUST strictly EXCLUDE all props, objects (like laptops, desks, cups, plants), and the original background."
     else:
         subject_instruction = subject_type
 
+    # 💡 下敷き「おまかせ」の時の、AIへの具体的な指示を裏側に実装！
+    if text_background == "✨ おまかせ（AIが一番読みやすいデザインを自動で選ぶ！）":
+        # ここ重要。AIに「吹き出し、パネルなど、構成に合わせてお前がいい感じの下敷きデザインを選べ」と指示。
+        bg_instruction = "Auto-select the best readable text box styles (e.g., speech bubbles, clean panels) that fit the composition and emotional goal."
+    elif text_background == "🏷️ タイトルのみ強調（見出しだけリボンやバナー風にする）":
+        bg_instruction = "Apply a stylish background (like a banner or ribbon) ONLY to the title. Keep detail texts clean without heavy backgrounds."
+    elif text_background == "なし（文字のみ・背景に溶け込ませる）":
+        bg_instruction = "None (text only)"
+    else:
+        # それ以外（雲、テープなど）は、選んだスタイルと不透明度をそのまま指示
+        bg_instruction = f"Style: {text_background}, Opacity: {bg_opacity}"
+
+    # 🚨 バグ修正！ここを "image_generation" に戻したから、絶対に画像が出る！！
     data_for_gemini = {
-        "role": "Exclusive AI Creative Director",
+        "role": "Exclusive AI Image Generation Expert",
+        "format": "image_generation",
         "objective": f"Generate {num_images} high-quality images for {use_case}",
-        "format": "json",
         "design_concept": {
             "genre_worldview": genre,
             "style": style,
@@ -174,10 +192,7 @@ if st.button("🪄 読者の心を動かす図解プロンプトを生成する"
                 "font_style": font_choice,
                 "alignment": text_align
             },
-            "text_background": {
-                "style": text_background,
-                "opacity": f"{bg_opacity}%" if bg_opacity != "なし" else "None"
-            },
+            "text_background": bg_instruction, # ここに洗練された下敷き指示が入る！
             "composition_structure": composition,
             "brand_color_theme": final_color,
             "emotional_goal": emotion,
@@ -190,12 +205,12 @@ if st.button("🪄 読者の心を動かす図解プロンプトを生成する"
         },
         "generation_rules": [
             f"Generate exactly {num_images} images based on the content_per_image array.",
-            "Generate completely NEW backgrounds and poses suitable for the concepts. Keep the character consistent but in fresh contexts.",
-            "NEVER draw any props or items from the reference image.", # 念押しの荷物禁止令
+            "Generate completely NEW backgrounds and poses. Keep the character consistent but in fresh contexts.",
+            "NEVER draw any props or items from the reference image.",
             text_rule
         ]
     }
 
-    st.success(f"✨ {num_images}枚分の最強プロンプトが完成したよ！")
+    st.success(f"✨ {num_images}枚分の最強プロンプトが完成したよ！黒い枠の中身だけをコピーしてね！")
     st.code(json.dumps(data_for_gemini, indent=4, ensure_ascii=False), language='json')
     st.balloons()
