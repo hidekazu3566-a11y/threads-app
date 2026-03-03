@@ -26,13 +26,12 @@ composition_dict = {
         "Arrange the character-text pairs sequentially along a clean, smooth wavy path that progresses clearly from left to right across the screen. "
         "Each character and text pair must be tightly integrated as a single visual unit, especially at the start and end of the path. "
         "Include emotional sun/cloud/heart icons and a 'SUCCESS!' element at the final point. NO REPEATING TEXT. Reiterate: STRICT left-to-right horizontal linear sequence."
-    ),
     "ステータス画面風（ゲームみたいに能力を可視化）": (
-        "A game-inspired character status or profile screen layout. "
-        "Each item in the details list MUST be presented as a horizontal parameter bar (like HP, MP, or EXP bars in an RPG). "
-        "The character (cat) should be placed prominently next to these bars, looking like a hero in a selection screen. "
-        "Use vibrant, distinct colors for each bar and include a small, relevant icon at the start of each bar. "
-        "The background should have a subtle UI/HUD feel. CRITICAL: NO REPEATING TEXT. Use the exact labels provided."
+        "A game-inspired character status screen layout where the character (cat) is the protagonist. "
+        "CRITICAL GAUGE RULE: The length (fill-level) of each horizontal status bar MUST strictly correlate with the numerical value provided at the end of each text item (e.g., 'Power 80' or 'Speed (5)'). Higher numbers produce longer, fuller bars. "
+        "TEXT RENDERING RULE: DO NOT render the numerical values, percentages, or parentheses used for control on the image. " # 👈 ここで「数字は書くな」と指示！
+        "ONLY render the label text itself. For example, if the input is 'Power 80', the image should show a bar at 80% length but ONLY display the word 'Power'. "
+        "Use vibrant, distinct colors for each bar and ensure a clean, modern gaming UI feel. NO REPEATING TEXT."
     ),
     "スペクトル・グラデーション（0〜100%など段階的な変化を表現）": "A visual spectrum or gradient infographic showing a progressive, phased change, strictly labeled from 0% to 100%.",
     "ロジックツリー（「なぜ？」「どうやって？」を枝状に分解）": "A branchedロジックツリー or issue tree infographic layout strictly decomposing a main concept into detailed 'Why?' or 'How?' steps.",
