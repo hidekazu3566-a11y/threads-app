@@ -116,13 +116,13 @@ composition_dict = {
         "To ensure maximum visibility and aesthetic coherence, use stylish, CLEAN, SOLID text boxes or banners for all text, with the Title element having the color highlight. "
         "CRITICAL EMOTION-EXPRESSION SYNC RULE: The AI MUST analyze the specific content of the Japanese text items. MUST identifiy the core emotion of each statement (e.g., contemplation of the past, discovery of truth, somber decision, or soothing tiredness). Adapt the main subject's facial expression, body language, and pose to DRAMATICALLY and unmistakably change the face and full body pose to match the corresponding mood. Poses should be natural, structurally sound, and deeply integrated with the content. Zero tolerance for the default generic smile. " # 👈 感情同期を最強レベルに強化！
     ),
-   "タイポグラフィ主役（文字そのものをアートとして見せる）": (
+  "タイポグラフィ主役（文字そのものをアートとして見せる）": (
         "An artful typography-first composition focusing purely on the title text as the main visual artwork. "
         "CRITICAL RULE: Render the main title in an EXTREMELY LARGE, BOLD, and highly decorative font style. "
         "The title text size must be at least 3X larger than any detail text, dominating the entire composition. "
         "Add expressive textures, glowing effects, or 3D depth to the title font, treating the letters as a physical object or stage set. "
         "Characters should be intimately integrated with the letters, perhaps resting on, hugging, or peaking from behind the massive typography."
-    ),with character and background integrated seamlessly."
+    ),
 }
 
 # --- 1. 基本設定（用途・サイズ・ジャンル・枚数） ---
