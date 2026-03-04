@@ -109,7 +109,12 @@ composition_dict = {
         "To ensure maximum visibility and aesthetic coherence, use stylish, CLEAN, SOLID text boxes or banners for all text, with the Title element having the color highlight. "
         "CRITICAL EMOTION-EXPRESSION SYNC RULE: The AI MUST analyze the specific content of the Japanese text items. MUST identifiy the core emotion of each statement (e.g., contemplation of the past, discovery of truth, somber decision, or soothing tiredness). Adapt the main subject's facial expression, body language, and pose to DRAMATICALLY and unmistakably change the face and full body pose to match the corresponding mood. Poses should be natural, structurally sound, and deeply integrated with the content. Zero tolerance for the default generic smile. " # 👈 感情同期を最強レベルに強化！
     ),
-    "問い→答え開示（リビール）（疑問を投げてスワイプで答えを出す）": "A teaser composition designed strictly for a multi-image reveal, where the first image poses a powerful question and subsequent images reveal the clear answer.",
+    "問い→答え開示（リビール）（感情連動・スワイプ対応）": (
+        "A strict sequence of images optimized for a multi-image carousel or swipe format, focusing on a dynamic narrative flow. "
+        "IMAGE 1 (THE QUERY): This image MUST be a powerful teaser or question scene. The Title text (the question) is dominant. Use elegant, highly legible text boxes to ensure extreme contrast against the dramatic background. CRITICAL RULE: The main subject's facial expression, body language, and pose MUST display genuine puzzlement, curiosity, doubt, or deep questioning. Zero confidence or smiling. " # 👈 1枚目は「超・疑問顔」に固定！
+        "SUBSEQUENT IMAGES (THE REVEAL): These images provide the sequential answers (detail text). Clearly render each detail text item in its own elegant, semi-transparent text box. CRITICAL EMOTION-EXPRESSION SYNC RULE: The main subject's facial expression, body language, and pose MUST DRAMATICALLY change for each answer. It must transition from the initial doubt to confidence, enlightenment, satisfaction, profound understanding, or intense motivation, perfectly matching the content of the text. Zero trace of the initial doubt; the mystery is solved. " # 👈 2枚目以降はテロップに合わせて「ドヤ顔・納得顔・感動顔」などに劇的変化！
+        "Maintain high consistency of the subject and background world across all images. Text MUST NOT be repeated. The overall vibe is an impactful educational carousel or a mysterious secret reveal."
+    ),
     "タイポグラフィ主役（文字そのものをアートとして見せる）": "An artful typography-first composition where the title text is treated as the main visual artwork, with character and background integrated seamlessly."
 }
 
