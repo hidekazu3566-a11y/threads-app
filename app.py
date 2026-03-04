@@ -28,7 +28,7 @@ composition_dict = {
         "Include emotional sun/cloud/heart icons and a 'SUCCESS!' element at the final point. NO REPEATING TEXT. Reiterate: STRICT left-to-right horizontal linear sequence."
        ),
     "ステータス画面風（ゲームみたいに能力を可視化）": (
-        "A game-inspired character status screen layout where the character (cat) is the protagonist. "
+        "A game-inspired character status screen layout where the character is the protagonist. "
         "CRITICAL GAUGE RULE: The length (fill-level) of each horizontal status bar MUST strictly correlate with the numerical value provided at the end of each text item (e.g., 'Power 80' or 'Speed (5)'). Higher numbers produce longer, fuller bars. "
         "TEXT RENDERING RULE: DO NOT render the numerical values, percentages, or parentheses used for control on the image. " # 👈 ここで「数字は書くな」と指示！
         "ONLY render the label text itself. For example, if the input is 'Power 80', the image should show a bar at 80% length but ONLY display the word 'Power'. "
