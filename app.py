@@ -312,10 +312,11 @@ if st.button("🪄 読者の心を動かす図解プロンプトを生成する"
             "subject": subject_instruction,
             "placement": placement_instruction
         },
-        "generation_rules": [
+       "generation_rules": [
             "Generate exactly 1 image file immediately. DO NOT output JSON.",
             "Render the provided text naturally on the image. Placement can be flexible.",
-            "Strictly follow the 'composition_structure' without adding unrequested decorative elements.",
+            # 👇 ここがポイント！「選んだ構図に合わせろ、勝手に枠を増やすな」という指示
+            "Strictly follow the chosen 'composition_structure'. If the selected style is a single-frame composition (like Hinomaru), DO NOT add any grids, sub-panels, or collage elements.",
             "EMPTY SLOT PROTECTOR: If text is empty, do not draw any boxes or frames.",
             text_rule,
             "Maintain character consistency and high quality."
