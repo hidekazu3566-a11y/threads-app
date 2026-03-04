@@ -53,11 +53,11 @@ composition_dict = {
     ),
     "放射型（中心から外に広がる）": "A concentric circles infographic layout, like ripples expanding outwards, to clearly show influence, scope, or importance.",
     "ルービックキューブ（立体ブロック）（複雑な要素の組み合わせを表現）": (
-        "A complex 3D Rubik's cube structure composition. The Title is prominent at the top. "
-        "The individual faces of the cube are illustrated panels. "
-        "CRITICAL TEXT RULE: The content list is a STRICT SINGLE-USE INVENTORY. Once a text item is placed on a panel, it is EXHAUSTED and MUST NOT be used again. "
-        "ILLUSTRATIVE FILLING RULE: DO NOT repeat any text. If a panel needs filling, instead of repeating text, add a theme-relevant small illustrative element (icon, prop, or decorative object). " # 👈 これが新しい魔法！
-        "Example (for cute cats theme): Replace exhausted panels with illustrations like a balls of yarn, paw prints, fish bones, or specific objects related to the theme, keeping the visuals fresh. "
+        "A 3D Rubik's cube structure composition where the individual block panels are SIGNIFICANTLY ENLARGED to maximize surface area. " # 👈 ブロックサイズを「大幅に拡大」する！
+        "Prioritize text readability above all. Render all detail text (from the content list) in a VERY LARGE, BOLD, highly legible font (e.g., ゴシック体) within the enlarged panels. " # 👈 「文字の大きさ、太さ、読みやすさ」を最優先！
+        "The Title is visually dominant at the top. Use a STRONG visual hierarchy, making the main 'title' significantly LARGER and BOLDER than the 'details' text. " # 👈 タイトルと詳細のメリハリを強化！
+        "CRITICAL TEXT RULE: The content list is a STRICT SINGLE-USE INVENTORY. Absolutely zero word-for-word repetition across the entire image. Once an item is placed, it is EXHAUSTED. " # 👈 重複絶対禁止は維持！
+        "ILLUSTRATIVE FILLING RULE: If a panel needs filling, add a theme-relevant small illustrative element (icon, prop, or decorative object), NEVER repeated text. Replace exhausted panels with fresh visuals like balls of yarn, paw prints, fish bones, keeping the visuals fresh. " # 👈 小物の埋め草は維持！
         "INTEGRATION: The cat characters should be actively interacting with the block panels. Ensure clean, instructional aesthetics with clear text hierarchy. "
     ),
     "--- ストーリー4コマ・カルーセル絵巻（スワイプ前提の物語展開） ---": "A narrative composition structured for an Instagram carousel, where each image is a strictly connected 'panel' in a continuous 4-コマ story or continuous絵巻 (picture scroll).",
