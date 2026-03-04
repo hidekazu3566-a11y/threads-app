@@ -102,7 +102,14 @@ composition_dict = {
         "CRITICAL EMOTION-EXPRESSION SYNC RULE: The AI MUST analyze the specific content of the Japanese text in each list item/panel. Adapt the main subject's facial expression, body language, and pose to DRAMATICALLY match the corresponding mood. Poses should be natural and structurally sound. Avoid generic expressions. This rule applies to both the central figure and any depicted 'card characters'. "
         "Adapt with appropriate decorative motifs, ensuring a profound, spiritual feel, regardless of the theme."
     ),
-    "モノクロ＋1色スポットライト（白黒の中で点だけカラーにして強烈に強調）": "A dramatic composition in mostly monochrome, with strictly one specific element or character highlighted in a single, vibrant, contrasting color.",
+    "モノクロ＋1色スポットライト（表情連動・文字被り防止）": (
+        "A dramatic composition where the entire scene is rendered in stark, powerful monochrome. "
+        "AI TASK: Extract ALL provided Japanese text items clearly and legibly. Place ALL text elements to ensure that NO portion of any text is obscured or covered by the main subject's body. A distinct, CLEAN, SOLID WHITE text box (like a panel or banner) MUST BE USED FOR EACH text element to provide maximum contrast. "
+        "The Title text is treated as visually dominant. "
+        "CRITICAL SPOTLIGHT RULE: Precisely one, single element in the image MUST be highlighted in a single, vibrant, contrasting color. This spotlight effect can highlight the face, a special prop, or the background section related to a specific text item. "
+        "CRITICAL BODY INTEGRITY RULE: Ensure anatomically correct and structurally sound body representation for the main subject. Poses should be natural, avoiding unnatural distortion, body contortion, or extra/missing limbs. "
+        "CRITICAL EMOTION-EXPRESSION SYNC RULE: The AI MUST analyze the specific content of the Japanese text in each list item/panel. Adapt the main subject's facial expression, body language, and pose to DRAMATICALLY match the corresponding mood. Poses should be natural and structurally sound. Avoid generic smiling or frozen expressions. This rule applies to both the central figure and any depicted 'card characters'. "
+    ),
     "問い→答え開示（リビール）（疑問を投げてスワイプで答えを出す）": "A teaser composition designed strictly for a multi-image reveal, where the first image poses a powerful question and subsequent images reveal the clear answer.",
     "タイポグラフィ主役（文字そのものをアートとして見せる）": "An artful typography-first composition where the title text is treated as the main visual artwork, with character and background integrated seamlessly."
 }
