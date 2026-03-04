@@ -82,7 +82,13 @@ composition_dict = {
         "To ensure text readability against the highly detailed background, use a stylish, CLEAN SOLID WHITE text box (like a simple banner) or a sleek semi-transparent dark banner at the bottom or side. "
         "Render the text in a VERY LARGE, BOLD, cinematic font. NO REPEATING TEXT. The overall vibe should be like a high-end editorial spread, a dramatic movie poster, or a sleek product reveal."
     ),
-    "重ね合わせ（レイヤー）（写真や文字を重ねて奥行きや深みを出す）": "A layered composition with multiple overlapping elements of photo, character, and text, creating profound depth and dimension.",
+   "重ね合わせ（レイヤー）（要素を重ねて雑誌風のおしゃれな奥行きを出す）": (
+        "A highly stylized, editorial collage composition featuring deliberate layering of elements. "
+        "CRITICAL VISUAL RULE: Text boxes, the main subject, and background graphic elements (like shapes, torn paper, or motifs) MUST overlap each other slightly to create a rich sense of 3D depth and dimension. "
+        "READABILITY RULE: Despite the overlapping layout, all text MUST remain completely legible. Use drop shadows, outlines, or solid background panels behind the text to ensure extreme contrast and separation from the background. "
+        "Render the provided text as visually striking typography in a VERY LARGE, BOLD font. DO NOT repeat any text. "
+        "The overall vibe should be a trendy, aesthetic mood board or a modern magazine spread, adapting perfectly to the chosen theme and subject."
+    ),
     "シルエット・逆光（余韻や神秘的なムードを演出）": "A moody composition using strong backlighting and strictly silhouettes to create lingering emotion and profound mystery.",
     "鏡面・リフレクション（水面などの反射で二面性や夢幻的な美しさを出す）": "A dreamlike composition with a perfect mirror-like reflection (e.g., in water), creating a powerful sense of dreamlike beauty and integrity.",
     "タロットカード・星座マッピング（占い・スピリチュアルな独自の世界観）": "A mystical composition adhering strictly to a tarot card-like or celestial constellation-mapping worldview, with symbolic elements.",
