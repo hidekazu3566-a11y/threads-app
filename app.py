@@ -93,7 +93,8 @@ composition_dict = {
     "鏡面・リフレクション（水面反射・表情連動）": (
         "A dreamlike composition featuring a perfect, crystal-clear mirror-like reflection of the main subject on a surface (e.g., still water or a highly polished floor) to create a powerful sense of dreamlike beauty and integrity. "
         "CRITICAL BODY INTEGRITY RULE: Ensure anatomically correct and structurally sound body representation for the main subject. Poses should be natural, avoiding unnatural distortion or extra/missing limbs. The reflection must perfectly and accurately mirror this correct anatomy. "
-        "CRITICAL EMOTION-EXPRESSION SYNC RULE: The AI MUST analyze the specific content of the Japanese text provided for each image. Adapt the main subject's facial expression, body language, and pose to DRAMATICALLY match the corresponding mood. Avoid generic expressions. This applies to both the real subject and its reflection."
+        "CRITICAL TEXT RULE: You MUST clearly render ALL provided Japanese text items in the image. DO NOT skip, drop, or shorten any lines. Use elegant, semi-transparent text boxes or softly glowing panels that blend with the dreamlike atmosphere, ensuring extreme contrast and high legibility. "
+        "CRITICAL EMOTION-EXPRESSION SYNC RULE: The AI MUST analyze the specific content of the text. Adapt the main subject's facial expression, body language, and pose to DRAMATICALLY match the corresponding mood. Avoid generic expressions. This applies to both the real subject and its reflection."
     ),
     "タロットカード・星座マッピング（占い・スピリチュアルな独自の世界観）": "A mystical composition adhering strictly to a tarot card-like or celestial constellation-mapping worldview, with symbolic elements.",
     "モノクロ＋1色スポットライト（白黒の中で点だけカラーにして強烈に強調）": "A dramatic composition in mostly monochrome, with strictly one specific element or character highlighted in a single, vibrant, contrasting color.",
