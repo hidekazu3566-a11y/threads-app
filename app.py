@@ -88,7 +88,8 @@ composition_dict = {
         "CRITICAL READABILITY & MOOD: The text MUST enhance the atmospheric mood. Use elegant, clean text boxes that look like a soft, semi-transparent, or gently glowing background pane (e.g., a subtle dark or light wash). "
         "Render the provided text highly legible with extreme contrast within these semi-transparent panes. DO NOT repeat any text. "
         "The overall vibe is a profound movie poster or an emotional quote visual. "
-        "CRITICAL EMOTION-EXPRESSION SYNC RULE: The AI MUST analyze the specific content of the Japanese text in each list item/panel. Adapt the main subject's facial expression, body language, and pose to DRAMATICALLY match the corresponding mood. Avoid generic expressions. "
+        "CRITICAL EMOTION-EXPRESSION SYNC RULE: The AI MUST analyze the specific content of the Japanese text in each list item/panel. Adapt the main subject's facial expression, body language, and pose to DRAMATICALLY match the corresponding mood. Avoid generic expressions."
+    ),
         "DO NOT render words describing the composition's mood or style (e.g., 'emotional', 'moody', 'dramatic') as visible text within the image."
     ),
     "鏡面・リフレクション（水面などの反射で二面性や夢幻的な美しさを出す）": "A dreamlike composition with a perfect mirror-like reflection (e.g., in water), creating a powerful sense of dreamlike beauty and integrity.",
