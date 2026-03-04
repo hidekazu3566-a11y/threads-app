@@ -313,14 +313,12 @@ if st.button("🪄 読者の心を動かす図解プロンプトを生成する"
         },
         "generation_rules": [
             f"Generate exactly {num_images} separate image files.",
-            # 👇 「指定したスロットだけ」を徹底する隔離ルール
-            "STRICT SLOT ISOLATION: Image #N must ONLY use the text provided for slide N. Do not borrow or repeat text between images.",
-            # 👇 空欄なら「図解の部品」すら出させない掟（これでツリーの残骸も消える！）
-            "EMPTY SLOT RULE: If a slide's text is empty, that image MUST be 100% free of text AND infographic elements (no trees, no panels, no arrows). Just the character and background.",
-            # 👇 文字がある時だけ構図を守らせる
-            "STYLE ADHERENCE: Only apply the 'composition_structure' to images that HAVE text. For empty images, ignore the structure and show the character naturally.",
-            text_rule,
-            "CRITICAL TYPOGRAPHY: Ensure the title is significantly larger and bolder than the details."
+            # 👇 「1枚設定ならまとめろ、複数枚ならバラバラ」の全方位ルール
+            f"FLEXIBLE LAYOUT RULE: If {num_images} is 1, consolidate all items from 'content_per_image' into that single canvas using the specified 'composition_structure'.",
+            f"FLEXIBLE LAYOUT RULE: If {num_images} is greater than 1, apply STRICT 1-to-1 mapping. Image #N must ONLY use the text provided for slide N.",
+            # 👇 空欄なら「図解の残骸」も出さない掟（ルービックキューブの枠とかも消える！）
+            "EMPTY SLOT PROTECTOR: If a slide's text is empty, that specific image (or panel) MUST be 100% free of text and infographic structures. Just show the character and background.",
+            "Maintain high character consistency across all images. NO Japanese text or numbers."
         ]
     }
 
