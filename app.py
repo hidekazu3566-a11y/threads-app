@@ -289,7 +289,7 @@ if st.button("🪄 読者の心を動かす図解プロンプトを生成する"
     placement_instruction = f"{char_placement}. CRITICAL RULE: This requested character placement has the HIGHEST absolute priority. The design and 'composition_structure' MUST adapt to this specific character location. Do not move the character to fit a grid; move the design to fit the character."
     data_for_gemini = {
         "role": "Exclusive AI Image Generation Expert",
-        # 1. ここをシンプルに戻すことで、変な案内（JSONバグ）が消える！
+        # 1. ここを文字列にする。これで「はい」待ちは100%消える
         "format": "image_generation", 
         "objective": f"Generate 1 high-quality image for {use_case}",
         
@@ -302,7 +302,7 @@ if st.button("🪄 読者の心を動かす図解プロンプトを生成する"
                 "alignment": text_align
             },
             "text_background": bg_instruction,
-            # 2. ここであんたが選んだ「4コマ」や「ツリー」の指示がAIに伝わるから、1枚に全部まとまるよ！
+            # 構図（4コマ等）はここで指定済みだから、AIはちゃんと理解するよ
             "composition_structure": composition_instruction,
             "brand_color_theme": final_color,
             "emotional_goal": emotion,
@@ -313,14 +313,12 @@ if st.button("🪄 読者の心を動かす図解プロンプトを生成する"
             "subject": subject_instruction,
             "placement": placement_instruction
         },
-        # 3. ルールは「1枚に、すべての文字を、指定の構図で描け」という超シンプルなもの
+        # 2. ここも「1枚だけすぐ出せ」という最短の命令にする
         "generation_rules": [
-            "Generate exactly 1 image file.",
-            "Include ALL text items provided in the content_per_image array into this single image.",
-            "Strictly follow the 'composition_structure' (e.g., 4-panel comic, tree, or collage) to arrange all text elements.",
-            "EMPTY SLOT PROTECTOR: If text is empty, do not draw any text boxes or diagram frames.",
+            "Generate exactly 1 image file immediately.",
+            "Include all text from the content_per_image array into this image.",
             text_rule,
-            "Maintain character consistency and high professional quality."
+            "Maintain character consistency and high quality."
         ]
     }
 
