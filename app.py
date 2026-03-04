@@ -96,7 +96,12 @@ composition_dict = {
         "CRITICAL TEXT RULE: You MUST clearly render ALL provided Japanese text items in the image. DO NOT skip, drop, or shorten any lines. Use elegant, semi-transparent text boxes or softly glowing panels that blend with the dreamlike atmosphere, ensuring extreme contrast and high legibility. "
         "CRITICAL EMOTION-EXPRESSION SYNC RULE: The AI MUST analyze the specific content of the text. Adapt the main subject's facial expression, body language, and pose to DRAMATICALLY match the corresponding mood. Avoid generic expressions. This applies to both the real subject and its reflection."
     ),
-    "タロットカード・星座マッピング（占い・スピリチュアルな独自の世界観）": "A mystical composition adhering strictly to a tarot card-like or celestial constellation-mapping worldview, with symbolic elements.",
+    "タロット・星座マッピング（表情連動・文字くっきり）": (
+        "A mystical composition adhering strictly to a tarot card-like or celestial constellation-mapping worldview, rich with esoteric symbols, Zodiac motifs, and stardust textures. "
+        "CRITICAL READABILITY & TEXT PLACEMENT RULE: Render ALL provided Japanese text clearly and legibly. The text MUST NOT obscure the face or core symbolic elements of the main subject. Use distinct, clean text boxes that look like soft, semi-transparent background panes, gently glowing celestial scrolls, or old parchment labels pinned to the composition. Place these text elements in balanced negative space, typically in the corners, top/bottom banners, or separate 'card segments'. DO NOT repeat any text. "
+        "CRITICAL EMOTION-EXPRESSION SYNC RULE: The AI MUST analyze the specific content of the Japanese text in each list item/panel. Adapt the main subject's facial expression, body language, and pose to DRAMATICALLY match the corresponding mood. Poses should be natural and structurally sound. Avoid generic expressions. This rule applies to both the central figure and any depicted 'card characters'. "
+        "Adapt with appropriate decorative motifs, ensuring a profound, spiritual feel, regardless of the theme."
+    ),
     "モノクロ＋1色スポットライト（白黒の中で点だけカラーにして強烈に強調）": "A dramatic composition in mostly monochrome, with strictly one specific element or character highlighted in a single, vibrant, contrasting color.",
     "問い→答え開示（リビール）（疑問を投げてスワイプで答えを出す）": "A teaser composition designed strictly for a multi-image reveal, where the first image poses a powerful question and subsequent images reveal the clear answer.",
     "タイポグラフィ主役（文字そのものをアートとして見せる）": "An artful typography-first composition where the title text is treated as the main visual artwork, with character and background integrated seamlessly."
