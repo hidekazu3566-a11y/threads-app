@@ -60,7 +60,14 @@ composition_dict = {
         "ILLUSTRATIVE FILLING RULE: If a panel needs filling, add a theme-relevant small illustrative element (icon, prop, or decorative object), NEVER repeated text. Replace exhausted panels with fresh visuals like balls of yarn, paw prints, fish bones, keeping the visuals fresh. " # 👈 小物の埋め草は維持！
         "INTEGRATION: The cat characters should be actively interacting with the block panels. Ensure clean, instructional aesthetics with clear text hierarchy. "
     ),
-    "--- ストーリー4コマ・カルーセル絵巻（スワイプ前提の物語展開） ---": "A narrative composition structured for an Instagram carousel, where each image is a strictly connected 'panel' in a continuous 4-コマ story or continuous絵巻 (picture scroll).",
+    "4コマストーリー（文字くっきり＆背景はそのまま）": (
+        "A sequence of exactly four connected story panels, optimized for a comic strip or carousel layout. "
+        "Each panel MUST represent a single step in a logical narrative arc (起承転結). "
+        "CRITICAL READABILITY RULE: The chosen background style and character must be fully visible. However, to ensure text readability, create a distinct, CLEAN, SOLID WHITE text box (or speech bubble) at the bottom or top of each panel. "
+        "Render the provided text EXCLUSIVELY inside these white boxes. "
+        "CRITICAL TYPOGRAPHY: Text MUST be VERY LARGE, BOLD, and highly legible. Ensure extreme contrast between the text and the white box. "
+        "Do not repeat any text across panels. The main subject must appear consistently across panels to convey the story flow, without obstructing the text boxes."
+    ),
     "数字・データビジュアル（大きな数字で事実をガツンと伝える）": "A graphic composition focusing heavily on very large, bold numbers to powerfully present facts.",
     "ヒーローショット・ズームイン（主役を全画面でドーンと見せる、細部を拡大する）": "An epic hero shot where the main subject and title fill the entire screen, with extreme detail, zoom-in focus, and impact.",
     "重ね合わせ（レイヤー）（写真や文字を重ねて奥行きや深みを出す）": "A layered composition with multiple overlapping elements of photo, character, and text, creating profound depth and dimension.",
