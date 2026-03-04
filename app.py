@@ -313,11 +313,14 @@ if st.button("🪄 読者の心を動かす図解プロンプトを生成する"
         },
         "generation_rules": [
             f"Generate exactly {num_images} separate image files.",
-            "STRICT SLOT MAPPING: Each image $N$ must exclusively use the text from 'content_per_image' at index $N-1$.",
-            "EMPTY SLIDE = NO TEXT: If the text for a slide is empty, that image MUST be 100% text-free (only character and background).",
-            "NO CROSS-CONTAMINATION: Do not repeat or borrow text between different images.",
-            text_rule, 
-            "CRITICAL TYPOGRAPHY: The 'title' must be significantly larger and bolder than 'details'."
+            # 👇 「指定したスロットだけ」を徹底する隔離ルール
+            "STRICT SLOT ISOLATION: Image #N must ONLY use the text provided for slide N. Do not borrow or repeat text between images.",
+            # 👇 空欄なら「図解の部品」すら出させない掟（これでツリーの残骸も消える！）
+            "EMPTY SLOT RULE: If a slide's text is empty, that image MUST be 100% free of text AND infographic elements (no trees, no panels, no arrows). Just the character and background.",
+            # 👇 文字がある時だけ構図を守らせる
+            "STYLE ADHERENCE: Only apply the 'composition_structure' to images that HAVE text. For empty images, ignore the structure and show the character naturally.",
+            text_rule,
+            "CRITICAL TYPOGRAPHY: Ensure the title is significantly larger and bolder than the details."
         ]
     }
 
