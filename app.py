@@ -287,9 +287,8 @@ if st.button("🪄 読者の心を動かす図解プロンプトを生成する"
         bg_instruction = f"Style: {text_background}, Opacity: {bg_opacity}"
 
     placement_instruction = f"{char_placement}. CRITICAL RULE: This requested character placement has the HIGHEST absolute priority. The design and 'composition_structure' MUST adapt to this specific character location. Do not move the character to fit a grid; move the design to fit the character."
-    data_for_gemini = {
+  data_for_gemini = {
         "role": "Exclusive AI Image Generation Expert",
-        # 1. ここを文字列にする。これで「はい」待ちは100%消える
         "format": "image_generation", 
         "objective": f"Generate 1 high-quality image for {use_case}",
         
@@ -302,8 +301,7 @@ if st.button("🪄 読者の心を動かす図解プロンプトを生成する"
                 "alignment": text_align
             },
             "text_background": bg_instruction,
-            # 構図（4コマ等）はここで指定済みだから、AIはちゃんと理解するよ
-            "composition_structure": composition_instruction,
+            "composition_structure": composition_instruction, # ここにあんたが選んだ構図が入る！
             "brand_color_theme": final_color,
             "emotional_goal": emotion,
             "aspect_ratio": ratio
@@ -313,10 +311,12 @@ if st.button("🪄 読者の心を動かす図解プロンプトを生成する"
             "subject": subject_instruction,
             "placement": placement_instruction
         },
-        # 2. ここも「1枚だけすぐ出せ」という最短の命令にする
+        # 👇 ここを極限までシンプルにしたよ！
         "generation_rules": [
-            "Generate exactly 1 image file immediately.",
-            "Include all text from the content_per_image array into this image.",
+            "Generate exactly 1 image file immediately. DO NOT output JSON.",
+            "Render the provided text naturally on the image. Placement can be flexible.",
+            "Strictly follow the 'composition_structure' without adding unrequested decorative elements.",
+            "EMPTY SLOT PROTECTOR: If text is empty, do not draw any boxes or frames.",
             text_rule,
             "Maintain character consistency and high quality."
         ]
