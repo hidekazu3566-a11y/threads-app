@@ -82,7 +82,12 @@ composition_dict = {
         "To ensure text readability against the highly detailed background, use a stylish, CLEAN SOLID WHITE text box (like a simple banner) or a sleek semi-transparent dark banner at the bottom or side. "
         "Render the text in a VERY LARGE, BOLD, cinematic font. NO REPEATING TEXT. The overall vibe should be like a high-end editorial spread, a dramatic movie poster, or a sleek product reveal."
     ),
-    "シルエット・逆光（余韻や神秘的なムードを演出）": "A moody composition using strong backlighting and strictly silhouettes to create lingering emotion and profound mystery.",
+    "シルエット・逆光（エモさ・神秘的なムードを演出）": (
+        "A highly emotional, moody composition focusing heavily on strong BACKLIGHTING and SILHOUETTES. "
+        "The main subject MUST be silhouetted against a dramatic, luminous background (e.g., a breathtaking twilight, glowing neon, or cinematic light rays) to create lingering emotion and profound mystery. "
+        "CRITICAL READABILITY & MOOD: The text MUST enhance the atmospheric mood. Use elegant, clean text boxes (like semi-transparent dark panels, softly glowing white panels, or cinematic subtitles) that blend beautifully with the dramatic lighting. "
+        "Render the provided text highly legible with extreme contrast. DO NOT repeat any text. The overall vibe is a profound movie poster or an emotional quote visual."
+    ),
     "鏡面・リフレクション（水面などの反射で二面性や夢幻的な美しさを出す）": "A dreamlike composition with a perfect mirror-like reflection (e.g., in water), creating a powerful sense of dreamlike beauty and integrity.",
     "タロットカード・星座マッピング（占い・スピリチュアルな独自の世界観）": "A mystical composition adhering strictly to a tarot card-like or celestial constellation-mapping worldview, with symbolic elements.",
     "モノクロ＋1色スポットライト（白黒の中で点だけカラーにして強烈に強調）": "A dramatic composition in mostly monochrome, with strictly one specific element or character highlighted in a single, vibrant, contrasting color.",
