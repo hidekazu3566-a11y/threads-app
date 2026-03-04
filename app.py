@@ -312,11 +312,13 @@ if st.button("🪄 読者の心を動かす図解プロンプトを生成する"
             "placement": placement_instruction
         },
         "generation_rules": [
-            f"Generate each of the {num_images} requested items as a strictly independent, separate image file.",
-            "DO NOT combine, merge, or grid multiple content items into a single image canvas.",
-            "Generate completely NEW backgrounds and poses for each image while keeping the character consistent.",
-            text_rule,
-            "CRITICAL TYPOGRAPHY RULE: Establish a strict visual hierarchy. The main 'title' MUST be visually dominant."
+            f"Generate exactly {num_images} separate image files.",
+            # 👇 ここが「入れたところだけ出す」ための絶対の掟！
+            "STRICT SLOT ISOLATION: Each image $N$ must exclusively and only use the text provided in 'content_per_image' at index $N-1$.",
+            "ABSOLUTE ZERO TEXT RULE: If a slide's title and details are empty, that specific image MUST be 100% free of any text, labels, or infographic elements. Just the character and background.",
+            "NO CROSS-SLIDE LEAKAGE: Never repeat, redistribute, or borrow text from one slide to another. Each image is a completely independent scene.",
+            "CRITICAL: DO NOT render any Japanese text or numerical digits inside the images.",
+            "Maintain high character consistency across all images, even the ones without text."
         ]
     }
 
