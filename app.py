@@ -312,11 +312,11 @@ if st.button("🪄 読者の心を動かす図解プロンプトを生成する"
             "placement": placement_instruction
         },
         "generation_rules": [
-            f"Generate exactly {num_images} images based on the content_per_image array.",
-            "Generate completely NEW backgrounds and poses. Keep the character consistent but in fresh contexts.",
-            "NEVER draw any props or items from the reference image.",
+            f"Generate each of the {num_images} requested items as a strictly independent, separate image file.",
+            "DO NOT combine, merge, or grid multiple content items into a single image canvas.",
+            "Generate completely NEW backgrounds and poses for each image while keeping the character consistent.",
             text_rule,
-            "CRITICAL TYPOGRAPHY RULE: Establish a strict visual hierarchy. The main 'title' MUST be visually dominant, significantly LARGER and BOLDER than the 'details' text."
+            "CRITICAL TYPOGRAPHY RULE: Establish a strict visual hierarchy. The main 'title' MUST be visually dominant."
         ]
     }
 
