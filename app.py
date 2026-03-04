@@ -286,8 +286,9 @@ if st.button("🪄 読者の心を動かす図解プロンプトを生成する"
     else:
         bg_instruction = f"Style: {text_background}, Opacity: {bg_opacity}"
 
-    # 289行目〜最後まで上書き！
+    # 👇 289行目（placement_instructionの行）から最後まで全部上書き！
     placement_instruction = f"{char_placement}. CRITICAL RULE: This requested character placement has the HIGHEST absolute priority."
+
     data_for_gemini = {
         "role": "Exclusive AI Image Generation Expert",
         "format": "image_generation", 
@@ -322,10 +323,5 @@ if st.button("🪄 読者の心を動かす図解プロンプトを生成する"
     }
 
     st.success("✨ 最強プロンプトが完成したよ！黒い枠の中身だけをコピーしてね！")
-    st.code(json.dumps(data_for_gemini, indent=4, ensure_ascii=False), language='json')
-    st.balloons()
-    }
-
-    st.success(f"✨ {num_images}枚分の最強プロンプトが完成したよ！黒い枠の中身だけをコピーしてね！")
     st.code(json.dumps(data_for_gemini, indent=4, ensure_ascii=False), language='json')
     st.balloons()
