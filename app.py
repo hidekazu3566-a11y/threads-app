@@ -102,13 +102,12 @@ composition_dict = {
         "CRITICAL EMOTION-EXPRESSION SYNC RULE: The AI MUST analyze the specific content of the Japanese text in each list item/panel. Adapt the main subject's facial expression, body language, and pose to DRAMATICALLY match the corresponding mood. Poses should be natural and structurally sound. Avoid generic expressions. This rule applies to both the central figure and any depicted 'card characters'. "
         "Adapt with appropriate decorative motifs, ensuring a profound, spiritual feel, regardless of the theme."
     ),
-    "モノクロ＋1色スポットライト（表情連動・文字被り防止）": (
+    "モノクロ＋1色スポットライト（タイトル装飾・顔バグ防止）": (
         "A dramatic composition where the entire scene is rendered in stark, powerful monochrome. "
-        "AI TASK: Extract ALL provided Japanese text items clearly and legibly. Place ALL text elements to ensure that NO portion of any text is obscured or covered by the main subject's body. A distinct, CLEAN, SOLID WHITE text box (like a panel or banner) MUST BE USED FOR EACH text element to provide maximum contrast. "
-        "The Title text is treated as visually dominant. "
-        "CRITICAL SPOTLIGHT RULE: Precisely one, single element in the image MUST be highlighted in a single, vibrant, contrasting color. This spotlight effect can highlight the face, a special prop, or the background section related to a specific text item. "
-        "CRITICAL BODY INTEGRITY RULE: Ensure anatomically correct and structurally sound body representation for the main subject. Poses should be natural, avoiding unnatural distortion, body contortion, or extra/missing limbs. "
-        "CRITICAL EMOTION-EXPRESSION SYNC RULE: The AI MUST analyze the specific content of the Japanese text in each list item/panel. Adapt the main subject's facial expression, body language, and pose to DRAMATICALLY match the corresponding mood. Poses should be natural and structurally sound. Avoid generic smiling or frozen expressions. This rule applies to both the central figure and any depicted 'card characters'. "
+        "AI TASK: Extract ALL provided Japanese text items clearly and legibly. Place ALL text elements to ensure that NO portion of any text is obscured or covered by the main subject's body. "
+        "CRITICAL SPOTLIGHT RULE: Precisely one, single element in the image MUST be highlighted in a single, vibrant, contrasting color. This spotlight effect MUST highlight the Title text banner or background. DO NOT apply this color effect to the face, body, or any organic part of the main subject. "
+        "To ensure maximum visibility and aesthetic coherence, use stylish, CLEAN, SOLID text boxes or banners for all text, with the Title element having the color highlight. "
+        "The overall vibe should be like a profound movie poster or a sophisticated quote visual, using clean editorial aesthetics. NO repeating text. Ensure structurally sound poses. Analyze Japanese text to ensure poses and expressions match the mood, without using redundant mood descriptions."
     ),
     "問い→答え開示（リビール）（疑問を投げてスワイプで答えを出す）": "A teaser composition designed strictly for a multi-image reveal, where the first image poses a powerful question and subsequent images reveal the clear answer.",
     "タイポグラフィ主役（文字そのものをアートとして見せる）": "An artful typography-first composition where the title text is treated as the main visual artwork, with character and background integrated seamlessly."
