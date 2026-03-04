@@ -11,14 +11,13 @@ composition_dict = {
     "Zの法則（左上から右下へ視線を誘導・王道）": "A strong visual hierarchy designed to guide the viewer's eye in a clear Z-shaped pattern across the image.",
     "Fの法則（上から下へ項目を読ませる・リスト向け）": "A strong visual hierarchy designed to guide the viewer's eye in a clear F-shaped pattern across the image, ideal for reading lists.",
     "三分割法・黄金比・白銀比（安定と美しさの比率）": "Strict composition adherence to the Rule of Thirds or Golden Ratio logic to place key elements and focus. TEXT ELEMENTS (title, details) MUST BE ARRANGED to balance the negative space. Zero centered objects. ABSOLUTELY NO VISIBLE GRID LINES OR CROSSHAIRS.",
-    "中央集中型（日の丸構図・表情ポーズ連動）": (
+   "中央集中型（日の丸構図・表情ポーズ連動）": (
         "A precise, direct centered composition (Hinomaru style) with all focus exclusively on the central subject. "
-        "CRITICAL EMOTION-EXPRESSION SYNC RULE: The AI MUST analyze the specific content of the Japanese text provided. "
-        "DRAMATICALLY adapt the main subject's facial expression, body language, and pose to match the corresponding mood. "
+        "CRITICAL EMOTION-EXPRESSION SYNC RULE: Analyze the specific Japanese text provided for this image. "
+        "DRAMATICALLY adapt the main subject's facial expression, body language, and pose to match the mood of the text. "
         "Avoid generic expressions or frozen smiles. "
-        "CRITICAL BODY INTEGRITY RULE: Ensure anatomically correct and structurally sound body representation. "
-        "TEXT PLACEMENT: If text is provided, place it clearly above or below the subject, ensuring it NEVER obscures the face. "
-        "Maintain high consistency of the subject and style across all images."
+        "TEXT PLACEMENT: Place text clearly above or below the subject, ensuring it NEVER obscures the face. "
+        "Maintain high consistency of the subject and style across all generated images."
     ),
     "対角線・斜め分割（動きとリズム、スピード感を出す）": "A dynamic composition with key elements arranged strictly along strong diagonal lines, conveying movement and speed.",
     "額縁構図（外枠で囲って中央を際立たせる）": "CRITICAL RULE: A visible, distinct decorative frame or border surrounding the entire composition, emphasizing the central content. The frame style must match the chosen genre and art style.",
