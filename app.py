@@ -136,7 +136,7 @@ with col1:
         ratio = ratio_selection
 
 with col2:
-    num_images = st.selectbox("出力枚数", list(range(1, 11)))
+    num_images = 1
 
 genre = st.selectbox("ターゲットジャンル・世界観", [
     "指定なし（標準）",
@@ -291,7 +291,8 @@ if st.button("🪄 読者の心を動かす図解プロンプトを生成する"
     data_for_gemini = {
         "role": "Exclusive AI Image Generation Expert",
         "format": "image_generation",
-        "objective": f"Generate {num_images} high-quality images for {use_case}",
+        # 👇 探してたところ！「1」枚に固定！
+        "objective": f"Generate 1 high-quality image for {use_case}",
         "design_concept": {
             "genre_worldview": genre,
             "style": style,
@@ -311,14 +312,13 @@ if st.button("🪄 読者の心を動かす図解プロンプトを生成する"
             "subject": subject_instruction,
             "placement": placement_instruction
         },
+        # 👇 複雑なルールは消して、一番安全なこれにする！
         "generation_rules": [
-            f"Generate exactly {num_images} separate image files.",
-            # 👇 「1枚設定ならまとめろ、複数枚ならバラバラ」の全方位ルール
-            f"FLEXIBLE LAYOUT RULE: If {num_images} is 1, consolidate all items from 'content_per_image' into that single canvas using the specified 'composition_structure'.",
-            f"FLEXIBLE LAYOUT RULE: If {num_images} is greater than 1, apply STRICT 1-to-1 mapping. Image #N must ONLY use the text provided for slide N.",
-            # 👇 空欄なら「図解の残骸」も出さない掟（ルービックキューブの枠とかも消える！）
-            "EMPTY SLOT PROTECTOR: If a slide's text is empty, that specific image (or panel) MUST be 100% free of text and infographic structures. Just show the character and background.",
-            "Maintain high character consistency across all images. NO Japanese text or numbers."
+            "Generate exactly 1 image file.",
+            "LAYOUT RULE: Strictly follow the 'composition_structure'. DO NOT force a grid or collage UNLESS explicitly requested in the composition.",
+            "STRICT TEXT MAPPING: NEVER mix or leak text. The text belongs strictly to its specific assigned place.",
+            text_rule,
+            "CRITICAL TYPOGRAPHY RULE: Establish a strict visual hierarchy. The main 'title' MUST be visually dominant."
         ]
     }
 
