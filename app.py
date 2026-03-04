@@ -68,7 +68,13 @@ composition_dict = {
         "CRITICAL TYPOGRAPHY: Text MUST be VERY LARGE, BOLD, and highly legible. Ensure extreme contrast between the text and the white box. "
         "Do not repeat any text across panels. The main subject must appear consistently across panels to convey the story flow, without obstructing the text boxes."
     ),
-    "数字・データビジュアル（大きな数字で事実をガツンと伝える）": "A graphic composition focusing heavily on very large, bold numbers to powerfully present facts.",
+   "数字・データビジュアル（大きな数字で事実をガツンと伝える）": (
+        "A striking infographic layout designed to powerfully present data, rankings, or shocking facts. "
+        "CRITICAL VISUAL RULE: Extract the primary numerical values from the content list and render them as HUGE, 3D, or highly stylized focal points. These numbers MUST visually dominate the composition. "
+        "The central character (e.g., the cat) should be actively interacting with these giant numbers (e.g., sitting on a giant '90%', hugging a large '5', or leaning against them). "
+        "CRITICAL READABILITY: For the explanatory text corresponding to each number, use a CLEAN, SOLID WHITE text box (like a simple panel or banner) to ensure extreme contrast and high readability. "
+        "Render the text in a VERY LARGE, BOLD, legible font inside these white boxes. DO NOT repeat any text. Ensure a sleek, impactful editorial aesthetic."
+    ),
     "ヒーローショット・ズームイン（主役を全画面でドーンと見せる、細部を拡大する）": "An epic hero shot where the main subject and title fill the entire screen, with extreme detail, zoom-in focus, and impact.",
     "重ね合わせ（レイヤー）（写真や文字を重ねて奥行きや深みを出す）": "A layered composition with multiple overlapping elements of photo, character, and text, creating profound depth and dimension.",
     "シルエット・逆光（余韻や神秘的なムードを演出）": "A moody composition using strong backlighting and strictly silhouettes to create lingering emotion and profound mystery.",
