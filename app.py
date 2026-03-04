@@ -116,7 +116,13 @@ composition_dict = {
         "To ensure maximum visibility and aesthetic coherence, use stylish, CLEAN, SOLID text boxes or banners for all text, with the Title element having the color highlight. "
         "CRITICAL EMOTION-EXPRESSION SYNC RULE: The AI MUST analyze the specific content of the Japanese text items. MUST identifiy the core emotion of each statement (e.g., contemplation of the past, discovery of truth, somber decision, or soothing tiredness). Adapt the main subject's facial expression, body language, and pose to DRAMATICALLY and unmistakably change the face and full body pose to match the corresponding mood. Poses should be natural, structurally sound, and deeply integrated with the content. Zero tolerance for the default generic smile. " # 👈 感情同期を最強レベルに強化！
     ),
-    "タイポグラフィ主役（文字そのものをアートとして見せる）": "An artful typography-first composition where the title text is treated as the main visual artwork, with character and background integrated seamlessly."
+   "タイポグラフィ主役（文字そのものをアートとして見せる）": (
+        "An artful typography-first composition focusing purely on the title text as the main visual artwork. "
+        "CRITICAL RULE: Render the main title in an EXTREMELY LARGE, BOLD, and highly decorative font style. "
+        "The title text size must be at least 3X larger than any detail text, dominating the entire composition. "
+        "Add expressive textures, glowing effects, or 3D depth to the title font, treating the letters as a physical object or stage set. "
+        "Characters should be intimately integrated with the letters, perhaps resting on, hugging, or peaking from behind the massive typography."
+    ),with character and background integrated seamlessly."
 }
 
 # --- 1. 基本設定（用途・サイズ・ジャンル・枚数） ---
@@ -319,6 +325,7 @@ if st.button("🪄 読者の心を動かす図解プロンプトを生成する"
             "Strictly follow the chosen 'composition_structure'. If the selected style is a single-frame composition (like Hinomaru), DO NOT add any grids, sub-panels, or collage elements.",
             "EMPTY SLOT PROTECTOR: If text is empty, do not draw any boxes or frames.",
             text_rule,
+           "CRITICAL EMOTION-EXPRESSION SYNC RULE: The AI MUST analyze the conceptual meaning and emotional tone of the provided text items. It MUST dramatically adapt the main subject's facial expressions, body language, and poses to perfectly match the mood of each specific text (e.g., transition from doubt/sadness to clarity/joy). Avoid generic expressions or frozen smiles.",
             "Maintain character consistency and high quality."
         ]
     }
