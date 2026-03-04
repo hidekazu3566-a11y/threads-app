@@ -109,13 +109,6 @@ composition_dict = {
         "To ensure maximum visibility and aesthetic coherence, use stylish, CLEAN, SOLID text boxes or banners for all text, with the Title element having the color highlight. "
         "CRITICAL EMOTION-EXPRESSION SYNC RULE: The AI MUST analyze the specific content of the Japanese text items. MUST identifiy the core emotion of each statement (e.g., contemplation of the past, discovery of truth, somber decision, or soothing tiredness). Adapt the main subject's facial expression, body language, and pose to DRAMATICALLY and unmistakably change the face and full body pose to match the corresponding mood. Poses should be natural, structurally sound, and deeply integrated with the content. Zero tolerance for the default generic smile. " # 👈 感情同期を最強レベルに強化！
     ),
-   "問い→答え開示（リビール）（1枚1メッセージ・完全連動）": (
-        "CRITICAL CAROUSEL RULE: Generate exactly one independent image for each item in the content_list. DO NOT combine multiple detail items into a single list or panel. " # 👈 「リストにするな、1枚ずつ独立させろ」指示！
-        "IMAGE 1 (THE HOOK): Focus EXCLUSIVELY on the Title (the question). Render the text as a HUGE, centered, high-impact teaser. The main subject MUST display intense curiosity, worry, or mystery. No answers allowed on this slide. "
-        "IMAGE 2 & BEYOND (THE REVEAL): Each subsequent image MUST focus on ONLY ONE detail item from the list. Render the text LARGE and BOLD in the center or a heroic position. " # 👈 ここでFの法則（横リスト）と差別化！
-        "CRITICAL EMOTION SYNC: The subject's expression and the background MUST transform from the initial 'mystery' to 'absolute clarity/joy/impact' as the user swipes. Each slide must feel like a new discovery. "
-        "Use high-contrast text boxes to ensure extreme readability. NO repeating text. Ensure the subject and style remain consistent across all independent slides."
-    ),
     "タイポグラフィ主役（文字そのものをアートとして見せる）": "An artful typography-first composition where the title text is treated as the main visual artwork, with character and background integrated seamlessly."
 }
 
