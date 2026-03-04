@@ -75,7 +75,13 @@ composition_dict = {
         "CRITICAL READABILITY: For the explanatory text corresponding to each number, use a CLEAN, SOLID WHITE text box (like a simple panel or banner) to ensure extreme contrast and high readability. "
         "Render the text in a VERY LARGE, BOLD, legible font inside these white boxes. DO NOT repeat any text. Ensure a sleek, impactful editorial aesthetic."
     ),
-    "ヒーローショット・ズームイン（主役を全画面でドーンと見せる、細部を拡大する）": "An epic hero shot where the main subject and title fill the entire screen, with extreme detail, zoom-in focus, and impact.",
+   "ヒーローショット・ズームイン（主役を全アップでドーン！エモさ重視）": (
+        "An epic, dramatic HERO SHOT composition focusing intensely on the main subject. "
+        "CRITICAL CAMERA RULE: Extreme close-up / zoom-in on the core subject. The subject MUST fill at least 80% of the entire screen with incredible detail, sharp focus, depth of field, and cinematic lighting. " # 猫の例示を削除！
+        "TEXT RULE: This composition is for dramatic visual IMPACT, not long explanations. Render the provided text as a powerful catchphrase. "
+        "To ensure text readability against the highly detailed background, use a stylish, CLEAN SOLID WHITE text box (like a simple banner) or a sleek semi-transparent dark banner at the bottom or side. "
+        "Render the text in a VERY LARGE, BOLD, cinematic font. NO REPEATING TEXT. The overall vibe should be like a high-end editorial spread, a dramatic movie poster, or a sleek product reveal."
+    ),
     "重ね合わせ（レイヤー）（写真や文字を重ねて奥行きや深みを出す）": "A layered composition with multiple overlapping elements of photo, character, and text, creating profound depth and dimension.",
     "シルエット・逆光（余韻や神秘的なムードを演出）": "A moody composition using strong backlighting and strictly silhouettes to create lingering emotion and profound mystery.",
     "鏡面・リフレクション（水面などの反射で二面性や夢幻的な美しさを出す）": "A dreamlike composition with a perfect mirror-like reflection (e.g., in water), creating a powerful sense of dreamlike beauty and integrity.",
