@@ -109,11 +109,12 @@ composition_dict = {
         "To ensure maximum visibility and aesthetic coherence, use stylish, CLEAN, SOLID text boxes or banners for all text, with the Title element having the color highlight. "
         "CRITICAL EMOTION-EXPRESSION SYNC RULE: The AI MUST analyze the specific content of the Japanese text items. MUST identifiy the core emotion of each statement (e.g., contemplation of the past, discovery of truth, somber decision, or soothing tiredness). Adapt the main subject's facial expression, body language, and pose to DRAMATICALLY and unmistakably change the face and full body pose to match the corresponding mood. Poses should be natural, structurally sound, and deeply integrated with the content. Zero tolerance for the default generic smile. " # 👈 感情同期を最強レベルに強化！
     ),
-    "問い→答え開示（リビール）（感情連動・スワイプ対応）": (
-        "A strict sequence of images optimized for a multi-image carousel or swipe format, focusing on a dynamic narrative flow. "
-        "IMAGE 1 (THE QUERY): This image MUST be a powerful teaser or question scene. The Title text (the question) is dominant. Use elegant, highly legible text boxes to ensure extreme contrast against the dramatic background. CRITICAL RULE: The main subject's facial expression, body language, and pose MUST display genuine puzzlement, curiosity, doubt, or deep questioning. Zero confidence or smiling. " # 👈 1枚目は「超・疑問顔」に固定！
-        "SUBSEQUENT IMAGES (THE REVEAL): These images provide the sequential answers (detail text). Clearly render each detail text item in its own elegant, semi-transparent text box. CRITICAL EMOTION-EXPRESSION SYNC RULE: The main subject's facial expression, body language, and pose MUST DRAMATICALLY change for each answer. It must transition from the initial doubt to confidence, enlightenment, satisfaction, profound understanding, or intense motivation, perfectly matching the content of the text. Zero trace of the initial doubt; the mystery is solved. " # 👈 2枚目以降はテロップに合わせて「ドヤ顔・納得顔・感動顔」などに劇的変化！
-        "Maintain high consistency of the subject and background world across all images. Text MUST NOT be repeated. The overall vibe is an impactful educational carousel or a mysterious secret reveal."
+   "問い→答え開示（リビール）（1枚1メッセージ・完全連動）": (
+        "CRITICAL CAROUSEL RULE: Generate exactly one independent image for each item in the content_list. DO NOT combine multiple detail items into a single list or panel. " # 👈 「リストにするな、1枚ずつ独立させろ」指示！
+        "IMAGE 1 (THE HOOK): Focus EXCLUSIVELY on the Title (the question). Render the text as a HUGE, centered, high-impact teaser. The main subject MUST display intense curiosity, worry, or mystery. No answers allowed on this slide. "
+        "IMAGE 2 & BEYOND (THE REVEAL): Each subsequent image MUST focus on ONLY ONE detail item from the list. Render the text LARGE and BOLD in the center or a heroic position. " # 👈 ここでFの法則（横リスト）と差別化！
+        "CRITICAL EMOTION SYNC: The subject's expression and the background MUST transform from the initial 'mystery' to 'absolute clarity/joy/impact' as the user swipes. Each slide must feel like a new discovery. "
+        "Use high-contrast text boxes to ensure extreme readability. NO repeating text. Ensure the subject and style remain consistent across all independent slides."
     ),
     "タイポグラフィ主役（文字そのものをアートとして見せる）": "An artful typography-first composition where the title text is treated as the main visual artwork, with character and background integrated seamlessly."
 }
