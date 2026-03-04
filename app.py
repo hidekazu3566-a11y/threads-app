@@ -286,12 +286,13 @@ if st.button("🪄 読者の心を動かす図解プロンプトを生成する"
     else:
         bg_instruction = f"Style: {text_background}, Opacity: {bg_opacity}"
 
-    placement_instruction = f"{char_placement}. CRITICAL RULE: This requested character placement has the HIGHEST absolute priority. The design and 'composition_structure' MUST adapt to this specific character location. Do not move the character to fit a grid; move the design to fit the character."
-  data_for_gemini = {
+    # 289行目〜最後まで上書き！
+    placement_instruction = f"{char_placement}. CRITICAL RULE: This requested character placement has the HIGHEST absolute priority."
+
+    data_for_gemini = {
         "role": "Exclusive AI Image Generation Expert",
         "format": "image_generation", 
         "objective": f"Generate 1 high-quality image for {use_case}",
-        
         "design_concept": {
             "genre_worldview": genre,
             "style": style,
@@ -301,7 +302,7 @@ if st.button("🪄 読者の心を動かす図解プロンプトを生成する"
                 "alignment": text_align
             },
             "text_background": bg_instruction,
-            "composition_structure": composition_instruction, # ここにあんたが選んだ構図が入る！
+            "composition_structure": composition_instruction,
             "brand_color_theme": final_color,
             "emotional_goal": emotion,
             "aspect_ratio": ratio
@@ -311,7 +312,6 @@ if st.button("🪄 読者の心を動かす図解プロンプトを生成する"
             "subject": subject_instruction,
             "placement": placement_instruction
         },
-        # 👇 ここを極限までシンプルにしたよ！
         "generation_rules": [
             "Generate exactly 1 image file immediately. DO NOT output JSON.",
             "Render the provided text naturally on the image. Placement can be flexible.",
@@ -320,6 +320,11 @@ if st.button("🪄 読者の心を動かす図解プロンプトを生成する"
             text_rule,
             "Maintain character consistency and high quality."
         ]
+    }
+
+    st.success("✨ 最強プロンプトが完成したよ！黒い枠の中身だけをコピーしてね！")
+    st.code(json.dumps(data_for_gemini, indent=4, ensure_ascii=False), language='json')
+    st.balloons()
     }
 
     st.success(f"✨ {num_images}枚分の最強プロンプトが完成したよ！黒い枠の中身だけをコピーしてね！")
