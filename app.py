@@ -287,12 +287,12 @@ if st.button("🪄 読者の心を動かす図解プロンプトを生成する"
         bg_instruction = f"Style: {text_background}, Opacity: {bg_opacity}"
 
     placement_instruction = f"{char_placement}. CRITICAL RULE: This requested character placement has the HIGHEST absolute priority. The design and 'composition_structure' MUST adapt to this specific character location. Do not move the character to fit a grid; move the design to fit the character."
-
     data_for_gemini = {
         "role": "Exclusive AI Image Generation Expert",
-        "format": "image_generation",
-        # 👇 探してたところ！「1」枚に固定！
+        # 1. ここをシンプルに戻すことで、変な案内（JSONバグ）が消える！
+        "format": "image_generation", 
         "objective": f"Generate 1 high-quality image for {use_case}",
+        
         "design_concept": {
             "genre_worldview": genre,
             "style": style,
@@ -302,6 +302,7 @@ if st.button("🪄 読者の心を動かす図解プロンプトを生成する"
                 "alignment": text_align
             },
             "text_background": bg_instruction,
+            # 2. ここであんたが選んだ「4コマ」や「ツリー」の指示がAIに伝わるから、1枚に全部まとまるよ！
             "composition_structure": composition_instruction,
             "brand_color_theme": final_color,
             "emotional_goal": emotion,
@@ -312,13 +313,14 @@ if st.button("🪄 読者の心を動かす図解プロンプトを生成する"
             "subject": subject_instruction,
             "placement": placement_instruction
         },
-        # 👇 複雑なルールは消して、一番安全なこれにする！
+        # 3. ルールは「1枚に、すべての文字を、指定の構図で描け」という超シンプルなもの
         "generation_rules": [
             "Generate exactly 1 image file.",
-            "LAYOUT RULE: Strictly follow the 'composition_structure'. DO NOT force a grid or collage UNLESS explicitly requested in the composition.",
-            "STRICT TEXT MAPPING: NEVER mix or leak text. The text belongs strictly to its specific assigned place.",
+            "Include ALL text items provided in the content_per_image array into this single image.",
+            "Strictly follow the 'composition_structure' (e.g., 4-panel comic, tree, or collage) to arrange all text elements.",
+            "EMPTY SLOT PROTECTOR: If text is empty, do not draw any text boxes or diagram frames.",
             text_rule,
-            "CRITICAL TYPOGRAPHY RULE: Establish a strict visual hierarchy. The main 'title' MUST be visually dominant."
+            "Maintain character consistency and high professional quality."
         ]
     }
 
