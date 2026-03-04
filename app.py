@@ -90,7 +90,11 @@ composition_dict = {
         "The overall vibe is a profound movie poster or an emotional quote visual. "
         "CRITICAL EMOTION-EXPRESSION SYNC RULE: The AI MUST analyze the specific content of the Japanese text in each list item/panel. Adapt the main subject's facial expression, body language, and pose to DRAMATICALLY match the corresponding mood. Avoid generic expressions."
     ),
-    "鏡面・リフレクション（水面などの反射で二面性や夢幻的な美しさを出す）": "A dreamlike composition with a perfect mirror-like reflection (e.g., in water), creating a powerful sense of dreamlike beauty and integrity.",
+    "鏡面・リフレクション（水面反射・表情連動）": (
+        "A dreamlike composition featuring a perfect, crystal-clear mirror-like reflection of the main subject on a surface (e.g., still water or a highly polished floor) to create a powerful sense of dreamlike beauty and integrity. "
+        "CRITICAL BODY INTEGRITY RULE: Ensure anatomically correct and structurally sound body representation for the main subject. Poses should be natural, avoiding unnatural distortion or extra/missing limbs. The reflection must perfectly and accurately mirror this correct anatomy. "
+        "CRITICAL EMOTION-EXPRESSION SYNC RULE: The AI MUST analyze the specific content of the Japanese text provided for each image. Adapt the main subject's facial expression, body language, and pose to DRAMATICALLY match the corresponding mood. Avoid generic expressions. This applies to both the real subject and its reflection."
+    ),
     "タロットカード・星座マッピング（占い・スピリチュアルな独自の世界観）": "A mystical composition adhering strictly to a tarot card-like or celestial constellation-mapping worldview, with symbolic elements.",
     "モノクロ＋1色スポットライト（白黒の中で点だけカラーにして強烈に強調）": "A dramatic composition in mostly monochrome, with strictly one specific element or character highlighted in a single, vibrant, contrasting color.",
     "問い→答え開示（リビール）（疑問を投げてスワイプで答えを出す）": "A teaser composition designed strictly for a multi-image reveal, where the first image poses a powerful question and subsequent images reveal the clear answer.",
