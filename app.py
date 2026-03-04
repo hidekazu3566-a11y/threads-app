@@ -288,7 +288,6 @@ if st.button("🪄 読者の心を動かす図解プロンプトを生成する"
 
     # 289行目〜最後まで上書き！
     placement_instruction = f"{char_placement}. CRITICAL RULE: This requested character placement has the HIGHEST absolute priority."
-
     data_for_gemini = {
         "role": "Exclusive AI Image Generation Expert",
         "format": "image_generation", 
