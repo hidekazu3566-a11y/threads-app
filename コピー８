@@ -11,36 +11,111 @@ composition_dict = {
     "Zの法則（左上から右下へ視線を誘導・王道）": "A strong visual hierarchy designed to guide the viewer's eye in a clear Z-shaped pattern across the image.",
     "Fの法則（上から下へ項目を読ませる・リスト向け）": "A strong visual hierarchy designed to guide the viewer's eye in a clear F-shaped pattern across the image, ideal for reading lists.",
     "三分割法・黄金比・白銀比（安定と美しさの比率）": "Strict composition adherence to the Rule of Thirds or Golden Ratio logic to place key elements and focus. TEXT ELEMENTS (title, details) MUST BE ARRANGED to balance the negative space. Zero centered objects. ABSOLUTELY NO VISIBLE GRID LINES OR CROSSHAIRS.",
-    "中央集中型・日の丸構図（視線をど真ん中に集める）": "A precise direct centered composition with all focus exclusively on the central subject and title, minimal distractions.",
+  "中央集中型（日の丸構図・感情ポーズ連動）": (
+        "A precise, direct centered composition (Hinomaru style) with all focus exclusively on the central subject. "
+        "CRITICAL EMOTION-EXPRESSION SYNC RULE: The AI MUST analyze the specific conceptual meaning of the Japanese text provided for each individual image in the sequence. "
+        "DRAMATICALLY adapt the main subject's facial expression, body language, and pose to perfectly match the mood of that specific text (e.g., transition from doubt/sadness to clarity/joy across the sequence). "
+        "Avoid generic expressions or frozen smiles. "
+        "TEXT PLACEMENT: If text is to be rendered, place it clearly above or below the subject, ensuring it NEVER obscures the face. "
+        "Maintain high consistency of the subject and style across all generated images without adding any unrequested elements."
+    ),
     "対角線・斜め分割（動きとリズム、スピード感を出す）": "A dynamic composition with key elements arranged strictly along strong diagonal lines, conveying movement and speed.",
     "額縁構図（外枠で囲って中央を際立たせる）": "CRITICAL RULE: A visible, distinct decorative frame or border surrounding the entire composition, emphasizing the central content. The frame style must match the chosen genre and art style.",
     "マス目・タイル配置（均等に枠を分けて情報を整理する）": "A clean, organized composition structured by a precise grid or tile layout, conveying a strong sense of unity and structure.",
-    "破れグリッド・非対称バランス（あえて崩しておしゃれ感や動きを出す）": "CRITICAL RULE: Extreme 'broken grid' editorial collage layout. TEXT BOXES MUST HAVE TORN PAPER EDGES and appear like paper scraps pinned to a background. THE CHARACTER AND TEXT BOXES MUST HEAVILY OVERLAP each other to create depth. Use asymmetrical, irregular placement where elements break out of an invisible grid. The overall feel must be like a creative, layered scrapbook or a high-fashion magazine spread with watercolor textures. Add decorative elements like small flowers, leaves, or cute doodles in the empty spaces to balance the composition.",
+    "雑誌風コラージュ（あえて崩しておしゃれ感や動きを出す）": "CRITICAL RULE: Extreme 'broken grid' editorial collage layout. TEXT BOXES MUST HAVE TORN PAPER EDGES and appear like paper scraps pinned to a background. THE CHARACTER AND TEXT BOXES MUST HEAVILY OVERLAP each other to create depth. Use asymmetrical, irregular placement where elements break out of an invisible grid. The overall feel must be like a creative, layered scrapbook or a high-fashion magazine spread with watercolor textures. Add decorative elements like small flowers, leaves, or cute doodles in the empty spaces to balance the composition.",
     "余白重視（ネガティブスペース）（空白を活かして上品さや高級感を演出）": "A minimalist composition prioritizing a very large amount of clean negative space, creating a profound sense of elegance, luxury, and focus.",
     "シンメトリー（左右対称）（誠実さや静寂を伝える）": "A perfectly symmetrical composition, creating a sense of visual integrity, solemnity, and peace.",
     "トライアングル（三角構図）（圧倒的な安定感や成長を出す）": "CRITICAL RULE: Strict implied triangle composition created ONLY by the non-linear, dynamic placement of elements. ABSOLUTELY NO VISIBLE TRIANGLE SHAPES, OUTLINES, ARROWS, OR CONNECTING LINES. The connection between elements must be completely invisible and purely psychological. Conveying extreme stability through powerful diagonal flow. Focal point (e.g., character/cat) MUST BE PLACED at a dynamically staggered apex, and supporting elements (e.g., text blocks) MUST BE ARRANGED to form a distinct, wide base. DO NOT draw any lines between the character and the text. DO NOT align character and text blocks vertically; use strong diagonal angles to create a visual pyramid flow.",
     "4分割・ブロック配置（情報を4つのエリアに分ける）": "A clean, structured infographic layout divided into four distinct, equal quadrants. TEXT ELEMENTS are ARRANGED sequentially. CRITICAL: DO NOT add any extra numbering icons or labels if the input text already includes numbers. Place the provided text exactly as it is within each block.",
-    "サクセス・ストーリー（成功への道のりと感情の変化）": (
-        "A chronological infographic showing a sequence of steps toward a successful goal. "
-        "The number of focal points on the wavy path MUST EXACTLY MATCH the number of items in the content list. "
-        "Use a flowing, wavy line to connect unique icons and text blocks, representing a 'journey'. "
-        "Include visual indicators of emotional high and low points (e.g., small sun, heart, or star icons) along the path. "
-        "CRITICAL: DO NOT repeat any text. Each step MUST have its own unique, non-repeating description from the list."
+   "サクセス・ストーリー（成功への道のりと感情の変化）": (
+        "A strict linear, horizontal (left-to-right) infographic journey toward a successful goal. " # 👈 「厳格な水平（左から右）」に修正！
+        "The number of steps MUST EXACTLY MATCH the content list. CRITICAL LAYOUT RULE: Elements MUST NEVER cross back over previous steps. " # 👈 「絶対に前のステップを横切らない」という禁止ルールを追加！
+        "Arrange the character-text pairs sequentially along a clean, smooth wavy path that progresses clearly from left to right across the screen. "
+        "Each character and text pair must be tightly integrated as a single visual unit, especially at the start and end of the path. "
+        "Include emotional sun/cloud/heart icons and a 'SUCCESS!' element at the final point. NO REPEATING TEXT. Reiterate: STRICT left-to-right horizontal linear sequence."
+       ),
+    "ステータス画面風（ゲームみたいに能力を可視化）": (
+        "A game-inspired character status screen layout where the character is the protagonist. "
+        "CRITICAL GAUGE RULE: The length (fill-level) of each horizontal status bar MUST strictly correlate with the numerical value provided at the end of each text item (e.g., 'Power 80' or 'Speed (5)'). Higher numbers produce longer, fuller bars. "
+        "TEXT RENDERING RULE: DO NOT render the numerical values, percentages, or parentheses used for control on the image. " # 👈 ここで「数字は書くな」と指示！
+        "ONLY render the label text itself. For example, if the input is 'Power 80', the image should show a bar at 80% length but ONLY display the word 'Power'. "
+        "Use vibrant, distinct colors for each bar and ensure a clean, modern gaming UI feel. NO REPEATING TEXT."
     ),
-    "レーダーチャート（クモの巣）（複数の評価軸で総合力を可視化）": "A precise radar chart infographic (spider chart) showing multiple evaluation axes to visualize overall strength.",
-    "スペクトル・グラデーション（0〜100%など段階的な変化を表現）": "A visual spectrum or gradient infographic showing a progressive, phased change, strictly labeled from 0% to 100%.",
-    "ロジックツリー（「なぜ？」「どうやって？」を枝状に分解）": "A branchedロジックツリー or issue tree infographic layout strictly decomposing a main concept into detailed 'Why?' or 'How?' steps.",
-    "同心円型（波紋）（中心から外に広がる影響や重要度を表現）": "A concentric circles infographic layout, like ripples expanding outwards, to clearly show influence, scope, or importance.",
-    "ルービックキューブ（立体ブロック）（複雑な要素の組み合わせを表現）": "A conceptual composition visualizing a multi-element structure as an interlocking, complex 3D Rubik's cube puzzle block.",
-    "--- ストーリー4コマ・カルーセル絵巻（スワイプ前提の物語展開） ---": "A narrative composition structured for an Instagram carousel, where each image is a strictly connected 'panel' in a continuous 4-コマ story or continuous絵巻 (picture scroll).",
-    "数字・データビジュアル（大きな数字で事実をガツンと伝える）": "A graphic composition focusing heavily on very large, bold numbers to powerfully present facts.",
-    "ヒーローショット・ズームイン（主役を全画面でドーンと見せる、細部を拡大する）": "An epic hero shot where the main subject and title fill the entire screen, with extreme detail, zoom-in focus, and impact.",
-    "重ね合わせ（レイヤー）（写真や文字を重ねて奥行きや深みを出す）": "A layered composition with multiple overlapping elements of photo, character, and text, creating profound depth and dimension.",
-    "シルエット・逆光（余韻や神秘的なムードを演出）": "A moody composition using strong backlighting and strictly silhouettes to create lingering emotion and profound mystery.",
-    "鏡面・リフレクション（水面などの反射で二面性や夢幻的な美しさを出す）": "A dreamlike composition with a perfect mirror-like reflection (e.g., in water), creating a powerful sense of dreamlike beauty and integrity.",
-    "タロットカード・星座マッピング（占い・スピリチュアルな独自の世界観）": "A mystical composition adhering strictly to a tarot card-like or celestial constellation-mapping worldview, with symbolic elements.",
-    "モノクロ＋1色スポットライト（白黒の中で点だけカラーにして強烈に強調）": "A dramatic composition in mostly monochrome, with strictly one specific element or character highlighted in a single, vibrant, contrasting color.",
-    "問い→答え開示（リビール）（疑問を投げてスワイプで答えを出す）": "A teaser composition designed strictly for a multi-image reveal, where the first image poses a powerful question and subsequent images reveal the clear answer.",
+   "スペクトル・グラデーション（0〜100%など段階的な変化を表現）": (
+        "A full-background gradient infographic on textured paper, flowing smoothly from cool blue (representing low/0%) on the far left to hot red (representing high/100%) on the far right. " # 👈 「背景全体を青から赤へ」に修正！
+        "The number of steps MUST EXACTLY MATCH the content list, arranged horizontally from left to right along this color spectrum. " # 👈 「横に並べる」と指示！
+        "A central cat protagonist is integrated tightly with each step's corresponding text box. " # 👈 一体感を維持！
+        "Clear labels for '0%' and '100%' must be visible. Include subtle emotional icons. DO NOT repeat any text. "
+        "Prioritize seamless, tight character-text proximity. The overall feel is balanced and instructional." # 👈 密着と分かりやすさを強調！
+        ),
+"深掘りツリー（「なぜ？」「どうやる？」を枝分けして解説）": (
+        "An organic, tree-like infographic with a strict visual hierarchy. "
+        "The Title is the root/trunk. "
+        "AI TASK: Treat the content list as a STRICT INVENTORY of unique items. " # 👈 「在庫（インベントリ）」として扱わせる
+        "PLACEMENT RULE: Each item from the list is a SINGLE-USE asset. Once an item is placed, it is EXHAUSTED and MUST NOT be used again in any other part of the image. " # 👈 「一回使ったら在庫切れ」ルール
+        "CRITICAL VISUAL HIERARCHY: Group names MUST be in 'Wooden Signboards'. Detail items MUST be 'Leaves'. "
+        "CATEGORY CREATION: AI must generate BRIEF, UNIQUE category names (e.g., 'Nature', 'Actions') that are NOT present in the detail list. " # 👈 「看板の文字はリストから選ぶな、AIが新しく考えろ」と指示
+        "CRITICAL ANTI-REDUNDANCY: Absolutely zero word-for-word repetition. The total count of labels must equal the list length plus new categories. "
+        "The cat should be interacting with the tree. NO REPEATING TEXT."
+    ),
+    "放射型（中心から外に広がる）": "A concentric circles infographic layout, like ripples expanding outwards, to clearly show influence, scope, or importance.",
+    "ルービックキューブ（立体ブロック）（複雑な要素の組み合わせを表現）": (
+        "A 3D Rubik's cube structure composition where the individual block panels are SIGNIFICANTLY ENLARGED to maximize surface area. " # 👈 ブロックサイズを「大幅に拡大」する！
+        "Prioritize text readability above all. Render all detail text (from the content list) in a VERY LARGE, BOLD, highly legible font (e.g., ゴシック体) within the enlarged panels. " # 👈 「文字の大きさ、太さ、読みやすさ」を最優先！
+        "The Title is visually dominant at the top. Use a STRONG visual hierarchy, making the main 'title' significantly LARGER and BOLDER than the 'details' text. " # 👈 タイトルと詳細のメリハリを強化！
+        "CRITICAL TEXT RULE: The content list is a STRICT SINGLE-USE INVENTORY. Absolutely zero word-for-word repetition across the entire image. Once an item is placed, it is EXHAUSTED. " # 👈 重複絶対禁止は維持！
+        "ILLUSTRATIVE FILLING RULE: If a panel needs filling, add a theme-relevant small illustrative element (icon, prop, or decorative object), NEVER repeated text. Replace exhausted panels with fresh visuals like balls of yarn, paw prints, fish bones, keeping the visuals fresh. " # 👈 小物の埋め草は維持！
+        "INTEGRATION: The cat characters should be actively interacting with the block panels. Ensure clean, instructional aesthetics with clear text hierarchy. "
+    ),
+    "4コマストーリー（文字くっきり＆背景はそのまま）": (
+        "A sequence of exactly four connected story panels, optimized for a comic strip or carousel layout. "
+        "Each panel MUST represent a single step in a logical narrative arc (起承転結). "
+        "CRITICAL READABILITY RULE: The chosen background style and character must be fully visible. However, to ensure text readability, create a distinct, CLEAN, SOLID WHITE text box (or speech bubble) at the bottom or top of each panel. "
+        "Render the provided text EXCLUSIVELY inside these white boxes. "
+        "CRITICAL TYPOGRAPHY: Text MUST be VERY LARGE, BOLD, and highly legible. Ensure extreme contrast between the text and the white box. "
+        "Do not repeat any text across panels. The main subject must appear consistently across panels to convey the story flow, without obstructing the text boxes."
+    ),
+   "数字・データビジュアル（大きな数字で事実をガツンと伝える）": (
+        "A striking infographic layout designed to powerfully present data, rankings, or shocking facts. "
+        "CRITICAL VISUAL RULE: Extract the primary numerical values from the content list and render them as HUGE, 3D, or highly stylized focal points. These numbers MUST visually dominate the composition. "
+        "The central character (e.g., the cat) should be actively interacting with these giant numbers (e.g., sitting on a giant '90%', hugging a large '5', or leaning against them). "
+        "CRITICAL READABILITY: For the explanatory text corresponding to each number, use a CLEAN, SOLID WHITE text box (like a simple panel or banner) to ensure extreme contrast and high readability. "
+        "Render the text in a VERY LARGE, BOLD, legible font inside these white boxes. DO NOT repeat any text. Ensure a sleek, impactful editorial aesthetic."
+    ),
+   "ヒーローショット・ズームイン（主役を全アップでドーン！エモさ重視）": (
+        "An epic, dramatic HERO SHOT composition focusing intensely on the main subject. "
+        "CRITICAL CAMERA RULE: Extreme close-up / zoom-in on the core subject. The subject MUST fill at least 80% of the entire screen with incredible detail, sharp focus, depth of field, and cinematic lighting. " # 猫の例示を削除！
+        "TEXT RULE: This composition is for dramatic visual IMPACT, not long explanations. Render the provided text as a powerful catchphrase. "
+        "To ensure text readability against the highly detailed background, use a stylish, CLEAN SOLID WHITE text box (like a simple banner) or a sleek semi-transparent dark banner at the bottom or side. "
+        "Render the text in a VERY LARGE, BOLD, cinematic font. NO REPEATING TEXT. The overall vibe should be like a high-end editorial spread, a dramatic movie poster, or a sleek product reveal."
+    ),
+  "シルエット・逆光（半透明テロップ・表情連動）": (
+        "A highly emotional, moody composition focusing heavily on strong BACKLIGHTING and SILHOUETTES. "
+        "The main subject MUST be silhouetted against a dramatic, luminous background (e.g., a breathtaking twilight, glowing neon, or cinematic light rays) to create lingering emotion and profound mystery. "
+        "CRITICAL READABILITY & MOOD: The text MUST enhance the atmospheric mood. Use elegant, clean text boxes that look like a soft, semi-transparent, or gently glowing background pane (e.g., a subtle dark or light wash). "
+        "Render the provided text highly legible with extreme contrast within these semi-transparent panes. DO NOT repeat any text. "
+        "The overall vibe is a profound movie poster or an emotional quote visual. "
+        "CRITICAL EMOTION-EXPRESSION SYNC RULE: The AI MUST analyze the specific content of the Japanese text in each list item/panel. Adapt the main subject's facial expression, body language, and pose to DRAMATICALLY match the corresponding mood. Avoid generic expressions."
+    ),
+    "鏡面・リフレクション（水面反射・表情連動）": (
+        "A dreamlike composition featuring a perfect, crystal-clear mirror-like reflection of the main subject on a surface (e.g., still water or a highly polished floor) to create a powerful sense of dreamlike beauty and integrity. "
+        "CRITICAL BODY INTEGRITY RULE: Ensure anatomically correct and structurally sound body representation for the main subject. Poses should be natural, avoiding unnatural distortion or extra/missing limbs. The reflection must perfectly and accurately mirror this correct anatomy. "
+        "CRITICAL TEXT RULE: You MUST clearly render ALL provided Japanese text items in the image. DO NOT skip, drop, or shorten any lines. Use elegant, semi-transparent text boxes or softly glowing panels that blend with the dreamlike atmosphere, ensuring extreme contrast and high legibility. "
+        "CRITICAL EMOTION-EXPRESSION SYNC RULE: The AI MUST analyze the specific content of the text. Adapt the main subject's facial expression, body language, and pose to DRAMATICALLY match the corresponding mood. Avoid generic expressions. This applies to both the real subject and its reflection."
+    ),
+    "タロット・星座マッピング（表情連動・文字くっきり）": (
+        "A mystical composition adhering strictly to a tarot card-like or celestial constellation-mapping worldview, rich with esoteric symbols, Zodiac motifs, and stardust textures. "
+        "CRITICAL READABILITY & TEXT PLACEMENT RULE: Render ALL provided Japanese text clearly and legibly. The text MUST NOT obscure the face or core symbolic elements of the main subject. Use distinct, clean text boxes that look like soft, semi-transparent background panes, gently glowing celestial scrolls, or old parchment labels pinned to the composition. Place these text elements in balanced negative space, typically in the corners, top/bottom banners, or separate 'card segments'. DO NOT repeat any text. "
+        "CRITICAL EMOTION-EXPRESSION SYNC RULE: The AI MUST analyze the specific content of the Japanese text in each list item/panel. Adapt the main subject's facial expression, body language, and pose to DRAMATICALLY match the corresponding mood. Poses should be natural and structurally sound. Avoid generic expressions. This rule applies to both the central figure and any depicted 'card characters'. "
+        "Adapt with appropriate decorative motifs, ensuring a profound, spiritual feel, regardless of the theme."
+    ),
+    "モノクロ＋1色スポットライト（感情同期最強版）": (
+        "A dramatic composition where the entire scene is rendered in stark, powerful monochrome. "
+        "AI TASK: Extract ALL provided Japanese text items clearly and legibly. Place ALL text elements to ensure that NO portion of any text is obscured or covered by the main subject's body. "
+        "CRITICAL SPOTLIGHT RULE: Precisely one, single element in the image MUST be highlighted in a single, vibrant, contrasting color. This spotlight effect MUST highlight the Title text banner or background. DO NOT apply this color effect to the face, body, or any organic part of the main subject. "
+        "To ensure maximum visibility and aesthetic coherence, use stylish, CLEAN, SOLID text boxes or banners for all text, with the Title element having the color highlight. "
+        "CRITICAL EMOTION-EXPRESSION SYNC RULE: The AI MUST analyze the specific content of the Japanese text items. MUST identifiy the core emotion of each statement (e.g., contemplation of the past, discovery of truth, somber decision, or soothing tiredness). Adapt the main subject's facial expression, body language, and pose to DRAMATICALLY and unmistakably change the face and full body pose to match the corresponding mood. Poses should be natural, structurally sound, and deeply integrated with the content. Zero tolerance for the default generic smile. " # 👈 感情同期を最強レベルに強化！
+    ),
     "タイポグラフィ主役（文字そのものをアートとして見せる）": "An artful typography-first composition where the title text is treated as the main visual artwork, with character and background integrated seamlessly."
 }
 
