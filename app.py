@@ -117,16 +117,15 @@ composition_dict = {
         "1. MASSIVE EMPTY VOID: At least 85-90% of the canvas MUST be pure, uninterrupted empty space. ABSOLUTELY PROHIBITED: Do not place elements in the center. Avoid 'Hinomaru' (centered) composition. "
 
         # 👇【対角線配置：情報ブロック vs 被写体】
-        # 情報（タイトル＋テロップ）を一つのコーナーに固め、被写体は正反対の隅に置く。これで余白を最大化！
-        "2. DIAGONAL OPPOSITE LAYOUT: If the information block (TITLE + details) is in the TOP-LEFT, the character MUST be in the BOTTOM-RIGHT. If the info block is in the TOP-RIGHT, the character MUST be in the BOTTOM-LEFT. "
-
+        # 👇【2. 対角線配置と下敷き禁止】情報ブロックとキャラを正反対の隅に。背景に直接置くこと！
+        "2. DIAGONAL OPPOSITE LAYOUT (NO BOXES): Place the complete information block (TITLE + details) and the single character at opposite extreme ends (e.g., TOP-LEFT vs BOTTOM-RIGHT). ABSOLUTELY PROHIBITED: Do NOT use any white boxes, text panels, frames, or collage elements. Everything must sit directly on the minimalist background. "
         # 👇【修正】テキストブロックの掟に「背景色に合わせた文字色の自動選択」を追加
         "3. REFINED TEXT CLUSTER with CRITICAL READABILITY: The 'TITLE' and all detail text (teroppu) must be perfectly LEFT-ALIGNED in one corner. The AI MUST automatically and completely ADJUST the text color to be WHITE or a very bright cream color if the background tone is dark (e.g., dusk, moody deep colors). Black text is ONLY allowed on very bright/light backgrounds. "
         # 👇【被写体は1名・極小・孤立】被写体は1名のみ！タイトルの反対側で、完全に独りぼっち。サイズは米粒のように極小。
         "4. MICROSCOPIC SINGLE SUBJECT: Generate EXACTLY ONE character. It must be tiny (under 10% of canvas) and stand completely ALONE in its corner. No boxes, no nearby text. "
 
-        # 👇【感情の100%同期：完全版】途切れてた部分を補完！テロップに釣られず、タイトルの感情だけを鏡のように反映させる。
-        "5. PURE EMOTION SYNC: The character's expression MUST sync 100% with the 'TITLE' mood. IGNORE all moods or positive words in the detail text. The character acts as a mirror to the TITLE only."
+        # 👇【5. 感情のタイトル・ミラーリング】笑顔固定は禁止！タイトルの喜怒哀楽を鏡のように映すこと。テロップには釣られない。
+        "5. PURE EMOTION MIRROR: The character's expression MUST sync 100% with the overall 'TITLE' mood only. If the title is sad, the character is sad; if happy, the character is happy. IGNORE any individual positive or negative words in the detail text. "
 
         # 👇【6. 背景色のランダム化と視認性の確保】
         # 背景を毎回ランダム（昼、夕暮れ、深夜など）に変えつつ、文字色を背景に合わせて白か黒に自動調整させる！
