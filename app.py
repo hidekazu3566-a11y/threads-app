@@ -111,23 +111,22 @@ composition_dict = {
 
         "7. DECORATION: Integrate background with watercolor doodles, leaves, pins, or stamps. Ensure a creative feel. No repetition."
     ),
-   "余白重視（空間を活かして情緒や高級感を出す）": (
-        "STRICT NEGATIVE SPACE & SINGLE SUBJECT RULE: "
-        # 👇【圧倒的な空間＋文字は読みやすく＋キャラは極小】
-        # 画面の70-80%は空っぽの余白にする！テロップ（文字）は読めないと意味がないので「読みやすいサイズ」をキープ。その代わり、被写体（キャラクター）だけを「極端に小さく（極小）」して配置する！
-        "1. THE 80/20 RULE & READABLE TEXT: 70-80% of the canvas MUST be pure, empty space. The text must remain READABLE and clear (not too small). However, the character (subject) must be scaled down to be VERY SMALL to emphasize the vast space. "
+   "余白重視（極限のネガティブスペースで情緒を出す）": (
+        "ULTIMATE MINIMALIST NEGATIVE SPACE RULE: "
+        # 👇【圧倒的な余白】画面の85〜90%は完全な「無」にする。中央には絶対に何も置かない。
+        "1. MASSIVE EMPTY VOID: At least 85-90% of the canvas MUST be completely blank, vast space. ABSOLUTELY PROHIBITED: Do not place any elements in the center or spread them out. "
 
-        # 👇【タイトル最大化】タイトルは一番大きく、余白の中にドーンと置く！
-        "2. TITLE DOMINANCE: The 'TITLE' must be the single largest visual element. "
+        # 👇【タイトルサイズ調整】タイトルを「大きすぎず、でも気品がある」サイズに縮小。広い空間の中に静かに浮かんでいるように配置。
+        "2. REFINED TITLE SIZE: The 'TITLE' must be medium-small and elegant. Do NOT make it oversized. Surround it with maximum breathing room. "
 
-        # 👇【キャラは絶対1匹！】「ごちゃっとする」のを防ぐため、キャラは絶対に1匹のみ！2匹以上は絶対禁止。
-        "3. SINGLE CHARACTER ONLY: Generate EXACTLY ONE character. CRITICAL: ABSOLUTELY DO NOT generate 2 or more characters under any circumstances. "
+        # 👇【キャラは1匹＆隅っこ配置】猫は1匹だけ！右下か左下の「隅っこ」に、テロップとセットで配置する。
+        "3. CORNER ANCHORING (Bottom-Right or Bottom-Left): Cluster the single character and all text into ONE small, compact block. Place this block strictly in a bottom corner. "
 
-        # 👇【感情はタイトルに全振り】キャラが1匹だけなので、タイトルの感情（悲しい等）と100%リンクさせる！他の細かい文字（喜びの舞など）の感情は完全に無視！
-        "4. ABSOLUTE EMOTION LOCK: Since there is only ONE character, its expression MUST perfectly sync with the 'TITLE's emotion. Strictly disregard all other minor detail moods. "
+        # 👇【テロップのサイズ】「小さすぎず、でも控えめ」なサイズに。キャラのすぐ近くに整列させて、情報の密度をギュッと凝縮する。
+        "4. COMPACT READABLE TEXT: Detail text must be small but clearly legible. Cluster it tightly within the 10-15% area allocated for information. "
 
-        # 👇【Z構図禁止】画面全体を使うZ構図を禁止！文字と小さなキャラはスッキリ一箇所（または整列させて）まとめる。
-        "5. SMART LAYOUT: strictly prevent Z-flow. Elements must NOT spread across the canvas. Prioritize overwhelming empty space with a tiny subject."
+        # 👇【1匹限定＆感情同期】ごちゃつきを避けるためキャラは1匹。感情はタイトルの空気に100%合わせる。
+        "5. SINGLE SUBJECT EMOTION LOCK: Generate EXACTLY ONE character. Its expression MUST perfectly sync with the 'TITLE's mood, ignoring all other minor text. "
     ),
     "シンメトリー（左右対称）（誠実さや静寂を伝える）": "A perfectly symmetrical composition, creating a sense of visual integrity, solemnity, and peace.",
     "トライアングル（三角構図）（圧倒的な安定感や成長を出す）": "CRITICAL RULE: Strict implied triangle composition created ONLY by the non-linear, dynamic placement of elements. ABSOLUTELY NO VISIBLE TRIANGLE SHAPES, OUTLINES, ARROWS, OR CONNECTING LINES. The connection between elements must be completely invisible and purely psychological. Conveying extreme stability through powerful diagonal flow. Focal point character MUST BE PLACED at a dynamically staggered apex, and supporting elements (e.g., text blocks) MUST BE ARRANGED to form a distinct, wide base. DO NOT draw any lines between the character and the text. DO NOT align character and text blocks vertically; use strong diagonal angles to create a visual pyramid flow.",
