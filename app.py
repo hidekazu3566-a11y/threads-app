@@ -112,24 +112,22 @@ composition_dict = {
         "7. DECORATION: Integrate background with watercolor doodles, leaves, pins, or stamps. Ensure a creative feel. No repetition."
     ),
    "余白重視（空間を活かして情緒や高級感を出す）": (
-        "STRICT NEGATIVE SPACE RULE: "
-        # 👇【余白と配置】画面の7割は余白！文字は1つの背景箱に潰さず、スッキリ整列させる。
-        "1. VISUAL BREATHING ROOM: At least 70% of the canvas MUST remain empty. Cluster the detailed text into the remaining 30%, but keep the layout structured and readable. STRICTLY PROHIBITED: Do NOT merge all text into one messy background box. "
+        "STRICT NEGATIVE SPACE & SINGLE SUBJECT RULE: "
+        # 👇【圧倒的な空間＋文字は読みやすく＋キャラは極小】
+        # 画面の70-80%は空っぽの余白にする！テロップ（文字）は読めないと意味がないので「読みやすいサイズ」をキープ。その代わり、被写体（キャラクター）だけを「極端に小さく（極小）」して配置する！
+        "1. THE 80/20 RULE & READABLE TEXT: 70-80% of the canvas MUST be pure, empty space. The text must remain READABLE and clear (not too small). However, the character (subject) must be scaled down to be VERY SMALL to emphasize the vast space. "
 
         # 👇【タイトル最大化】タイトルは一番大きく、余白の中にドーンと置く！
-        "2. TITLE DOMINANCE: The 'TITLE' must be the single largest visual element, placed with maximum surrounding space. "
+        "2. TITLE DOMINANCE: The 'TITLE' must be the single largest visual element. "
 
-        # 👇【キャラ数制限】キャラは1匹か、2〜3匹。絶対に3匹を超えない！
-        "3. VARIABLE CHARACTER DENSITY: AI chooses 1 or 2-3 subjects. CRITICAL: ABSOLUTELY DO NOT EXCEED 3 SUBJECTS. "
+        # 👇【キャラは絶対1匹！】「ごちゃっとする」のを防ぐため、キャラは絶対に1匹のみ！2匹以上は絶対禁止。
+        "3. SINGLE CHARACTER ONLY: Generate EXACTLY ONE character. CRITICAL: ABSOLUTELY DO NOT generate 2 or more characters under any circumstances. "
 
-        # 👇【超重要！1匹の時の感情防衛】タイトルが悲しければ悲しく、タイトルが嬉しければ嬉しく！「タイトルの感情」と完全に100%リンクさせる！他の細かい文字の感情は一切無視！
-        "4. SCENARIO A (Single Subject): If ONE character, its expression MUST perfectly sync with the 'TITLE's emotion (whether it is sad, happy, angry, etc.). ABSOLUTE EMOTION LOCK: Strictly ignore the emotions of all other minor text blocks. "
+        # 👇【感情はタイトルに全振り】キャラが1匹だけなので、タイトルの感情（悲しい等）と100%リンクさせる！他の細かい文字（喜びの舞など）の感情は完全に無視！
+        "4. ABSOLUTE EMOTION LOCK: Since there is only ONE character, its expression MUST perfectly sync with the 'TITLE's emotion. Strictly disregard all other minor detail moods. "
 
-        # 👇【複数の時の感情】2〜3匹なら、それぞれの文字の横に置いて感情を出し分ける！
-        "5. SCENARIO B (Multiple Subjects): If 2-3 characters, each MUST be small and cleanly paired with a specific text block. Its expression MUST match ONLY that local text. "
-
-        # 👇【Z構図禁止】画面全体に散らばらせるZ構図は禁止！情報は一箇所にスッキリまとめる。
-        "6. SMART LAYOUT: No Z-flow. Group the information cleanly in one area, maintaining profound clarity and open space."
+        # 👇【Z構図禁止】画面全体を使うZ構図を禁止！文字と小さなキャラはスッキリ一箇所（または整列させて）まとめる。
+        "5. SMART LAYOUT: strictly prevent Z-flow. Elements must NOT spread across the canvas. Prioritize overwhelming empty space with a tiny subject."
     ),
     "シンメトリー（左右対称）（誠実さや静寂を伝える）": "A perfectly symmetrical composition, creating a sense of visual integrity, solemnity, and peace.",
     "トライアングル（三角構図）（圧倒的な安定感や成長を出す）": "CRITICAL RULE: Strict implied triangle composition created ONLY by the non-linear, dynamic placement of elements. ABSOLUTELY NO VISIBLE TRIANGLE SHAPES, OUTLINES, ARROWS, OR CONNECTING LINES. The connection between elements must be completely invisible and purely psychological. Conveying extreme stability through powerful diagonal flow. Focal point character MUST BE PLACED at a dynamically staggered apex, and supporting elements (e.g., text blocks) MUST BE ARRANGED to form a distinct, wide base. DO NOT draw any lines between the character and the text. DO NOT align character and text blocks vertically; use strong diagonal angles to create a visual pyramid flow.",
