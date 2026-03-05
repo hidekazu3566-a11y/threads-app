@@ -113,23 +113,23 @@ composition_dict = {
     ),
    "余白重視（空間を活かして情緒や高級感を出す）": (
         "STRICT NEGATIVE SPACE RULE: "
-        "1. VISUAL BREATHING ROOM: A MINIMUM of 70% of the canvas MUST remain completely empty. The other 30% MUST be clustered into a single, compact area (e.g., bottom-right or corner) to create a 'knowledge block'. Use a very clean, minimalist background. STRICTLY PROHIBITED: No overlapping collage elements. Elements must NOT be spread across the canvas creating a 'Z' flow. "
-        # ↑【余白＆配置の掟】画面の7割は絶対に空っぽにして「ポツンと感」を演出！要素はZ字に散らさず、一箇所にギュッと固めるよ。
+        # 👇【余白と配置】画面の7割は余白！文字は1つの背景箱に潰さず、スッキリ整列させる。
+        "1. VISUAL BREATHING ROOM: At least 70% of the canvas MUST remain empty. Cluster the detailed text into the remaining 30%, but keep the layout structured and readable. STRICTLY PROHIBITED: Do NOT merge all text into one messy background box. "
 
-        "2. TITLE DOMINANCE: The 'TITLE' must be the single largest visual element, placed with maximum surrounding space, away from the knowledge block. "
-        # ↑【タイトル最大化】タイトルは一番デカく！固めた解説ブロックからは離して、余白の中にドーンと置く。
+        # 👇【タイトル最大化】タイトルは一番大きく、余白の中にドーンと置く！
+        "2. TITLE DOMINANCE: The 'TITLE' must be the single largest visual element, placed with maximum surrounding space. "
 
-        "3. VARIABLE CHARACTER DENSITY: AI chooses 1 or 2-3 subjects. **CRITICAL: ABSOLUTELY DO NOT EXCEED 3 SUBJECTS.** "
-        # ↑【キャラ数制限】1匹か、2〜3匹かを選ぶ。絶対に3匹を超えないように「CRITICAL」で強めに念押し！
+        # 👇【キャラ数制限】キャラは1匹か、2〜3匹。絶対に3匹を超えない！
+        "3. VARIABLE CHARACTER DENSITY: AI chooses 1 or 2-3 subjects. CRITICAL: ABSOLUTELY DO NOT EXCEED 3 SUBJECTS. "
 
-        "4. SCENARIO A (Single Subject): If ONE character, its expression MUST be derived EXCLUSIVELY from the 'TITLE'. **ABSOLUTE EMOTION LOCK:** Disregard all other detail moods. "
-        # ↑【1匹の時の感情ルール】キャラが1匹なら、タイトルの感情に「絶対ロック」！他の細かい言葉（喜びの舞とか）のハッピーオーラは完全に無視して、タイトルの情緒だけを貫くよ。
+        # 👇【超重要！1匹の時の感情防衛】タイトルが悲しければ悲しく、タイトルが嬉しければ嬉しく！「タイトルの感情」と完全に100%リンクさせる！他の細かい文字の感情は一切無視！
+        "4. SCENARIO A (Single Subject): If ONE character, its expression MUST perfectly sync with the 'TITLE's emotion (whether it is sad, happy, angry, etc.). ABSOLUTE EMOTION LOCK: Strictly ignore the emotions of all other minor text blocks. "
 
-        "5. SCENARIO B (Multiple Subjects): If 2-3 characters, each MUST be small and adjacent to a single text block within the knowledge block. Do NOT pair a character with every single text block (e.g., Step 1, Step 2, Step 3). Its expression MUST match ONLY that local text's emotion. "
-        # ↑【複数の時の感情ルール】2〜3匹いる時は、それぞれが「一番近くにある文字」の感情だけを担当する（近接連動）！全部のステップにキャラを置かず、要所要所にポツンと添えて、感情が混ざるのを防ぐよ。
+        # 👇【複数の時の感情】2〜3匹なら、それぞれの文字の横に置いて感情を出し分ける！
+        "5. SCENARIO B (Multiple Subjects): If 2-3 characters, each MUST be small and cleanly paired with a specific text block. Its expression MUST match ONLY that local text. "
 
-        "6. SMART LAYOUT: Maintain profound clarity through strict clustering. NEVER spread elements across the entire canvas to create a 'Z' flow. Elements must be separated by significant open space within the cluster, but the cluster itself must occupy only a corner."
-        # ↑【Z構図禁止】画面全体を使っちゃうZ構図を禁止して、要素を隅っこにまとめることでスマートな余白を守る！
+        # 👇【Z構図禁止】画面全体に散らばらせるZ構図は禁止！情報は一箇所にスッキリまとめる。
+        "6. SMART LAYOUT: No Z-flow. Group the information cleanly in one area, maintaining profound clarity and open space."
     ),
     "シンメトリー（左右対称）（誠実さや静寂を伝える）": "A perfectly symmetrical composition, creating a sense of visual integrity, solemnity, and peace.",
     "トライアングル（三角構図）（圧倒的な安定感や成長を出す）": "CRITICAL RULE: Strict implied triangle composition created ONLY by the non-linear, dynamic placement of elements. ABSOLUTELY NO VISIBLE TRIANGLE SHAPES, OUTLINES, ARROWS, OR CONNECTING LINES. The connection between elements must be completely invisible and purely psychological. Conveying extreme stability through powerful diagonal flow. Focal point character MUST BE PLACED at a dynamically staggered apex, and supporting elements (e.g., text blocks) MUST BE ARRANGED to form a distinct, wide base. DO NOT draw any lines between the character and the text. DO NOT align character and text blocks vertically; use strong diagonal angles to create a visual pyramid flow.",
