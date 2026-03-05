@@ -111,7 +111,26 @@ composition_dict = {
 
         "7. DECORATION: Integrate background with watercolor doodles, leaves, pins, or stamps. Ensure a creative feel. No repetition."
     ),
-    "余白重視（ネガティブスペース）（空白を活かして上品さや高級感を演出）": "A minimalist composition prioritizing a very large amount of clean negative space, creating a profound sense of elegance, luxury, and focus.",
+    "余白重視（空間を活かして情緒や高級感を出す）": (
+        "STRICT NEGATIVE SPACE RULE: "
+        "1. VISUAL BREATHING ROOM: At least 60-70% of the canvas MUST remain empty. Use a very clean, minimalist background. "
+        "STRICTLY PROHIBITED: No paper scraps, torn edges, washi-tape, or overlapping collage elements. "
+        # ↑【余白死守】コラージュ要素を消して、スッキリさせる掟。
+
+        "2. TITLE DOMINANCE: The 'TITLE' must be the single largest visual element, placed in a high-visibility area with plenty of surrounding space. "
+        # ↑【タイトル最大化】どんな時もタイトルが主役！
+
+        "3. VARIABLE CHARACTER DENSITY: AI chooses between 1 (for emotional focus) or 2-3 (for smart step-by-step explanation). Do not exceed 3 subjects. "
+        # ↑【ここが答え！】1匹か、2〜3匹かをAIに選ばせるようにしたよ。3匹より多くは出さない！
+
+        "4. SCENARIO A (Single Subject): If ONE character is generated, its expression MUST be derived EXCLUSIVELY from the 'TITLE'. Ignore all other minor moods. "
+        # ↑【1匹の時】さっきの「タイトル絶対遵守」ロジックをそのまま継承！
+
+        "5. SCENARIO B (Multiple Subjects): If 2-3 characters are generated, each MUST be small and placed adjacent to a specific text block (e.g., Step 1). Its expression MUST match ONLY that local text. "
+        # ↑【複数の時】文字の横に添えて、スマートな解説風にするロジック！
+
+        "6. SMART LAYOUT: Maintain profound clarity. No clutter or dense layering. Elements must be clearly separated by open space."
+    ),
     "シンメトリー（左右対称）（誠実さや静寂を伝える）": "A perfectly symmetrical composition, creating a sense of visual integrity, solemnity, and peace.",
     "トライアングル（三角構図）（圧倒的な安定感や成長を出す）": "CRITICAL RULE: Strict implied triangle composition created ONLY by the non-linear, dynamic placement of elements. ABSOLUTELY NO VISIBLE TRIANGLE SHAPES, OUTLINES, ARROWS, OR CONNECTING LINES. The connection between elements must be completely invisible and purely psychological. Conveying extreme stability through powerful diagonal flow. Focal point character MUST BE PLACED at a dynamically staggered apex, and supporting elements (e.g., text blocks) MUST BE ARRANGED to form a distinct, wide base. DO NOT draw any lines between the character and the text. DO NOT align character and text blocks vertically; use strong diagonal angles to create a visual pyramid flow.",
     "4分割・ブロック配置（情報を4つのエリアに分ける）": "A clean, structured infographic layout divided into four distinct, equal quadrants. TEXT ELEMENTS are ARRANGED sequentially. CRITICAL: DO NOT add any extra numbering icons or labels if the input text already includes numbers. Place the provided text exactly as it is within each block.",
