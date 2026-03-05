@@ -112,24 +112,24 @@ composition_dict = {
         "7. DECORATION: Integrate background with watercolor doodles, leaves, pins, or stamps. Ensure a creative feel. No repetition."
     ),
    "余白重視（極限のネガティブスペース・対角線構図）": (
+       "余白重視（極限のネガティブスペース・感情シンクロ）": (
         "ULTIMATE MINIMALIST DIAGONAL RULE: "
-        # 👇【圧倒的な余白と背景】画面の85%以上を完全な無にする。白い箱やパネルで情報を囲むのは厳禁！背景に溶け込ませること。
-        "1. MASSIVE EMPTY VOID: At least 85-90% of the canvas MUST be completely blank space. STRICTLY PROHIBITED: Do NOT use white boxes, panels, or frames to surround the text and character. Everything must sit directly on the minimalist background. "
+        # 👇【圧倒的な余白】画面の85%以上を完全な「無」にする。中央揃えは禁止。
+        "1. MASSIVE EMPTY VOID: At least 85-90% of the canvas MUST be pure, uninterrupted empty space. ABSOLUTELY PROHIBITED: Do not place elements in the center. Avoid 'Hinomaru' (centered) composition. "
 
-        # 👇【対角線配置の掟】被写体とタイトルを対角線上に配置して、余白を際立たせる！
-        "2. DIAGONAL OPPOSITE LAYOUT: If the character is in the BOTTOM-RIGHT, the 'TITLE' MUST be in the TOP-LEFT. If the character is in the BOTTOM-LEFT, the 'TITLE' MUST be in the TOP-RIGHT. Place them at the extreme ends to maximize the space between them. "
+        # 👇【対角線配置：情報ブロック vs 被写体】
+        # 情報（タイトル＋テロップ）を一つのコーナーに固め、被写体は正反対の隅に置く。これで余白を最大化！
+        "2. DIAGONAL OPPOSITE LAYOUT: If the information block (TITLE + details) is in the TOP-LEFT, the character MUST be in the BOTTOM-RIGHT. If the info block is in the TOP-RIGHT, the character MUST be in the BOTTOM-LEFT. "
 
-        # 👇【タイトルサイズ】大きすぎず、余白の中にポツンと上品に置く。
-        "3. REFINED FLOATING TITLE: The 'TITLE' should be medium-small and elegant. Surround it with its own vast breathing room. "
+        # 👇【左揃えの情報ブロック】タイトルとテロップをセットにして、綺麗に左揃え（Left-Aligned）で配置。
+        "3. REFINED TEXT CLUSTER: The 'TITLE' and all detail text (teroppu) must be grouped together in one corner, perfectly LEFT-ALIGNED. The TITLE should be elegant but not oversized. "
 
-        # 👇【キャラは1匹・極小】猫は1匹だけ！タイトルの反対側の隅っこに、テロップとセットで極小サイズで配置する。
-        "4. MICROSCOPIC SINGLE SUBJECT: Generate EXACTLY ONE character. Scaled down to be tiny (under 10% of canvas), anchored in the opposite corner from the title. "
+        # 👇【被写体は1名・極小・孤立】被写体は1名のみ！タイトルの反対側で、完全に独りぼっち。サイズは米粒のように極小。
+        "4. MICROSCOPIC SINGLE SUBJECT: Generate EXACTLY ONE character. It must be tiny (under 10% of canvas) and stand completely ALONE in its corner. No boxes, no nearby text. "
 
-        # 👇【テロップの配置】テロップはキャラのすぐ上か横に、控えめなサイズで添える。
-        "5. COMPACT TEXT CLUSTER: Detail text must be small and cleanly aligned near the tiny character. Keep the cluster very small. "
-
-        # 👇【感情の絶対同期】キャラは1匹。感情はタイトルの空気に100%合わせる。
-        "6. SINGLE SUBJECT EMOTION LOCK: The character's expression MUST perfectly sync with the 'TITLE's mood. Ignore all other minor text. "
+        # 👇【感情の100%同期】ここが重要！「笑顔禁止」とは書かず、タイトルの感情にだけ合わせる。
+        # タイトルが悲しければ悲しく、嬉しければ嬉しく。テロップのポジティブさに釣られるのを厳禁にするよ。
+        "5. PURE EMOTION SYNC: The character's expression MUST sync 100% with the 'TITLE' mood. IGNORE all moods or positive words in the detail text. The character acts as a mirror to the TITLE only."
     ),
     "シンメトリー（左右対称）（誠実さや静寂を伝える）": "A perfectly symmetrical composition, creating a sense of visual integrity, solemnity, and peace.",
     "トライアングル（三角構図）（圧倒的な安定感や成長を出す）": "CRITICAL RULE: Strict implied triangle composition created ONLY by the non-linear, dynamic placement of elements. ABSOLUTELY NO VISIBLE TRIANGLE SHAPES, OUTLINES, ARROWS, OR CONNECTING LINES. The connection between elements must be completely invisible and purely psychological. Conveying extreme stability through powerful diagonal flow. Focal point character MUST BE PLACED at a dynamically staggered apex, and supporting elements (e.g., text blocks) MUST BE ARRANGED to form a distinct, wide base. DO NOT draw any lines between the character and the text. DO NOT align character and text blocks vertically; use strong diagonal angles to create a visual pyramid flow.",
