@@ -26,12 +26,12 @@ composition_dict = {
   "三分割法・黄金比・白銀比（安定と美しさの比率）": (
         "Strict composition adherence to the Rule of Thirds logic. "
         "CRITICAL LAYOUT RULE: "
-        "1. EXACTLY ONE main character MUST be dynamically positioned on ONE of the four grid intersection points (power points: top-left, top-right, bottom-left, bottom-right). This single location MUST be selected randomly for each generated image. "
-        "2. Group and arrange ALL text elements neatly within the vertical third section opposite the chosen single character placement to perfectly balance the composition. Utilize remaining areas as clean, breathable negative space. "
-        # 👇 感情ルールを「条件分岐」に修正！
-        "CRITICAL EMOTION RULE: The AI MUST deeply analyze the SPECIFIC, IMMEDIATE meaning of BOTH the LOCAL TITLE TEXT and LOCAL HIGHLIGHTED TEXT for each individual image. Do NOT make assumptions about the overall story's ending. "
-        "1. IF the local text implies negative emotions, struggles, or worries (e.g., 'not rewarded', 'tired', 'troubled'): The AI MUST STRICTLY depict visible internal conflict (e.g., tearful eyes, knitted brows, somber face). ZERO TOLERANCE for any type of smile. " # 👈 ネガティブな時「だけ」葛藤を強制！笑顔は絶対禁止！
-        "2. IF the local text implies positive emotions, relief, or solutions (e.g., 'praise', 'warm drink', 'perfect'): The AI MUST depict a genuinely joyful, relieved, or positive expression. " # 👈 ポジティブな時はちゃんと喜ばせる！
+        # 👇 ここを最強レベルに強化！禁止ルールを追加。
+        "1. STRICT SINGLE CHARACTER LIMIT: Under NO circumstances are multiple depictions of the character allowed in the same image frame. Exactly one instance of the main character MUST be present. "
+        "2. Position this single main character dynamically on ONE of the four grid intersection points (power points: top-left, top-right, bottom-left, bottom-right). This single location MUST be selected randomly for each generated image. "
+        "3. Group and arrange ALL text elements neatly within the vertical third section opposite the chosen single character placement to perfectly balance the composition. Utilize remaining areas as clean, breathable negative space. "
+        # 👇 表情同期の指示も「1匹に合わせる」ように再調整！
+        "CRITICAL EMOTION RULE: The AI MUST deeply analyze the SPECIFIC meaning of the LOCAL title text, local highlighted text, and prioritize matching the primary detailed text provided for that individual image. DRAMATICALLY adapt the single character's expressions, body language, and poses to perfectly match this mood. AVOID generic expressions or generic 'default smile' UNLESS the specific local text is genuinely positive. "
         "ABSOLUTELY NO VISIBLE GRID LINES OR CROSSHAIRS."
     ),
   "中央集中型（日の丸構図・感情ポーズ連動）": (
