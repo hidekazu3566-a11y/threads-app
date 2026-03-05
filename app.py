@@ -89,22 +89,23 @@ composition_dict = {
         "The number of tiles must exactly match the total count of non-empty text blocks. Ensure structural unity."
         # ↑【整合性】マスの数をブロックの総数とピッタリ一致させる指示だよ。
     ),
-    "雑誌風コラージュ（あえて崩しておしゃれ感や動きを出す）": (
+   "雑誌風コラージュ（あえて崩しておしゃれ感や動きを出す）": (
         "STRICT COLLAGE COMPOSITION RULE: "
-        "1. DO NOT draw any clean, linear grid-lines or uniform partitions. Standard multi-panel layouts are STRICTLY PROHIBITED. "
-        # ↑【守護】「マス目」に戻るのを防ぐ、配置の基本ルール。
+        "1. DO NOT add any clean grid-lines. Use an editorial 'broken grid' style with layered, non-uniform edges (scraps, tape, etc.). "
 
-        "2. Elements MUST be arranged in an editorial 'broken grid' style. TEXT BOXES should have stylized, non-uniform edges (e.g., paper scraps, washi-tape effects, or creative cut-outs) and appear as layered elements. "
-        # ↑【素材】端っこの処理をAIに任せる、オシャレな素材感の指示。
+        "2. VARIABLE CHARACTER DENSITY: The AI MUST decide the optimal number of characters (1 or a few scattered subjects). "
 
-        "3. ALL VISUAL ELEMENTS AND TEXT BOXES MUST HEAVILY OVERLAP each other to create profound depth, resembling a creative, hand-made scrapbook with varied layering. "
-        # ↑【変更点】「CHARACTER」という言葉すら消して「ALL VISUAL ELEMENTS（全ての視覚要素）」に統一したよ。これで数に関わらず「重ねろ」という指示だけが通る！
+        "3. SCENARIO A (Single Subject): If only ONE character is generated, its expression and pose MUST be derived EXCLUSIVELY from the 'TITLE' and 'HIGHLIGHTS'. "
+        # ↑【ここが核心！】1人の時は「TITLEとHIGHLIGHTS」だけを見ろ、と断言！
+        "CRITICAL: Disregard the emotional tone of any other minor details or actions (e.g., '喜びの舞') to prevent mood bleeding. "
+        # ↑【感情汚染の排除】他の細かい文字のハッピーさに引っ張られるのを「厳禁」にしたよ。
 
-        "4. Use asymmetrical, irregular placement where elements break out of an invisible grid, ensuring 'structured disarray'. "
-        # ↑【配置】整列を壊して「動き」を出すための指示。
+        "4. SCENARIO B (Multiple Subjects): If MULTIPLE characters are generated, each instance MUST be placed in close proximity to a specific text block and reflect THAT block's emotion only. "
+        # ↑【複数の時】こっちは変わらず、文字と顔をセットで独立させるロジック。
 
-        "5. COLLAGE DECORATION RULE: Integrate the background as the base collage layer with small decorative elements like watercolor doodles, leaves, small pins, or stamps. Ensure a creative, editorial feel."
-        # ↑【装飾】感情の話は一切なし。純粋なデコレーション指示だよ。
+        "5. VISUAL STYLE: ALL elements MUST HEAVILY OVERLAP to create depth, resembling a creative, hand-made scrapbook. Elements break out of an invisible grid for a dynamic feel. "
+
+        "6. DECORATION: Integrate background with watercolor doodles, leaves, pins, or stamps. No repetition."
     ),
     "余白重視（ネガティブスペース）（空白を活かして上品さや高級感を演出）": "A minimalist composition prioritizing a very large amount of clean negative space, creating a profound sense of elegance, luxury, and focus.",
     "シンメトリー（左右対称）（誠実さや静寂を伝える）": "A perfectly symmetrical composition, creating a sense of visual integrity, solemnity, and peace.",
