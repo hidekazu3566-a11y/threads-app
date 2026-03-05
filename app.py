@@ -77,14 +77,18 @@ composition_dict = {
         "The subject must be the emotional heart of this framed composition."
     ),
     "マス目・タイル配置（均等に枠を分けて情報を整理する）": (
-        "A systematic grid or tile layout where the NUMBER OF TILES MUST EXACTLY MATCH the total count of text items provided (Title + each unique detail). "
-        # ↑【変更点】「マスの数は、提供されたテキスト項目の総数と厳密に一致させること」という指示にしたよ！
-        
-        "DO NOT merge multiple text items into a single tile. Every single line of text from the list MUST have its own dedicated, independent tile. "
-        # ↑【変更点】「項目を統合するな！1行につき1マス必ず用意しろ！」と念押し！
+        "A systematic grid layout where 'Text Blocks' (units of text separated by empty entries in the list) are the fundamental units for each tile. "
+        # ↑【変更点】「行」ではなく「空白で区切られた塊」を単位に指定！
 
-        "The subject interacts with each tile, adapting its expression and pose to the specific mood of the text within that local tile. "
-        "Ensure an organizing sense of unity and structure."
+        "CRITICAL UNIT RULE: Use empty entries in the list as the ONLY hard boundaries for new tiles. Every text unit located between blanks MUST be rendered in its own sovereign, independent tile. "
+        # ↑【新ルール】空白を「絶対的なマスの区切り」として定義したよ。
+
+        "DO NOT merge separate blocks (e.g., '喜びの舞をする' and 'わっしょいわっしょい') into one tile if a blank entry exists between them. Treat each block as a distinct data point. "
+        # ↑【事故防止】空白があるなら、どんな短い言葉も絶対に統合させない！
+
+        "The number of tiles must exactly match the total count of non-empty text blocks. Ensure structural unity."
+        # ↑【整合性】マスの数をブロックの総数とピッタリ一致させる指示だよ。
+    ),
     ),
     "雑誌風コラージュ（あえて崩しておしゃれ感や動きを出す）": "CRITICAL RULE: Extreme 'broken grid' editorial collage layout. TEXT BOXES MUST HAVE TORN PAPER EDGES and appear like paper scraps pinned to a background. THE CHARACTER AND TEXT BOXES MUST HEAVILY OVERLAP each other to create depth. Use asymmetrical, irregular placement where elements break out of an invisible grid. The overall feel must be like a creative, layered scrapbook or a high-fashion magazine spread with watercolor textures. Add decorative elements like small flowers, leaves, or cute doodles in the empty spaces to balance the composition.",
     "余白重視（ネガティブスペース）（空白を活かして上品さや高級感を演出）": "A minimalist composition prioritizing a very large amount of clean negative space, creating a profound sense of elegance, luxury, and focus.",
