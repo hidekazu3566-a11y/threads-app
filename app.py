@@ -23,7 +23,14 @@ composition_dict = {
         "The character should be placed in the bottom-right corner or integrated as a vertical anchor on the left, but MUST NOT obstruct the left-aligned text path. "
         "Avoid scattered speech bubbles; use clean, structured list panels for a professional editorial feel."
     ),
-    "三分割法・黄金比・白銀比（安定と美しさの比率）": "Strict composition adherence to the Rule of Thirds or Golden Ratio logic to place key elements and focus. TEXT ELEMENTS (title, details) MUST BE ARRANGED to balance the negative space. Zero centered objects. ABSOLUTELY NO VISIBLE GRID LINES OR CROSSHAIRS.",
+    "三分割法・黄金比・白銀比（安定と美しさの比率）": (
+        "Strict composition adherence to the Rule of Thirds logic. "
+        "CRITICAL LAYOUT RULE: "
+        "1. Position the main subject (character) dynamically on one of the four intersection points (power points) of the grid (e.g., bottom-right). " # 👈 キャラを交点に配置
+        "2. Group and arrange all text elements (title, details) neatly within the vertical third section opposite the character (e.g., the left third). " # 👈 テキストを反対側の1/3にグループ化
+        "3. Utilize the remaining areas as clean, breathable negative space to enhance elegance and focus. " # 👈 残りをエモい余白にする
+        "ABSOLUTELY NO VISIBLE GRID LINES, CROSSHAIRS, OR INTERSECTION MARKS." # 👈 グリッド線は絶対に出さない（これは維持！）
+    ),
   "中央集中型（日の丸構図・感情ポーズ連動）": (
         "A precise, direct centered composition (Hinomaru style) with all focus exclusively on the central subject. "
         "CRITICAL EMOTION-EXPRESSION SYNC RULE: The AI MUST analyze the specific conceptual meaning of the Japanese text provided for each individual image in the sequence. "
