@@ -59,7 +59,23 @@ composition_dict = {
         "- If the TITLE implies joy, success, or excitement (e.g., 'happy', 'achieved'), depict a genuinely joyful and bright smile. "
         "- The character's emotion must strictly reflect the core mood stated in the title to maintain empathy with the viewer."
     ),
-    "額縁構図（外枠で囲って中央を際立たせる）": "CRITICAL RULE: A visible, distinct decorative frame or border surrounding the entire composition, emphasizing the central content. The frame style must match the chosen genre and art style.",
+    "額縁構図（外枠で囲って中央を際立たせる）": (
+        "CRITICAL FRAME & SINGLE SUBJECT RULE: "
+        "1. DO NOT draw a literal, physical wooden picture frame. Create a 'decorative border' (e.g., botanical vines, patterns, or motifs) framing the outer edges. "
+        "2. STRICT SINGLE SUBJECT LIMIT: Exactly ONE main subject from the provided image MUST be placed as the central focus. DO NOT depict multiple versions of the subject. "
+
+        "EMOTION SYNC RULE: The AI MUST analyze the overall sentiment and energy of the ACTUAL TEXT CONTENT provided in the 'TITLE' and 'HIGHLIGHTS' fields. "
+        # ↑【ここ重要！】「TITLE」という単語を探すんじゃなく、そこに入力された「具体的な文章（中身）」を読み取れ、と指示したよ！
+
+        "Adapt the subject's facial expression and pose to perfectly match the intensity of the mood found in that specific text: "
+        "- If the text content implies negative emotions (struggle, pain, worry), ZERO TOLERANCE for smiles. Reflect the specific depth of distress found in the words. "
+        # ↑【解説】入力された文章が「悩み」系なら笑顔禁止。言葉の重みに表情を100%合わせるよ。
+
+        "- If the text content implies positive emotions (joy, relief, success), reflect a joyful expression that scales directly with the energy and volume of those words. "
+        # ↑【解説】入力された文章が「喜び」系なら、その言葉の勢いに合わせて表情を明るくさせるよ。
+
+        "The subject must be the emotional heart of this framed composition."
+    ),
     "マス目・タイル配置（均等に枠を分けて情報を整理する）": "A clean, organized composition structured by a precise grid or tile layout, conveying a strong sense of unity and structure.",
     "雑誌風コラージュ（あえて崩しておしゃれ感や動きを出す）": "CRITICAL RULE: Extreme 'broken grid' editorial collage layout. TEXT BOXES MUST HAVE TORN PAPER EDGES and appear like paper scraps pinned to a background. THE CHARACTER AND TEXT BOXES MUST HEAVILY OVERLAP each other to create depth. Use asymmetrical, irregular placement where elements break out of an invisible grid. The overall feel must be like a creative, layered scrapbook or a high-fashion magazine spread with watercolor textures. Add decorative elements like small flowers, leaves, or cute doodles in the empty spaces to balance the composition.",
     "余白重視（ネガティブスペース）（空白を活かして上品さや高級感を演出）": "A minimalist composition prioritizing a very large amount of clean negative space, creating a profound sense of elegance, luxury, and focus.",
