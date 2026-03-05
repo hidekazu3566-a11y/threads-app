@@ -112,7 +112,6 @@ composition_dict = {
         "7. DECORATION: Integrate background with watercolor doodles, leaves, pins, or stamps. Ensure a creative feel. No repetition."
     ),
    "余白重視（極限のネガティブスペース・対角線構図）": (
-       "余白重視（極限のネガティブスペース・感情シンクロ）": (
         "ULTIMATE MINIMALIST DIAGONAL RULE: "
         # 👇【圧倒的な余白】画面の85%以上を完全な「無」にする。中央揃えは禁止。
         "1. MASSIVE EMPTY VOID: At least 85-90% of the canvas MUST be pure, uninterrupted empty space. ABSOLUTELY PROHIBITED: Do not place elements in the center. Avoid 'Hinomaru' (centered) composition. "
