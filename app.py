@@ -29,7 +29,8 @@ composition_dict = {
         "1. EXACTLY ONE main character MUST be dynamically positioned on ONE randomly chosen intersection point (power point) of the grid (e.g., top-left, bottom-right). DO NOT fix the position to a single corner. "
         "2. Group and arrange ALL text elements neatly within the vertical third section opposite the chosen character placement to perfectly balance the composition. "
         "3. Utilize the remaining areas as clean, breathable negative space to enhance elegance and focus. "
-        "CRITICAL EMOTION RULE: The AI MUST deeply analyze the core emotional tone of the overall provided text. The single character's expression MUST perfectly match this specific mood (e.g., deep contemplation, sadness, or joy). AVOID a generic 'default smile' UNLESS the text is genuinely positive. "
+        # 👇 ここに「強調文字（highlight text）」も判断基準に入れるように追加！
+        "CRITICAL EMOTION RULE: The AI MUST NOT analyze the overall tone of the text. Instead, DRAMATICALLY adapt the single character's facial expressions, body language, and poses to perfectly match the SPECIFIC meaning of the TITLE, HIGHLIGHTED TEXT, and specific details provided for that individual image. AVOID a generic 'default smile' UNLESS the specific local text is genuinely positive. "
         "ABSOLUTELY NO VISIBLE GRID LINES OR CROSSHAIRS."
     ),
   "中央集中型（日の丸構図・感情ポーズ連動）": (
