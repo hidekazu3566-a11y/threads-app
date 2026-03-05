@@ -51,7 +51,14 @@ composition_dict = {
         "TEXT PLACEMENT: If text is to be rendered, place it clearly above or below the subject, ensuring it NEVER obscures the face. "
         "Maintain high consistency of the subject and style across all generated images without adding any unrequested elements."
     ),
-    "対角線・斜め分割（動きとリズム、スピード感を出す）": "A dynamic composition with key elements arranged strictly along strong diagonal lines, conveying movement and speed.",
+    "対角線・斜め分割（動きとリズム、スピード感を出す）": (
+        "A dynamic composition with key elements arranged strictly along strong diagonal lines, conveying movement and speed. "
+        "CRITICAL EMOTION-EXPRESSION SYNC RULE: The AI MUST deeply analyze the SPECIFIC meaning of the TITLE text first. "
+        "SPECIFIC MEANING RULE: "
+        "- If the TITLE implies struggle, worry, or pain (e.g., 'not rewarded', 'tired'), depict visible internal conflict and knitted brows. ZERO TOLERANCE for smiles. "
+        "- If the TITLE implies joy, success, or excitement (e.g., 'happy', 'achieved'), depict a genuinely joyful and bright smile. "
+        "- The character's emotion must strictly reflect the core mood stated in the title to maintain empathy with the viewer."
+    ),
     "額縁構図（外枠で囲って中央を際立たせる）": "CRITICAL RULE: A visible, distinct decorative frame or border surrounding the entire composition, emphasizing the central content. The frame style must match the chosen genre and art style.",
     "マス目・タイル配置（均等に枠を分けて情報を整理する）": "A clean, organized composition structured by a precise grid or tile layout, conveying a strong sense of unity and structure.",
     "雑誌風コラージュ（あえて崩しておしゃれ感や動きを出す）": "CRITICAL RULE: Extreme 'broken grid' editorial collage layout. TEXT BOXES MUST HAVE TORN PAPER EDGES and appear like paper scraps pinned to a background. THE CHARACTER AND TEXT BOXES MUST HEAVILY OVERLAP each other to create depth. Use asymmetrical, irregular placement where elements break out of an invisible grid. The overall feel must be like a creative, layered scrapbook or a high-fashion magazine spread with watercolor textures. Add decorative elements like small flowers, leaves, or cute doodles in the empty spaces to balance the composition.",
