@@ -111,7 +111,7 @@ composition_dict = {
 
         "7. DECORATION: Integrate background with watercolor doodles, leaves, pins, or stamps. Ensure a creative feel. No repetition."
     ),
-   "余白重視（極限のネガティブスペース・対角線構図）": (
+   "余白重視（極限のネガティブスペース・対角線構図・背景ランダム）": (
         "ULTIMATE MINIMALIST DIAGONAL RULE: "
         # 👇【圧倒的な余白】画面の85%以上を完全な「無」にする。中央揃えは禁止。
         "1. MASSIVE EMPTY VOID: At least 85-90% of the canvas MUST be pure, uninterrupted empty space. ABSOLUTELY PROHIBITED: Do not place elements in the center. Avoid 'Hinomaru' (centered) composition. "
@@ -126,9 +126,11 @@ composition_dict = {
         # 👇【被写体は1名・極小・孤立】被写体は1名のみ！タイトルの反対側で、完全に独りぼっち。サイズは米粒のように極小。
         "4. MICROSCOPIC SINGLE SUBJECT: Generate EXACTLY ONE character. It must be tiny (under 10% of canvas) and stand completely ALONE in its corner. No boxes, no nearby text. "
 
-        # 👇【感情の100%同期】ここが重要！「笑顔禁止」とは書かず、タイトルの感情にだけ合わせる。
-        # タイトルが悲しければ悲しく、嬉しければ嬉しく。テロップのポジティブさに釣られるのを厳禁にするよ。
+        # 👇【感情の100%同期：完全版】途切れてた部分を補完！テロップに釣られず、タイトルの感情だけを鏡のように反映させる。
         "5. PURE EMOTION SYNC: The character's expression MUST sync 100% with the 'TITLE' mood. IGNORE all moods or positive words in the detail text. The character acts as a mirror to the TITLE only."
+
+        # 👇【背景色のランダム化】背景の色とトーンを毎回ランダムに変更！明るい空から切ない夕暮れ、深い闇まで、色のバリエーションで余白のエモさを変えるよ。
+        "6. RANDOMIZED EMOTIONAL VOID TONE: The background color and tone MUST be completely RANDOMIZED for each generation, varying from bright daylight to subdued dusk to dark moody silence. The negative space must have a unique emotional depth (e.g., wistful, hopeful, contemplative) through color."
     ),
     "シンメトリー（左右対称）（誠実さや静寂を伝える）": "A perfectly symmetrical composition, creating a sense of visual integrity, solemnity, and peace.",
     "トライアングル（三角構図）（圧倒的な安定感や成長を出す）": "CRITICAL RULE: Strict implied triangle composition created ONLY by the non-linear, dynamic placement of elements. ABSOLUTELY NO VISIBLE TRIANGLE SHAPES, OUTLINES, ARROWS, OR CONNECTING LINES. The connection between elements must be completely invisible and purely psychological. Conveying extreme stability through powerful diagonal flow. Focal point character MUST BE PLACED at a dynamically staggered apex, and supporting elements (e.g., text blocks) MUST BE ARRANGED to form a distinct, wide base. DO NOT draw any lines between the character and the text. DO NOT align character and text blocks vertically; use strong diagonal angles to create a visual pyramid flow.",
