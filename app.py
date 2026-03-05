@@ -340,7 +340,7 @@ if st.button("🪄 読者の心を動かす図解プロンプトを生成する"
                 "alignment": text_align
             },
             "text_background": bg_instruction,
-            "composition_structure": composition_instruction,
+            "composition_structure": composition_dict[selected_composition],
             "brand_color_theme": final_color,
             "emotional_goal": emotion,
             "aspect_ratio": ratio
@@ -357,8 +357,7 @@ if st.button("🪄 読者の心を動かす図解プロンプトを生成する"
             "Strictly follow the chosen 'composition_structure'. If the selected style is a single-frame composition (like Hinomaru), DO NOT add any grids, sub-panels, or collage elements.",
             "EMPTY SLOT PROTECTOR: If text is empty, do not draw any boxes or frames.",
             text_rule,
-           "CRITICAL EMOTION-EXPRESSION SYNC RULE: The AI MUST analyze the conceptual meaning and emotional tone of the provided text items. It MUST dramatically adapt the main subject's facial expressions, body language, and poses to perfectly match the mood of each specific text (e.g., transition from doubt/sadness to clarity/joy). Avoid generic expressions or frozen smiles.",
-            "Maintain character consistency and high quality."
+          "CRITICAL EMOTION-EXPRESSION SYNC RULE: The AI MUST analyze the SPECIFIC meaning of the text items and adapt the character's expression to match that mood. Avoid generic 'default smiles' UNLESS positive."
         ]
     }
 
