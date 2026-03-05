@@ -340,7 +340,7 @@ if st.button("🪄 読者の心を動かす図解プロンプトを生成する"
                 "alignment": text_align
             },
             "text_background": bg_instruction,
-            "composition_structure": composition_dict[selected_composition],
+           "composition_structure": composition_dict[composition_ui],
             "brand_color_theme": final_color,
             "emotional_goal": emotion,
             "aspect_ratio": ratio
