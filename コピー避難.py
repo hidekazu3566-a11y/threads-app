@@ -23,15 +23,24 @@ composition_dict = {
         "The character should be placed in the bottom-right corner or integrated as a vertical anchor on the left, but MUST NOT obstruct the left-aligned text path. "
         "Avoid scattered speech bubbles; use clean, structured list panels for a professional editorial feel."
     ),
-  "三分割法・黄金比・白銀比（安定と美しさの比率）": (
+ "三分割法・黄金比・白銀比（安定と美しさの比率）": (
         "Strict composition adherence to the Rule of Thirds logic. "
         "CRITICAL LAYOUT RULE: "
         # 👇 ここを最強レベルに強化！禁止ルールを追加。
-        "1. STRICT SINGLE CHARACTER LIMIT: Under NO circumstances are multiple depictions of the character allowed in the same image frame. Exactly one instance of the main character MUST be present. "
+        "1. STRICT SINGLE CHARACTER LIMIT: Under NO circumstances are multiple depictions of the character allowed in the same image frame. Exactly one instance of the main character MUST be present. DO NOT use multiple poses or frames of the same character. "
         "2. Position this single main character dynamically on ONE of the four grid intersection points (power points: top-left, top-right, bottom-left, bottom-right). This single location MUST be selected randomly for each generated image. "
         "3. Group and arrange ALL text elements neatly within the vertical third section opposite the chosen single character placement to perfectly balance the composition. Utilize remaining areas as clean, breathable negative space. "
+
         # 👇 表情同期の指示も「1匹に合わせる」ように再調整！
-        "CRITICAL EMOTION RULE: The AI MUST deeply analyze the SPECIFIC meaning of the LOCAL title text, local highlighted text, and prioritize matching the primary detailed text provided for that individual image. DRAMATICALLY adapt the single character's expressions, body language, and poses to perfectly match this mood. AVOID generic expressions or generic 'default smile' UNLESS the specific local text is genuinely positive. "
+        # 【1. 表情同期の指示】
+        "EMOTION SYNC RULE: DRAMATICALLY adapt the single character's facial expressions, body language, and poses to perfectly match the mood. "
+        # 【2. タイトルと強調文字の指示】
+        "HIGHLIGHT ANALYSIS RULE: The AI MUST deeply analyze the SPECIFIC meaning of BOTH the LOCAL TITLE TEXT and LOCAL HIGHLIGHTED TEXT. "
+        # 【3. 具体的意味に基づく表情の出し分け】
+        "SPECIFIC MEANING RULE: "
+        "- If the SPECIFIC meaning implies struggle (e.g., 'not rewarded', 'tired'), depict visible internal conflict and knitted brows. ZERO TOLERANCE for smiles. "
+        "- If the SPECIFIC meaning implies relief or joy (e.g., 'praise', 'warm drink'), depict a genuinely joyful smile. "
+
         "ABSOLUTELY NO VISIBLE GRID LINES OR CROSSHAIRS."
     ),
   "中央集中型（日の丸構図・感情ポーズ連動）": (
@@ -42,9 +51,41 @@ composition_dict = {
         "TEXT PLACEMENT: If text is to be rendered, place it clearly above or below the subject, ensuring it NEVER obscures the face. "
         "Maintain high consistency of the subject and style across all generated images without adding any unrequested elements."
     ),
-    "対角線・斜め分割（動きとリズム、スピード感を出す）": "A dynamic composition with key elements arranged strictly along strong diagonal lines, conveying movement and speed.",
-    "額縁構図（外枠で囲って中央を際立たせる）": "CRITICAL RULE: A visible, distinct decorative frame or border surrounding the entire composition, emphasizing the central content. The frame style must match the chosen genre and art style.",
-    "マス目・タイル配置（均等に枠を分けて情報を整理する）": "A clean, organized composition structured by a precise grid or tile layout, conveying a strong sense of unity and structure.",
+    "対角線・斜め分割（動きとリズム、スピード感を出す）": (
+        "A dynamic composition with key elements arranged strictly along strong diagonal lines, conveying movement and speed. "
+        "CRITICAL EMOTION-EXPRESSION SYNC RULE: The AI MUST deeply analyze the SPECIFIC meaning of the TITLE text first. "
+        "SPECIFIC MEANING RULE: "
+        "- If the TITLE implies struggle, worry, or pain (e.g., 'not rewarded', 'tired'), depict visible internal conflict and knitted brows. ZERO TOLERANCE for smiles. "
+        "- If the TITLE implies joy, success, or excitement (e.g., 'happy', 'achieved'), depict a genuinely joyful and bright smile. "
+        "- The character's emotion must strictly reflect the core mood stated in the title to maintain empathy with the viewer."
+    ),
+    "額縁構図（外枠で囲って中央を際立たせる）": (
+        "CRITICAL FRAME & SINGLE SUBJECT RULE: "
+        "1. DO NOT draw a literal, physical wooden picture frame. Create a 'decorative border' (e.g., botanical vines, patterns, or motifs) framing the outer edges. "
+        "2. STRICT SINGLE SUBJECT LIMIT: Exactly ONE main subject from the provided image MUST be placed as the central focus. DO NOT depict multiple versions of the subject. "
+
+        "EMOTION SYNC RULE: The AI MUST analyze the overall sentiment and energy of the ACTUAL TEXT CONTENT provided in the 'TITLE' and 'HIGHLIGHTS' fields. "
+        # ↑【ここ重要！】「TITLE」という単語を探すんじゃなく、そこに入力された「具体的な文章（中身）」を読み取れ、と指示したよ！
+
+        "Adapt the subject's facial expression and pose to perfectly match the intensity of the mood found in that specific text: "
+        "- If the text content implies negative emotions (struggle, pain, worry), ZERO TOLERANCE for smiles. Reflect the specific depth of distress found in the words. "
+        # ↑【解説】入力された文章が「悩み」系なら笑顔禁止。言葉の重みに表情を100%合わせるよ。
+
+        "- If the text content implies positive emotions (joy, relief, success), reflect a joyful expression that scales directly with the energy and volume of those words. "
+        # ↑【解説】入力された文章が「喜び」系なら、その言葉の勢いに合わせて表情を明るくさせるよ。
+
+        "The subject must be the emotional heart of this framed composition."
+    ),
+    "マス目・タイル配置（均等に枠を分けて情報を整理する）": (
+        "A systematic grid or tile layout where the NUMBER OF TILES MUST EXACTLY MATCH the total count of text items provided (Title + each unique detail). "
+        # ↑【変更点】「マスの数は、提供されたテキスト項目の総数と厳密に一致させること」という指示にしたよ！
+        
+        "DO NOT merge multiple text items into a single tile. Every single line of text from the list MUST have its own dedicated, independent tile. "
+        # ↑【変更点】「項目を統合するな！1行につき1マス必ず用意しろ！」と念押し！
+
+        "The subject interacts with each tile, adapting its expression and pose to the specific mood of the text within that local tile. "
+        "Ensure an organizing sense of unity and structure."
+    ),
     "雑誌風コラージュ（あえて崩しておしゃれ感や動きを出す）": "CRITICAL RULE: Extreme 'broken grid' editorial collage layout. TEXT BOXES MUST HAVE TORN PAPER EDGES and appear like paper scraps pinned to a background. THE CHARACTER AND TEXT BOXES MUST HEAVILY OVERLAP each other to create depth. Use asymmetrical, irregular placement where elements break out of an invisible grid. The overall feel must be like a creative, layered scrapbook or a high-fashion magazine spread with watercolor textures. Add decorative elements like small flowers, leaves, or cute doodles in the empty spaces to balance the composition.",
     "余白重視（ネガティブスペース）（空白を活かして上品さや高級感を演出）": "A minimalist composition prioritizing a very large amount of clean negative space, creating a profound sense of elegance, luxury, and focus.",
     "シンメトリー（左右対称）（誠実さや静寂を伝える）": "A perfectly symmetrical composition, creating a sense of visual integrity, solemnity, and peace.",
@@ -331,7 +372,7 @@ if st.button("🪄 読者の心を動かす図解プロンプトを生成する"
                 "alignment": text_align
             },
             "text_background": bg_instruction,
-            "composition_structure": composition_instruction,
+           "composition_structure": composition_dict[composition_ui],
             "brand_color_theme": final_color,
             "emotional_goal": emotion,
             "aspect_ratio": ratio
@@ -348,8 +389,7 @@ if st.button("🪄 読者の心を動かす図解プロンプトを生成する"
             "Strictly follow the chosen 'composition_structure'. If the selected style is a single-frame composition (like Hinomaru), DO NOT add any grids, sub-panels, or collage elements.",
             "EMPTY SLOT PROTECTOR: If text is empty, do not draw any boxes or frames.",
             text_rule,
-           "CRITICAL EMOTION-EXPRESSION SYNC RULE: The AI MUST analyze the conceptual meaning and emotional tone of the provided text items. It MUST dramatically adapt the main subject's facial expressions, body language, and poses to perfectly match the mood of each specific text (e.g., transition from doubt/sadness to clarity/joy). Avoid generic expressions or frozen smiles.",
-            "Maintain character consistency and high quality."
+          "CRITICAL EMOTION-EXPRESSION SYNC RULE: The AI MUST analyze the SPECIFIC meaning of the text items and adapt the character's expression to match that mood. Avoid generic 'default smiles' UNLESS positive."
         ]
     }
 
