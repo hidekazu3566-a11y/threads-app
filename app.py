@@ -120,17 +120,17 @@ composition_dict = {
         # 情報（タイトル＋テロップ）を一つのコーナーに固め、被写体は正反対の隅に置く。これで余白を最大化！
         "2. DIAGONAL OPPOSITE LAYOUT: If the information block (TITLE + details) is in the TOP-LEFT, the character MUST be in the BOTTOM-RIGHT. If the info block is in the TOP-RIGHT, the character MUST be in the BOTTOM-LEFT. "
 
-        # 👇【左揃えの情報ブロック】タイトルとテロップをセットにして、綺麗に左揃え（Left-Aligned）で配置。
-        "3. REFINED TEXT CLUSTER: The 'TITLE' and all detail text (teroppu) must be grouped together in one corner, perfectly LEFT-ALIGNED. The TITLE should be elegant but not oversized. "
-
+        # 👇【修正】テキストブロックの掟に「背景色に合わせた文字色の自動選択」を追加
+        "3. REFINED TEXT CLUSTER with CRITICAL READABILITY: The 'TITLE' and all detail text (teroppu) must be perfectly LEFT-ALIGNED in one corner. The AI MUST automatically and completely ADJUST the text color to be WHITE or a very bright cream color if the background tone is dark (e.g., dusk, moody deep colors). Black text is ONLY allowed on very bright/light backgrounds. "
         # 👇【被写体は1名・極小・孤立】被写体は1名のみ！タイトルの反対側で、完全に独りぼっち。サイズは米粒のように極小。
         "4. MICROSCOPIC SINGLE SUBJECT: Generate EXACTLY ONE character. It must be tiny (under 10% of canvas) and stand completely ALONE in its corner. No boxes, no nearby text. "
 
         # 👇【感情の100%同期：完全版】途切れてた部分を補完！テロップに釣られず、タイトルの感情だけを鏡のように反映させる。
         "5. PURE EMOTION SYNC: The character's expression MUST sync 100% with the 'TITLE' mood. IGNORE all moods or positive words in the detail text. The character acts as a mirror to the TITLE only."
 
-        # 👇【背景色のランダム化】背景の色とトーンを毎回ランダムに変更！明るい空から切ない夕暮れ、深い闇まで、色のバリエーションで余白のエモさを変えるよ。
-        "6. RANDOMIZED EMOTIONAL VOID TONE: The background color and tone MUST be completely RANDOMIZED for each generation, varying from bright daylight to subdued dusk to dark moody silence. The negative space must have a unique emotional depth (e.g., wistful, hopeful, contemplative) through color."
+        # 👇【6. 背景色のランダム化と視認性の確保】
+        # 背景を毎回ランダム（昼、夕暮れ、深夜など）に変えつつ、文字色を背景に合わせて白か黒に自動調整させる！
+        "6. RANDOMIZED EMOTIONAL VOID TONE WITH VISIBILITY: The background color and tone MUST be completely RANDOMIZED for each generation (e.g., bright daylight, subdued dusk, dark moody silence). CRITICAL: The AI MUST automatically adjust the text color to WHITE for dark backgrounds and BLACK for light backgrounds to ensure 100% legibility. Readability is the absolute highest priority."
     ),
     "シンメトリー（左右対称）（誠実さや静寂を伝える）": "A perfectly symmetrical composition, creating a sense of visual integrity, solemnity, and peace.",
     "トライアングル（三角構図）（圧倒的な安定感や成長を出す）": "CRITICAL RULE: Strict implied triangle composition created ONLY by the non-linear, dynamic placement of elements. ABSOLUTELY NO VISIBLE TRIANGLE SHAPES, OUTLINES, ARROWS, OR CONNECTING LINES. The connection between elements must be completely invisible and purely psychological. Conveying extreme stability through powerful diagonal flow. Focal point character MUST BE PLACED at a dynamically staggered apex, and supporting elements (e.g., text blocks) MUST BE ARRANGED to form a distinct, wide base. DO NOT draw any lines between the character and the text. DO NOT align character and text blocks vertically; use strong diagonal angles to create a visual pyramid flow.",
