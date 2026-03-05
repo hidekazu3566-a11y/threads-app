@@ -26,11 +26,10 @@ composition_dict = {
     "三分割法・黄金比・白銀比（安定と美しさの比率）": (
         "Strict composition adherence to the Rule of Thirds logic. "
         "CRITICAL LAYOUT RULE: "
-        "1. Position the main subject dynamically on the grid's intersection points (power points). The AI can freely choose to display a SINGLE character or MULTIPLE characters. "
-        "2. Group and arrange all text elements neatly within the vertical third section opposite the character(s) (e.g., the right or left third). "
-        "3. Utilize the remaining areas as clean, breathable negative space to enhance elegance. "
-        # 👇 感情の指示を「内容に合わせて完璧に切り替える」ように修正！
-        "CRITICAL EMOTION RULE: The AI MUST deeply analyze the core emotional tone of the provided text. The character's expression MUST perfectly match this specific mood (e.g., joyful for success, worried for problems, determined for goals). AVOID a generic, disconnected 'default smile' UNLESS the text is genuinely positive. If using MULTIPLE characters, sync expressions sequentially to each text item. "
+        "1. EXACTLY ONE main character MUST be dynamically positioned on ONE randomly chosen intersection point (power point) of the grid (e.g., top-left, bottom-right). DO NOT fix the position to a single corner. "
+        "2. Group and arrange ALL text elements neatly within the vertical third section opposite the chosen character placement to perfectly balance the composition. "
+        "3. Utilize the remaining areas as clean, breathable negative space to enhance elegance and focus. "
+        "CRITICAL EMOTION RULE: The AI MUST deeply analyze the core emotional tone of the overall provided text. The single character's expression MUST perfectly match this specific mood (e.g., deep contemplation, sadness, or joy). AVOID a generic 'default smile' UNLESS the text is genuinely positive. "
         "ABSOLUTELY NO VISIBLE GRID LINES OR CROSSHAIRS."
     ),
   "中央集中型（日の丸構図・感情ポーズ連動）": (
