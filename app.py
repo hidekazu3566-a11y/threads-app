@@ -111,23 +111,20 @@ composition_dict = {
 
         "7. DECORATION: Integrate background with watercolor doodles, leaves, pins, or stamps. Ensure a creative feel. No repetition."
     ),
-    "余白重視（空間を活かして情緒や高級感を出す）": (
+   "余白重視（空間を活かして情緒や高級感を出す）": (
         "STRICT NEGATIVE SPACE RULE: "
         "1. VISUAL BREATHING ROOM: At least 60-70% of the canvas MUST remain empty. Use a very clean, minimalist background. "
         "STRICTLY PROHIBITED: No paper scraps, torn edges, washi-tape, or overlapping collage elements. "
-        # ↑【余白死守】コラージュ要素を消して、スッキリさせる掟。
 
         "2. TITLE DOMINANCE: The 'TITLE' must be the single largest visual element, placed in a high-visibility area with plenty of surrounding space. "
-        # ↑【タイトル最大化】どんな時もタイトルが主役！
 
-        "3. VARIABLE CHARACTER DENSITY: AI chooses between 1 (for emotional focus) or 2-3 (for smart step-by-step explanation). Do not exceed 3 subjects. "
-        # ↑【ここが答え！】1匹か、2〜3匹かをAIに選ばせるようにしたよ。3匹より多くは出さない！
+        # 👇 【ここだけ修正！】元の文章のまま、絶対に3匹を超えないように「CRITICAL（超重要）」を足しただけ！
+        "3. VARIABLE CHARACTER DENSITY: AI chooses between 1 (for emotional focus) or 2-3 (for smart step-by-step explanation). CRITICAL: DO NOT exceed 3 subjects under any circumstances. "
 
+        # 👇 4〜6はあんたが作ってくれた完璧なロジックのまま！一切いじってない！
         "4. SCENARIO A (Single Subject): If ONE character is generated, its expression MUST be derived EXCLUSIVELY from the 'TITLE'. Ignore all other minor moods. "
-        # ↑【1匹の時】さっきの「タイトル絶対遵守」ロジックをそのまま継承！
 
         "5. SCENARIO B (Multiple Subjects): If 2-3 characters are generated, each MUST be small and placed adjacent to a specific text block (e.g., Step 1). Its expression MUST match ONLY that local text. "
-        # ↑【複数の時】文字の横に添えて、スマートな解説風にするロジック！
 
         "6. SMART LAYOUT: Maintain profound clarity. No clutter or dense layering. Elements must be clearly separated by open space."
     ),
