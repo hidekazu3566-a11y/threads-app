@@ -131,6 +131,23 @@ composition_dict = {
         # 背景を毎回ランダム（昼、夕暮れ、深夜など）に変えつつ、文字色を背景に合わせて白か黒に自動調整させる！
         "6. RANDOMIZED EMOTIONAL VOID TONE WITH VISIBILITY: The background color and tone MUST be completely RANDOMIZED for each generation (e.g., bright daylight, subdued dusk, dark moody silence). CRITICAL: The AI MUST automatically adjust the text color to WHITE for dark backgrounds and BLACK for light backgrounds to ensure 100% legibility. Readability is the absolute highest priority."
     ),
+    "洗練されたシンメトリー（左右対称 × 強弱のコントラスト）": (
+        "PRECISE VERTICAL SYMMETRY WITH HIGH CONTRAST: "
+        # 👇【垂直軸のバランス】すべての要素を中央の縦ラインに整列させる。
+        "1. CENTRAL AXIS ALIGNMENT: Align all key elements (Title, Text, and Character) strictly along the vertical center axis to create perfect bilateral symmetry. "
+
+        # 👇【サイズのコントラスト】タイトルは大きく、キャラは極小に。これで日の丸構図を回避！
+        "2. SIZE CONTRAST (MACRO vs MICRO): The 'TITLE' must be large and visually dominant at the top. In contrast, the single character MUST be microscopic (less than 8% of the canvas) at the bottom. This scale difference is critical to avoid a generic centered look. "
+
+        # 👇【ウェイトのコントラスト】文字の太さに圧倒的な差をつける。
+        "3. TYPOGRAPHIC CONTRAST: Use a heavy, bold font for the main Title and a very thin, light font for the detail text. The visual weight must be clearly differentiated. "
+
+        # 👇【視認性のコントラスト】背景色と文字色の差を最大化。
+        "4. COLOR CONTRAST: Ensure high contrast between the background and elements (e.g., White text on dark moody background, or Black text on bright paper). Text must be 100% legible. "
+
+        # 👇【感情のミラーリング】ポツンと中央にいるキャラは、タイトルの感情を映す鏡。
+        "5. PURE EMOTION SYNC: The tiny character's expression must mirror the mood of the 'TITLE' exactly. If the title is wistful, the character is pensive; if happy, the character is joyful."
+    ), 
     "トライアングル（三角構図）（圧倒的な安定感や成長を出す）": "CRITICAL RULE: Strict implied triangle composition created ONLY by the non-linear, dynamic placement of elements. ABSOLUTELY NO VISIBLE TRIANGLE SHAPES, OUTLINES, ARROWS, OR CONNECTING LINES. The connection between elements must be completely invisible and purely psychological. Conveying extreme stability through powerful diagonal flow. Focal point character MUST BE PLACED at a dynamically staggered apex, and supporting elements (e.g., text blocks) MUST BE ARRANGED to form a distinct, wide base. DO NOT draw any lines between the character and the text. DO NOT align character and text blocks vertically; use strong diagonal angles to create a visual pyramid flow.",
     "4分割・ブロック配置（情報を4つのエリアに分ける）": "A clean, structured infographic layout divided into four distinct, equal quadrants. TEXT ELEMENTS are ARRANGED sequentially. CRITICAL: DO NOT add any extra numbering icons or labels if the input text already includes numbers. Place the provided text exactly as it is within each block.",
    "サクセス・ストーリー（成功への道のりと感情の変化）": (
