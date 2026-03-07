@@ -123,26 +123,32 @@ composition_dict = {
         # ↑【整合性】マスの数をブロックの総数とピッタリ一致させる指示だよ。
     ),
    "コラージュ型（雑誌風・カオスと洗練の黄金比）": (
-        "ELITE MAGAZINE-STYLE COLLAGE WITH ARTISTIC LAYERING & INTENSE TORN TEXTURES: "
+        "ELITE MAGAZINE-STYLE COLLAGE WITH INTENSE LAYERING & GAZE-DIRECTED FLOW: "
         
-        # 1. 【動的なナナメ配置と重なり】真っ直ぐ並べるのを禁止！
-        "1. DYNAMIC ANGLED LAYERING: PROHIBIT perfectly vertical or horizontal alignment. "
-        "Every scrap of paper MUST be slightly tilted or rotated at different angles to create a natural, hand-made scrapbook feel. "
-        "Overlapping is essential: Let papers partially cover each other to create a sense of depth and three-dimensionality. "
+        # 1. 【タイトルの絶対主役化】
+        "1. TITLE DOMINANCE: The 'TITLE' text MUST be the single most dominant visual anchor, significantly larger and bolder than ANY other text. "
 
-        # 2. 【「超」ビリビリ感と物理的な質感】
-        "2. HYPER-REALISTIC TORN EDGES: Enhance the 'Biribiri-kan'. Edges must be extremely rough, uneven, and show paper fibers. "
-        "Add realistic drop shadows under each paper scrap to make them look like they are physically lifted off the background. Use diverse fasteners like crooked masking tape, rusted clips, and tilted push pins. "
+        # 2. 【意図的な崩しと「超」ビリビリ感】
+        "2. HEAVILY OVERLAPPED, ARTISTIC LAYERING: PROHIBIT perfectly vertical or horizontal alignment. "
+        "Every scrap of paper MUST be slightly tilted. Use Drop Shadows and extreme Biribiri-kan (rough, hand-torn edges). "
 
-        # 3. 【猫の「コラージュ職人」化】
-        "3. ACTIVE CHARACTER INTERACTION: The character must not just stand there. "
-        "They should look like they are 'assembling' the collage—holding a corner of a paper, peeking from between layers, or stepping on a scrap while pointing at the text. Their gaze must stay fixed on the main message. "
+        # 3. 【多種多様な装飾の「融合」】水彩画、葉、ピン、スタンプを1つずつ厳選
+        "3. RICHLY DECORATED SCENARIO (WITHOUT REDUNDANCY): Integrate diverse background elements like watercolor doodles, leaves, and vintage pins. "
+        "Strictly PROHIBIT repeating the same icon theme. Each accent must be unique and high-quality. "
 
-        # 4. 【装飾のシンボル厳選（渋滞解消の維持）】
-        "4. REFINED SYMBOLIC ACCENTS: Keep the 'one theme, one icon' rule. One high-quality metaphor icon (like the scale) is perfect. No redundant clutter. "
+        # 4. 【猫の「職人」化 ＆ リストへの視線ロック（ここを最強化！）】
+        # 猫の目が「1. 2. 3.」のリストを物理的に指し示すように固定
+        "4. DYNAMIC POSITIONING & GAZE-TO-LIST LOCK: Position the character guide randomly (Left, Right, etc.). "
+        "CRITICAL VISUAL FLOW: The character's eyes and posture MUST function as a literal visual arrow, pointing DIRECTLY at the '1. 2. 3.' list scrap. "
+        "Even if they are 'peeking' or 'holding' a paper, their gaze MUST be locked onto the list text to guide the reader's eye to the core information. "
 
-        # 5. 【背景のストーリー性】
-        "5. TEXTURED BACKGROUND DEPTH: The base layer should look like an old desk or a textured magazine spread with subtle stains or creases, reinforcing the physical collage worldview. "
+        # 5. 【リストの視認性とタイトルとのコントラスト】
+        # タイトルは「巨大・黒」、リストは「中サイズ・背景あり」で差別化
+        "5. MESSAGING CLARITY & CONTRAST: The list (1. 2. 3.) must be on a distinct piece of torn paper. "
+        "Ensure a strong contrast between the massive 'TITLE' and the 'LIST' to make the hierarchy obvious at a glance. "
+
+        # 6. 【背景のストーリー性】
+        "6. TEXTURED BACKGROUND DEPTH: The base layer must look like a textured magazine spread with subtle vintage stains. "
     ),
    "余白重視（極限のネガティブスペース・対角線構図・背景ランダム）": (
         "ULTIMATE MINIMALIST DIAGONAL RULE: "
