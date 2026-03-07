@@ -131,23 +131,24 @@ composition_dict = {
         # 背景を毎回ランダム（昼、夕暮れ、深夜など）に変えつつ、文字色を背景に合わせて白か黒に自動調整させる！
         "6. RANDOMIZED EMOTIONAL VOID TONE WITH VISIBILITY: The background color and tone MUST be completely RANDOMIZED for each generation (e.g., bright daylight, subdued dusk, dark moody silence). CRITICAL: The AI MUST automatically adjust the text color to WHITE for dark backgrounds and BLACK for light backgrounds to ensure 100% legibility. Readability is the absolute highest priority."
     ),
-    "洗練されたシンメトリー（左右対称 × 強弱のコントラスト）": (
-        "PRECISE VERTICAL SYMMETRY WITH HIGH CONTRAST: "
-        # 👇【垂直軸のバランス】すべての要素を中央の縦ラインに整列させる。
-        "1. CENTRAL AXIS ALIGNMENT: Align all key elements (Title, Text, and Character) strictly along the vertical center axis to create perfect bilateral symmetry. "
+    "洗練されたシンメトリー（左右対称 × 感情完全同期）": (
+        "STRICT VERTICAL SYMMETRY WITH EMOTIONAL LOCK: "
+        # 1. 垂直軸の整列（シンメトリー）
+        "1. CENTRAL AXIS ALIGNMENT: All elements MUST be centered vertically. "
 
-        # 👇【サイズのコントラスト】タイトルは大きく、キャラは極小に。これで日の丸構図を回避！
-        "2. SIZE CONTRAST (MACRO vs MICRO): The 'TITLE' must be large and visually dominant at the top. In contrast, the single character MUST be microscopic (less than 8% of the canvas) at the bottom. This scale difference is critical to avoid a generic centered look. "
+        # 2. 3つのボックスの配置（サイズは同じ、文字のコントラストを強調）
+        "2. THREE EQUAL BLOCKS: Render the three detail text items in three separate boxes of EQUAL SIZE, stacked vertically. Use a THIN, light font for this text to create TYPOGRAPHIC CONTRAST against the bold title. "
 
-        # 👇【ウェイトのコントラスト】文字の太さに圧倒的な差をつける。
-        "3. TYPOGRAPHIC CONTRAST: Use a heavy, bold font for the main Title and a very thin, light font for the detail text. The visual weight must be clearly differentiated. "
+        # 3. 感情の完全ミラーリング（ここが修正のキモ！）
+        "3. ABSOLUTE EMOTION MIRROR (TITLE ONLY): The character's facial expression and body language MUST be a 100% reflection of the 'TITLE' sentiment only. "
+        # 👇 テロップのポジティブ単語を「完全に無視しろ」と命令！
+        "CRITICAL: ABSOLUTELY IGNORE any positive or cheerful words in the detail text (e.g., 'praise', 'warm drink', 'smile'). "
+        # 👇 タイトルが悩み系なら、笑顔は0.1%も許さない！
+        "If the TITLE implies struggle or sadness, the character MUST NOT smile. Depict a pensive, quiet, or wistful expression. ZERO TOLERANCE for generic smiles if the title is moody."
 
-        # 👇【視認性のコントラスト】背景色と文字色の差を最大化。
-        "4. COLOR CONTRAST: Ensure high contrast between the background and elements (e.g., White text on dark moody background, or Black text on bright paper). Text must be 100% legible. "
-
-        # 👇【感情のミラーリング】ポツンと中央にいるキャラは、タイトルの感情を映す鏡。
-        "5. PURE EMOTION SYNC: The tiny character's expression must mirror the mood of the 'TITLE' exactly. If the title is wistful, the character is pensive; if happy, the character is joyful."
-    ), 
+        # 4. ボックスの装飾（下敷きはありつつ、コントラストを意識）
+        "4. CLEAN BOX DESIGN: Use simple, elegant boxes for the three items, ensuring they sit symmetrically on the center line. Character must be placed at the bottom, separate from the boxes."
+    ),
     "トライアングル（三角構図）（圧倒的な安定感や成長を出す）": "CRITICAL RULE: Strict implied triangle composition created ONLY by the non-linear, dynamic placement of elements. ABSOLUTELY NO VISIBLE TRIANGLE SHAPES, OUTLINES, ARROWS, OR CONNECTING LINES. The connection between elements must be completely invisible and purely psychological. Conveying extreme stability through powerful diagonal flow. Focal point character MUST BE PLACED at a dynamically staggered apex, and supporting elements (e.g., text blocks) MUST BE ARRANGED to form a distinct, wide base. DO NOT draw any lines between the character and the text. DO NOT align character and text blocks vertically; use strong diagonal angles to create a visual pyramid flow.",
     "4分割・ブロック配置（情報を4つのエリアに分ける）": "A clean, structured infographic layout divided into four distinct, equal quadrants. TEXT ELEMENTS are ARRANGED sequentially. CRITICAL: DO NOT add any extra numbering icons or labels if the input text already includes numbers. Place the provided text exactly as it is within each block.",
    "サクセス・ストーリー（成功への道のりと感情の変化）": (
