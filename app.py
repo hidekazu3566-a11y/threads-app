@@ -43,25 +43,27 @@ composition_dict = {
 
         "ABSOLUTELY NO VISIBLE GRID LINES OR CROSSHAIRS."
     ),
- "洗練された中央集中型（日の丸構図 × 視認性重視コントラスト × 感情同期）": (
-        "PRECISE CENTERED COMPOSITION (HINOMARU STYLE) WITH READABLE FLEXIBLE SHAPES & EMOTIONAL LOCK: "
+ "洗練された中央集中型（日の丸構図 × 視認性重視 × 汎用メタファー）": (
+        "PRECISE CENTERED COMPOSITION (HINOMARU STYLE) WITH CONTEXTUAL VISUAL METAPHORS & EMOTIONAL LOCK: "
         
-        # 1. 【中央のアンカー】メインキャラをど真ん中に配置。
+        # 1. 【中央のアンカー】メインキャラを画面のど真ん中に配置し、視線の中心を作る
         "1. CENTRAL CHARACTER ANCHOR: The main subject (e.g., the character) must be placed precisely in the center, acting as the visual anchor. Ensure text blocks are arranged to enhance, not obscure, the subject. "
 
-        # 2. 【強弱と視認性の両立】タイトルは巨大・極太。本文は「しっかり読めるサイズと太さ」にする！
+        # 2. 【強弱と視認性の両立】タイトルは巨大・極太。本文はスマホでもパキッと読める「サイズと太さ」を厳守する
         "2. CLEAR VISUAL HIERARCHY: The 'TITLE' MUST be rendered in a massive, bold, and heavy font. In contrast, all text inside the decorative shapes MUST be clearly legible and sufficiently large (medium size), using a medium font weight to ensure 100% visibility even on small mobile screens. Readability is the absolute highest priority. "
 
-        # 3. 【可変・等分ボックス配置】テーマに合った図形を使い、文字が窮屈にならないようにする。
-        "3. FLEXIBLE EQUAL-SIZED DECORATIVE SHAPES: Render each provided text block in its own separate decorative shape (e.g., stylized panels, containers, or themed forms like house-shaped panels). All shapes MUST have EXACTLY the same width and height. Ensure the shapes are large enough to contain the text comfortably for maximum legibility. "
+        # 3. 【文脈に合わせた図形デザイン】入力された文字の意味（メタファー）を分析し、最適な図形やアイコンをAIに選ばせる
+        "3. CONTEXTUAL EQUAL-SIZED SHAPES: For each text block, analyze its conceptual meaning and render it inside a decorative shape or container that acts as a visual metaphor for that specific concept. "
+        # 👇 ここが「抜け落ちていた」賢いAIへの指示！
+        "The AI must choose theme-appropriate shapes and internal decorative motifs (e.g., if the text is about 'ideas', use bulb-inspired panels; if 'nature', use leaf-inspired forms; if 'home', use house motifs). All shapes MUST have EXACTLY the same width and height to maintain structural symmetry. "
 
-        # 4. 【条件付き感情ミラーリング（タイトル連動）】
+        # 4. 【条件付き感情ミラーリング（タイトル連動）】表情とポーズを、タイトルの感情のみと100%同期させる
         "4. CONDITIONAL EMOTION MIRROR (TITLE-ONLY): The character's expression and full body pose MUST be a 100% emotional mirror of the 'TITLE' text content ONLY. "
-        # ⚠️ 悩み・ネガティブ系なら笑顔禁止。
+        # ⚠️ 悩み・ネガティブ系なら笑顔は一切禁止。切ない、真面目な顔にする
         "IF the TITLE implies negative emotions (struggle, worry, pain, wistfulness), ZERO TOLERANCE for smiles. The character must look pensive, quiet, or wistful. "
-        # 💖 喜び・ポジティブ系なら全力の笑顔。
+        # 💖 喜び・ポジティブ系なら全力の笑顔にする
         "IF the TITLE implies positive emotions (joy, relief, success, happy), the character SHOULD display a bright, genuine smile. "
-        # 🚫 テロップの単語には釣られない。
+        # 🚫 テロップの単語には絶対に釣られない。タイトルだけが猫の心を決める
         "CRITICAL: ABSOLUTELY IGNORE any emotional keywords in the detail text or box content. ONLY the TITLE dictates the character's heart. "
     ),
     "対角線・斜め分割（動きとリズム、スピード感を出す）": (
