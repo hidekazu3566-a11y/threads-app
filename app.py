@@ -300,7 +300,7 @@ for i in range(num_images):
         content_list.append({
             "slide_number": i+1,
             "title": img_title,
-            "details": img_details.split('\n') if img_details else []
+            "details": [d.strip() for d in img_details.split('\n\n') if d.strip()]
         })
 
 col3, col4 = st.columns(2)
