@@ -219,27 +219,30 @@ composition_dict = {
         "The main character should be interacting with the tree. NO REPEATING TEXT."
     ),
    "サイクル型（循環・ステップ図解 × 個別感情同期）": (
-        "CYCLIC STEP-BY-STEP FLOW (LOOP) WITH INDIVIDUAL EMOTION & VISUAL CONNECTORS: "
+        "VERSATILE CIRCULAR FLOW (STEP-BY-STEP) WITH ADJUSTABLE CONNECTORS: "
         
-        # 1. 【中央のテーマアンカー】真ん中に「最大の問い」や「主役」を配置する
-        "1. CENTRAL THEME ANCHOR: Place the core subject, main character, or 'starting question' precisely in the center. All steps must revolve around this anchor to tell a single story. "
+        # 1. 【中央のテーマアンカー】
+        "1. CENTRAL THEME ANCHOR: Place the core subject or starting question precisely in the center. "
 
-        # 2. 【循環するステップ配置】1→2→3と時計回りに視線が流れるように配置する
-        "2. CIRCULAR STEP SEQUENCE: Arrange the detail blocks in a clear, looping sequence around the center (typically clockwise). The layout must feel like a continuous journey. "
+        # 2. 【ステップ数に合わせた円状配置】
+        # 4つに固定せず、提供されたブロックの数に合わせて等間隔に配置させる
+        "2. EQUIDISTANT CIRCULAR LAYOUT: Distribute the provided number of detail blocks (3 to 5) evenly in a circular path around the center. "
+        "The flow MUST start from Top-Left and move clockwise. "
 
-        # 3. 【大きな誘導矢印の義務化】ブロック同士を「太く、特徴的なデザインの矢印」で繋ぐ
-        "3. MANDATORY STYLIZED ARROWS: Connect each block with large, colorful, and stylized directional arrows. These arrows must act as a primary visual skeleton to guide the eye. "
+        # 3. 【論理的な誘導矢印（ループは内容次第）】
+        "3. LOGICAL FLOW CONNECTORS: Connect the blocks with bold, stylized arrows following the sequence (1->2->3...). "
+        # 🔄 ループの有無をAIに判断させる指示
+        "CLOSING LOOP RULE: Only connect the final block back to the first block IF the content implies a repeating cycle. "
+        "IF it's a linear process with a clear goal, do NOT add a closing arrow to the start. "
 
-        # 4. 【各ブロックの内容に100%同期（ここを修正！）】
-        # ステップの順序に関係なく、そのボックスに書いてある「内容」に表情を合わせる
-        "4. INDIVIDUAL BLOCK EMOTION SYNC: The character's expression and pose next to each box MUST 100% reflect the specific content of THAT adjacent text box. "
-        "Analyze each step independently: If a box is about 'struggle', the character looks pensive; if it's about 'self-permission', the character looks gentle or relieved. Do not force a fixed progression; prioritize the immediate context. "
+        # 4. 【個別ボックスごとの感情同期】
+        "4. INDIVIDUAL BOX EMOTION SYNC: Each character guide MUST 100% reflect the adjacent text box's context. "
 
-        # 5. 【強弱と視認性】タイトルは巨大、本文はスマホで読めるサイズと太さ
-        "5. CLEAR VISUAL HIERARCHY: The 'TITLE' MUST be massive and bold. Each detail box MUST contain clearly legible text with medium size and medium font weight for 100% mobile visibility. "
+        # 5. 【強弱と視認性】
+        "5. CLEAR VISUAL HIERARCHY: Title must be massive and bold. Detail text must be medium size and weight for 100% legibility. "
 
-        # 6. 【リッチな文脈装飾】各ステップの内容に合わせた小道具を添える
-        "6. CONTEXTUAL PROPS & DENSITY: Surround each step with subtle 'visual accents' that act as metaphors for that specific phase. Maintain a high-quality, professional density. "
+        # 6. 【文脈に合わせた形状と装飾】
+        "6. DYNAMIC SHAPE VARIETY: Use diverse silhouettes (bubbles, panels, arrows) to keep the layout interesting. Ensure each box has ONE high-quality icon. "
     ),
     "ルービックキューブ（立体ブロック）（複雑な要素の組み合わせを表現）": (
         "A 3D Rubik's cube structure composition where the individual block panels are SIGNIFICANTLY ENLARGED to maximize surface area. " # 👈 ブロックサイズを「大幅に拡大」する！
