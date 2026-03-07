@@ -122,29 +122,27 @@ composition_dict = {
         "The number of tiles must exactly match the total count of non-empty text blocks. Ensure structural unity."
         # ↑【整合性】マスの数をブロックの総数とピッタリ一致させる指示だよ。
     ),
-   "コラージュ型（雑誌風・自由配置 × 究極の切り貼り）": (
-        "ELITE MAGAZINE-STYLE COLLAGE WITH DYNAMIC PLACEMENT & INTENSE TORN TEXTURES: "
+   "コラージュ型（雑誌風・カオスと洗練の黄金比）": (
+        "ELITE MAGAZINE-STYLE COLLAGE WITH ARTISTIC LAYERING & INTENSE TORN TEXTURES: "
         
-        # 1. 【主役の自由配置と相互作用】中央固定を廃止！
-        # キャラをランダムな位置に置き、そこから情報の主役（リスト）へ視線を送らせる
-        "1. DYNAMIC SUBJECT POSITIONING: Place the main character guide RANDOMLY (Left, Right, Top, or Bottom) to create an organic, non-symmetrical scrapbook feel. "
-        "CRITICAL: Regardless of their position, the character MUST interact with the main message (e.g., pointing at a scrap of paper, peeking from behind a clip, or looking towards the text). "
+        # 1. 【動的なナナメ配置と重なり】真っ直ぐ並べるのを禁止！
+        "1. DYNAMIC ANGLED LAYERING: PROHIBIT perfectly vertical or horizontal alignment. "
+        "Every scrap of paper MUST be slightly tilted or rotated at different angles to create a natural, hand-made scrapbook feel. "
+        "Overlapping is essential: Let papers partially cover each other to create a sense of depth and three-dimensionality. "
 
-        # 2. 【究極のビリビリ感と実在感】
-        "2. EXTREME TORN PAPER TEXTURES: Every text container MUST look like realistic, hand-torn scrap paper with rough, fibrous, and uneven edges (Biribiri-kan). "
-        "Layer elements physically using realistic masking tape, vintage paper clips, and push pins. The overlapping must look natural and tactile. "
+        # 2. 【「超」ビリビリ感と物理的な質感】
+        "2. HYPER-REALISTIC TORN EDGES: Enhance the 'Biribiri-kan'. Edges must be extremely rough, uneven, and show paper fibers. "
+        "Add realistic drop shadows under each paper scrap to make them look like they are physically lifted off the background. Use diverse fasteners like crooked masking tape, rusted clips, and tilted push pins. "
 
-        # 3. 【装飾の「引き算」とシンボル厳選】
-        "3. REFINED SYMBOLIC ACCENTS: Strictly PROHIBIT redundant or multiple icons of the same theme. "
-        "Select only ONE high-quality, detailed visual metaphor per concept. Eliminate all unnecessary clutter to keep the focus on the core message. "
+        # 3. 【猫の「コラージュ職人」化】
+        "3. ACTIVE CHARACTER INTERACTION: The character must not just stand there. "
+        "They should look like they are 'assembling' the collage—holding a corner of a paper, peeking from between layers, or stepping on a scrap while pointing at the text. Their gaze must stay fixed on the main message. "
 
-        # 4. 【メッセージの主役化（1. 2. 3. の強調）】
-        "4. DOMINANT MESSAGE HIERARCHY: The main list (1. 2. 3.) MUST be the largest and most distinct piece of torn paper. "
-        "The text MUST be bold and highly legible, standing out clearly from the artistic background elements. "
+        # 4. 【装飾のシンボル厳選（渋滞解消の維持）】
+        "4. REFINED SYMBOLIC ACCENTS: Keep the 'one theme, one icon' rule. One high-quality metaphor icon (like the scale) is perfect. No redundant clutter. "
 
-        # 5. 【エモさと抜け感のバランス】
-        "5. SOPHISTICATED ARTISTIC WHITESPACE: Maintain an elegant balance between the collage elements. "
-        "Avoid filling every corner. Use subtle paper textures or faint stains in the background to create depth without distracting from the text. "
+        # 5. 【背景のストーリー性】
+        "5. TEXTURED BACKGROUND DEPTH: The base layer should look like an old desk or a textured magazine spread with subtle stains or creases, reinforcing the physical collage worldview. "
     ),
    "余白重視（極限のネガティブスペース・対角線構図・背景ランダム）": (
         "ULTIMATE MINIMALIST DIAGONAL RULE: "
