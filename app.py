@@ -131,35 +131,29 @@ composition_dict = {
         # 背景を毎回ランダム（昼、夕暮れ、深夜など）に変えつつ、文字色を背景に合わせて白か黒に自動調整させる！
         "6. RANDOMIZED EMOTIONAL VOID TONE WITH VISIBILITY: The background color and tone MUST be completely RANDOMIZED for each generation (e.g., bright daylight, subdued dusk, dark moody silence). CRITICAL: The AI MUST automatically adjust the text color to WHITE for dark backgrounds and BLACK for light backgrounds to ensure 100% legibility. Readability is the absolute highest priority."
     ),
-    "洗練されたシンメトリー（左右対称 × 強弱コントラスト × 感情同期）": (
+   "洗練されたシンメトリー（左右対称 × 強弱コントラスト × 感情同期）": (
         "STRICT VERTICAL SYMMETRY WITH DYNAMIC CONTRAST & EMOTIONAL LOCK: "
         
-        # 1. 【垂直軸の完璧な整列】
+        # 1. 【垂直軸の整列】すべての要素（タイトル、ボックス、キャラ）を中央の縦ラインに完璧に揃える
         "1. CENTRAL AXIS ALIGNMENT: Every single element (Title, all text blocks, and the character) MUST be perfectly centered on the vertical axis to maintain absolute bilateral symmetry. "
 
-        # 2. 【圧倒的なサイズのコントラスト】
-        # タイトルを「王様」、ボックスを「家来」にするぐらいの差をつける！
-        "2. EXTREME SCALE CONTRAST (DOMINANT TITLE): The 'TITLE' MUST be rendered in a massive, bold, and heavy font at the top. In sharp contrast, ALL other text blocks below it MUST be significantly smaller and use a very thin, light font weight. This visual hierarchy is the absolute priority. "
+        # 2. 【圧倒的な強弱（コントラスト）】タイトルは巨大・極太、ボックス内は最小・極細にし、視覚的な優先順位を作る
+        "2. EXTREME SCALE & WEIGHT CONTRAST: The 'TITLE' MUST be massive, bold, and heavy, dominating the top of the image. In sharp contrast, all text inside the boxes MUST be significantly smaller and use a very thin, light font weight. This visual hierarchy is critical for a high-end feel. "
 
-        # 3. 【可変ボックス・等分配置】
-        # 「3つ」と決めつけず、ある分だけ全部、同じサイズで並べさせる！
-        "3. FLEXIBLE EQUAL-SIZED BLOCKS: Regardless of the number of text items provided, render EACH one in its own box of EXACTLY the same size and shape. Stack these boxes vertically with consistent spacing. "
+        # 3. 【可変ボックス・等分配置】空行で区切られた各ブロックを、すべて同じサイズのボックスに収めて縦に並べる
+        "3. FLEXIBLE EQUAL-SIZED BLOCKS: Render each provided text block in its own box. All boxes MUST have EXACTLY the same width and height to maintain symmetry. Stack these boxes vertically with consistent spacing. "
 
-        # 4. 【条件付きの感情ミラーリング】（ここも最新版！）
+        # 4. 【条件付きの感情ミラーリング（タイトル連動）】表情とポーズを、タイトルの感情のみと100%同期させる
         "4. CONDITIONAL EMOTION MIRROR (TITLE-ONLY): The character's expression and full body pose MUST be a 100% emotional mirror of the 'TITLE' text content ONLY. "
-        
-        # ⚠️ 悩み・ネガティブ系のタイトルなら笑顔は0.1%も許さない！
-        "IF the TITLE implies negative emotions (struggle, worry, pain, wistfulness), ZERO TOLERANCE for generic smiles. The character MUST look pensive, quiet, or sad. "
-        
-        # 💖 喜び・ポジティブ系のタイトルなら最高の笑顔！
-        "IF the TITLE implies positive emotions (joy, relief, success, happiness), the character SHOULD display a bright, genuine smile. "
-        
-        # 🚫 テロップの単語には絶対に釣られない（飲み物とか褒める等）
+        # タイトルが悩み・ネガティブ系（報われない、疲れた等）なら、笑顔は一切禁止
+        "IF the TITLE implies negative emotions (struggle, worry, pain, wistfulness), ZERO TOLERANCE for smiles. The character must look pensive, quiet, or wistful. "
+        # タイトルが喜び・ポジティブ系（嬉しい、成功等）なら、明るい笑顔にする
+        "IF the TITLE implies positive emotions (joy, relief, success, happy), the character SHOULD display a bright, genuine smile. "
+        # ボックス内の個別単語（飲み物や褒める等）には反応させず、タイトルのみに従う
         "CRITICAL: ABSOLUTELY IGNORE any emotional keywords in the detail text or box content. ONLY the TITLE dictates the character's heart. "
 
-        # 5. 【被写体の配置：極小コントラスト】
-        # キャラを米粒サイズにして、日の丸構図の「野暮ったさ」を消す！
-        "5. MICROSCOPIC CHARACTER PLACEMENT: Place the single character at the very bottom, aligned with the center axis. The character MUST be tiny (less than 7% of the canvas). This scale difference against the large title creates a sophisticated, high-end editorial feel."
+        # 5. 【被写体の配置：極小コントラスト】キャラを画面最下部の中央に、米粒のような極小サイズで配置する
+        "5. MICROSCOPIC CHARACTER PLACEMENT: Place the single character at the very bottom center. It MUST be tiny (less than 7% of the canvas). This scale difference against the large title creates a sophisticated, high-end editorial feel."
     ),
     "トライアングル（三角構図）（圧倒的な安定感や成長を出す）": "CRITICAL RULE: Strict implied triangle composition created ONLY by the non-linear, dynamic placement of elements. ABSOLUTELY NO VISIBLE TRIANGLE SHAPES, OUTLINES, ARROWS, OR CONNECTING LINES. The connection between elements must be completely invisible and purely psychological. Conveying extreme stability through powerful diagonal flow. Focal point character MUST BE PLACED at a dynamically staggered apex, and supporting elements (e.g., text blocks) MUST BE ARRANGED to form a distinct, wide base. DO NOT draw any lines between the character and the text. DO NOT align character and text blocks vertically; use strong diagonal angles to create a visual pyramid flow.",
     "4分割・ブロック配置（情報を4つのエリアに分ける）": "A clean, structured infographic layout divided into four distinct, equal quadrants. TEXT ELEMENTS are ARRANGED sequentially. CRITICAL: DO NOT add any extra numbering icons or labels if the input text already includes numbers. Place the provided text exactly as it is within each block.",
