@@ -122,34 +122,32 @@ composition_dict = {
         "The number of tiles must exactly match the total count of non-empty text blocks. Ensure structural unity."
         # ↑【整合性】マスの数をブロックの総数とピッタリ一致させる指示だよ。
     ),
-   "コラージュ型（雑誌風・自由配置 × 究極の切り貼り）": (
-        "ELITE MAGAZINE-STYLE COLLAGE WITH DYNAMIC PLACEMENT & CONTRASTING TONES: "
+  "コラージュ型（雑誌風・カオス×高コントラスト×猫【極小】固定）": (
+        "EXTREME MAGAZINE COLLAGE WITH DARK CONTRAST & MINI-SUBJECT: "
         
-        # 1. 【メインメッセージの絶対主役化（「TITLE」文字化禁止！）】
-        "1. PRIMARY MESSAGE DOMINANCE: The 'title text' from the content list MUST be the single most dominant visual anchor, rendered significantly larger and bolder than any other text. "
-        "DO NOT explicitly render the word 'TITLE' or 'Subject' as a label. "
+        # 1. 【タイトル（プライマリメッセージ）の巨大化】
+        "1. PRIMARY MESSAGE SUPREMACY: Render the 'title text' from the content list in a MASSIVE, bold, textured font. It must be at least 3x larger than the detail text. "
+        "CRITICAL: Do NOT render the word 'TITLE' or 'Subject'. "
 
-        # 2. 【意図的な「崩し」と強い重なり（カオスな美学）】
-        "2. ARTISTIC ANGLED LAYERING: PROHIBIT perfectly vertical or horizontal alignment. "
-        "Every scrap of paper MUST be slightly tilted. Overlapping is CRITICAL: let papers partially cover each other with realistic Drop Shadows to create 3D depth. "
+        # 2. 【重なりと「超」ビリビリ感】
+        "2. ARTISTIC ANGLED LAYERING: PROHIBIT all vertical/horizontal alignment. Every paper scrap MUST be tilted. "
+        "Overlap them heavily with deep Drop Shadows. Use extreme Biribiri-kan (rough-torn edges showing paper fibers). "
 
-        # 3. 【視認性を守る背景色の差別化（同系色禁止！）】
-        "3. NON-MONOCHROMATIC BACKGROUND: The background base layer MUST be a distinct color that provides clear visual contrast with the foreground text scraps. "
-        "Avoid using a same-tone background to ensure the '1.2.3.' list pops out. "
+        # 3. 【背景を「強制的に」暗くする（視認性最優先）】
+        # 「淡い色」の余地をゼロにして、暗い色を指定！
+        "3. DARK BASE LAYER FOR MAXIMUM POP: The background base MUST be a very DARK color (e.g., Midnight Navy, Charcoal, or Dark Burnt Wood). "
+        "The text-holding scraps MUST be bright off-white. This extreme dark-to-light contrast is the absolute priority for legibility. "
 
-        # 4. 【「超」ビリビリ感と物理的な実在感】
-        "4. HYPER-REALISTIC TORN TEXTURES: Every text container MUST look like realistic, hand-torn scrap paper with rough, fibrous edges (Biribiri-kan). "
-        "Layer elements physically using realistic masking tape, clips, and push pins. "
+        # 4. 【猫を「極小」サイズに固定する（ここがガチ！）】
+        # 「1/4」でもデカすぎたから「1/8」以下、リストの1行より小さく指示！
+        "4. MINIATURE CHARACTER SCALE: The character MUST be rendered in a MINIATURE scale, occupying less than 15% (1/8) of the total image area. "
+        "CRITICAL: The character MUST be smaller than any of the numbered list items. Position it as a small 'sticker-like' accent at the edge, not a main subject. "
 
-        # 5. 【キャラのサイズ制御 ＆ 視線ロック（ここを追加！）】
-        # 「控えめなサイズ」を命じることで、猫が情報を隠すのを防ぐ
-        "5. DYNAMIC POSITIONING & MODERATE SCALE: Position the character guide randomly (Left, Right, etc.). "
-        "CRITICAL SCALE RULE: Render the character at a moderate, non-dominant scale to ensure the text scraps remain the visual priority. "
-        "VISUAL FLOW: The character's gaze and posture MUST function as a literal visual arrow, pointing DIRECTLY at the '1. 2. 3.' list scrap. "
+        # 5. 【視線ロック（小粒でも仕事はさせる）】
+        "5. GAZE-LOCK: Even at a small size, the character's eyes and posture MUST point directly at the '1.2.3.' list to guide the visual flow. "
 
-        # 6. 【多種多様な装飾の「融合」と渋滞解消】
-        "6. REFINED SYMBOLIC ACCENTS: Integrate diverse background elements like subtle watercolor doodles, leaves, and vintage stamps. "
-        "Strictly PROHIBIT redundant or multiple icons of the same theme. "
+        # 6. 【装飾の渋滞解消】
+        "6. REFINED ACCENTS: Add exactly ONE clip, ONE pin, and a few leaves/stamps. No redundancy. Focus on high-quality textures. "
     ),
    "余白重視（極限のネガティブスペース・対角線構図・背景ランダム）": (
         "ULTIMATE MINIMALIST DIAGONAL RULE: "
