@@ -43,26 +43,25 @@ composition_dict = {
 
         "ABSOLUTELY NO VISIBLE GRID LINES OR CROSSHAIRS."
     ),
-  "洗練された中央集中型（日の丸構図 × コントラスト × 感情同期）": (
-        "PRECISE CENTERED COMPOSITION (HINOMARU STYLE) WITH FLEXIBLE SHAPES, HIGH CONTRAST & EMOTIONAL LOCK: "
+ "洗練された中央集中型（日の丸構図 × 視認性重視コントラスト × 感情同期）": (
+        "PRECISE CENTERED COMPOSITION (HINOMARU STYLE) WITH READABLE FLEXIBLE SHAPES & EMOTIONAL LOCK: "
         
-        # 1. 【中央のアンカー】メインの被写体（キャラ）を画面のど真ん中に、力強く配置する。
+        # 1. 【中央のアンカー】メインキャラをど真ん中に配置。
         "1. CENTRAL CHARACTER ANCHOR: The main subject (e.g., the character) must be placed precisely in the center, acting as the visual anchor. Ensure text blocks are arranged to enhance, not obscure, the subject. "
 
-        # 2. 【圧倒的な強弱（コントラスト）】タイトルは巨大・極太、詳細は最小・極細にし、視覚的な優先順位を作る。
-        "2. EXTREME SCALE & WEIGHT CONTRAST: The 'TITLE' MUST be rendered in a massive, bold, and heavy font. In sharp contrast, all text inside the decorative shapes MUST be significantly smaller and use a very thin, light font weight. This visual hierarchy is critical for a high-end feel. "
+        # 2. 【強弱と視認性の両立】タイトルは巨大・極太。本文は「しっかり読めるサイズと太さ」にする！
+        "2. CLEAR VISUAL HIERARCHY: The 'TITLE' MUST be rendered in a massive, bold, and heavy font. In contrast, all text inside the decorative shapes MUST be clearly legible and sufficiently large (medium size), using a medium font weight to ensure 100% visibility even on small mobile screens. Readability is the absolute highest priority. "
 
-        # 3. 【可変・等分ボックス配置】（ここを修正！）
-        # 空行で区切られた各ブロックを、その時々のテーマに合った「図形（パネル、吹き出し、幾何学模様など）」に入れて、等分に並べる。
-        "3. FLEXIBLE EQUAL-SIZED DECORATIVE SHAPES: Render each provided text block in its own separate, distinct decorative shape (e.g., stylized panels, containers, geometric forms, or stylized speech bubbles). Adapt the shape type to the theme of the text and image (e.g., use house-shaped panels for a home theme). All shapes MUST have EXACTLY the same width and height to maintain structural integrity, and be arranged symmetrically around the center axis (above, below, or to the sides). "
+        # 3. 【可変・等分ボックス配置】テーマに合った図形を使い、文字が窮屈にならないようにする。
+        "3. FLEXIBLE EQUAL-SIZED DECORATIVE SHAPES: Render each provided text block in its own separate decorative shape (e.g., stylized panels, containers, or themed forms like house-shaped panels). All shapes MUST have EXACTLY the same width and height. Ensure the shapes are large enough to contain the text comfortably for maximum legibility. "
 
-        # 4. 【条件付き感情ミラーリング（タイトル連動）】表情とポーズを、タイトルの感情のみと100%同期させる。
+        # 4. 【条件付き感情ミラーリング（タイトル連動）】
         "4. CONDITIONAL EMOTION MIRROR (TITLE-ONLY): The character's expression and full body pose MUST be a 100% emotional mirror of the 'TITLE' text content ONLY. "
-        # ⚠️ 悩み・ネガティブ系のタイトルなら笑顔は一切禁止。
+        # ⚠️ 悩み・ネガティブ系なら笑顔禁止。
         "IF the TITLE implies negative emotions (struggle, worry, pain, wistfulness), ZERO TOLERANCE for smiles. The character must look pensive, quiet, or wistful. "
-        # 💖 喜び・ポジティブ系のタイトルなら全力の笑顔。
+        # 💖 喜び・ポジティブ系なら全力の笑顔。
         "IF the TITLE implies positive emotions (joy, relief, success, happy), the character SHOULD display a bright, genuine smile. "
-        # ボックス内の個別単語（飲み物や褒める等）には反応させず、タイトルのみに従う。
+        # 🚫 テロップの単語には釣られない。
         "CRITICAL: ABSOLUTELY IGNORE any emotional keywords in the detail text or box content. ONLY the TITLE dictates the character's heart. "
     ),
     "対角線・斜め分割（動きとリズム、スピード感を出す）": (
