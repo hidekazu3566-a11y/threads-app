@@ -122,37 +122,34 @@ composition_dict = {
         "The number of tiles must exactly match the total count of non-empty text blocks. Ensure structural unity."
         # ↑【整合性】マスの数をブロックの総数とピッタリ一致させる指示だよ。
     ),
-"コラージュ型（雑誌風・カオス×高コントラスト×キャラ【極小】固定）": (
-        "ELITE MAGAZINE-STYLE COLLAGE WITH INTENSE LAYERING & GAZE-DIRECTED FLOW: "
+"コラージュ型（雑誌風・ブロック構造完全同期×ダーク背景×キャラ極小）": (
+        "ELITE MAGAZINE COLLAGE WITH STRICT LOGICAL TEXT GROUPING & DEEP DARK CONTRAST: "
         
-        # 1. 【メインメッセージの巨大化・文字化禁止】
-        # AIが生真面目にラベルを描く事故を根絶。内容の文字を巨大化させる。
-        "1. PRIMARY MESSAGE SUPREMACY: Render the 'title text' from the content list in a MASSIVE, bold, textured font (e.g., dark charcoal/black watercolor ink) to attract maximum attention. It must act as the dominant visual anchor. "
-        "DO NOT explicitly render the word 'TITLE' or 'Subject' as a label. "
+        # 1. 【メインメッセージの巨大化】
+        "1. PRIMARY MESSAGE SUPREMACY: Render the 'title text' from the content list in a MASSIVE, bold, textured font. "
+        "CRITICAL: DO NOT render the word 'TITLE' or 'Subject'. "
 
-        # 2. 【意図的な「崩し」と強い重なり（カオスな美学）】
-        # 垂直・水平を禁止。ナナメに重ねて奥行きを出す。Biribiri-kan。影。
-        "2. ARTISTIC ANGLED LAYERING: PROHIBIT perfectly vertical or horizontal alignment. Every paper scrap MUST be slightly tilted or rotated at diverse angles. "
-        "Overlap them heavily with deep Drop Shadows. Use extreme Biribiri-kan (rough-torn edges showing paper fibers). "
+        # 2. 【塊の死守と、空白での分離（あんたの指示を完全反映！）】
+        # 改行で切るな！1つのブロックは1枚の紙。空行や別ブロック指定の時だけ紙を分ける。
+        "2. STRICT TEXT GROUPING BY INPUT: Treat each provided text block in the input as ONE solid unit. "
+        "Render all text within a single block onto ONE single piece of torn paper. "
+        "CRITICAL: Do NOT cut or split sentences, numbered lists (1. 2. 3.), or consecutive lines into separate paper scraps just because of a line break. "
+        "ONLY create a separate paper scrap if there is a distinct new block or a clear empty line separating the text in the prompt. "
 
-        # 3. 【背景を「強制的に」暗くする（視認性最優先・淡色はNG）】（ここを最強化！）
-        # 「淡い色」の余地をゼロにして、暗い色を指定！以前のimage_16.pngのトーンを再現。
-        "3. DARK BASE LAYER FOR MAXIMUM POP: The background base MUST be a textured paper spread in a very DARK color (e.g., Midnight Navy, Charcoal, Dark Teal, or Dark Distressed Walnut Wood). "
-        "Text holder paper scraps MUST be in a bright off-white or cream tone to create dramatic contrast. Tonal contrast is the absolute priority for legibility. "
+        # 3. 【意図的な「崩し」と奥行き】
+        "3. ARTISTIC ANGLED LAYERING: PROHIBIT perfectly vertical alignment. "
+        "Each unified paper scrap MUST be slightly tilted at different angles. Overlap them with deep Drop Shadows. "
 
-        # 4. 【キャラクターを「極小ステッカーサイズ」に固定（ここを最強化！）】
-        # 「1/4」でもデカすぎたから「1/8」以下、リストの1行より小さく指示！情報の邪魔をしない。
-        "4. MINIATURE CHARACTER SCALE: Position the character guide randomly (Left, Right, etc.). "
-        "CRITICAL SCALE RULE: The character MUST be rendered in a MINIATURE, sticker-like scale, occupying less than 15% (1/8) of the total image area. "
-        "The character MUST be clearly smaller than any individual text scrap (e.g., smaller than the '1.我慢するのやだ' block). Position it as an accent, not a main subject. "
+        # 4. 【背景を「深みのあるネイビー」などに固定（高コントラスト）】
+        "4. DEEP DARK BASE LAYER: The background base MUST be a textured paper in a DEEP, RICH color (e.g., Deep Navy, Dark Teal, or Charcoal Black). "
+        "Text scraps MUST be bright off-white to create maximum pop and legibility. "
 
-        # 5. 【視線ロック（小粒でも仕事はさせる）】
-        "5. GAZE-LOCK: Even at a small size, the character's eyes and posture MUST function as a literal visual arrow, pointing DIRECTLY at the '1.2.3.' list to guide the visual flow. Expression synchronizes with TITLE content. "
+        # 5. 【キャラの極小サイズと視線ロック】
+        "5. MINIATURE SCALE & GAZE-LOCK: Render the character in a MINIATURE scale (less than 15% of the area). "
+        "The character MUST be clearly smaller than the text scraps. The character's gaze and posture MUST point DIRECTLY at the main text block scrap. "
 
-        # 6. 【多種多様な装飾の「融合」と渋滞解消】
-        # 水彩、葉っぱ、ピンなどを1つずつ厳選。重複禁止。渋滞解消。エモさの融合。
-        "6. RICHLY DECORATED SCENARIO (WITHOUT REDUNDANCY): Integrate diverse background elements like subtle watercolor doodles, leaves, vintage pins, or logic stamps. "
-        "Strictly PROHIBIT repeating the same icon theme (e.g., no two compasses, no multiple lightbulbs). Focus on high-quality textures. "
+        # 6. 【装飾の渋滞解消】
+        "6. REFINED SYMBOLIC ACCENTS: Add exactly ONE clip, ONE pin, and a few unique stamps/leaves. PROHIBIT redundancy. "
     ),
    "洗練されたシンメトリー（左右対称 × 強弱コントラスト × 感情同期）": (
         "STRICT VERTICAL SYMMETRY WITH DYNAMIC CONTRAST & EMOTIONAL LOCK: "
