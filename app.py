@@ -122,53 +122,37 @@ composition_dict = {
         "The number of tiles must exactly match the total count of non-empty text blocks. Ensure structural unity."
         # ↑【整合性】マスの数をブロックの総数とピッタリ一致させる指示だよ。
     ),
- "コラージュ型（雑誌風・カオス×高コントラスト×キャラ【極小】固定）": (
-        "EXTREME MAGAZINE COLLAGE WITH DARK CONTRAST & MINI-SUBJECT: "
+"コラージュ型（雑誌風・カオス×高コントラスト×キャラ【極小】固定）": (
+        "ELITE MAGAZINE-STYLE COLLAGE WITH INTENSE LAYERING & GAZE-DIRECTED FLOW: "
         
-        # 1. 【メインメッセージの巨大化・文字化の厳禁】
-        "1. PRIMARY MESSAGE SUPREMACY: The 'title text' from the content list MUST be the single most dominant visual anchor, rendered in a MASSIVE, bold, textured font. "
-        "CRITICAL: Do NOT under any circumstances render the word 'TITLE' or 'Subject' as a functional label. "
+        # 1. 【メインメッセージの巨大化・文字化禁止】
+        # AIが生真面目にラベルを描く事故を根絶。内容の文字を巨大化させる。
+        "1. PRIMARY MESSAGE SUPREMACY: Render the 'title text' from the content list in a MASSIVE, bold, textured font (e.g., dark charcoal/black watercolor ink) to attract maximum attention. It must act as the dominant visual anchor. "
+        "DO NOT explicitly render the word 'TITLE' or 'Subject' as a label. "
 
         # 2. 【意図的な「崩し」と強い重なり（カオスな美学）】
-        "2. ARTISTIC ANGLED LAYERING: PROHIBIT perfectly vertical or horizontal alignment. Every paper scrap MUST be slightly tilted or rotated. "
-        "Overlap elements heavily with realistic Drop Shadows to create 3D depth. Use extreme Biribiri-kan (rough-torn edges). "
+        # 垂直・水平を禁止。ナナメに重ねて奥行きを出す。Biribiri-kan。影。
+        "2. ARTISTIC ANGLED LAYERING: PROHIBIT perfectly vertical or horizontal alignment. Every paper scrap MUST be slightly tilted or rotated at diverse angles. "
+        "Overlap them heavily with deep Drop Shadows. Use extreme Biribiri-kan (rough-torn edges showing paper fibers). "
 
-        # 3. 【背景を「強制的にダーク」にする（コントラスト最優先）】
-        # 「暗い背景」こそが視認性の鍵。
-        "3. DARK BASE LAYER FOR MAXIMUM POP: The background base MUST be a textured paper spread in a very DARK color (e.g., Midnight Navy, Charcoal, or Dark Distressed Walnut Wood). "
-        "Text holder paper scraps MUST be in a bright off-white or cream tone to create dramatic contrast against the dark base for maximum legibility. "
+        # 3. 【背景を「強制的に」暗くする（視認性最優先・淡色はNG）】（ここを最強化！）
+        # 「淡い色」の余地をゼロにして、暗い色を指定！以前のimage_16.pngのトーンを再現。
+        "3. DARK BASE LAYER FOR MAXIMUM POP: The background base MUST be a textured paper spread in a very DARK color (e.g., Midnight Navy, Charcoal, Dark Teal, or Dark Distressed Walnut Wood). "
+        "Text holder paper scraps MUST be in a bright off-white or cream tone to create dramatic contrast. Tonal contrast is the absolute priority for legibility. "
 
-        # 4. 【キャラクターを「極小ステッカーサイズ」に固定】
-        # 猫に限らず、ガイド役を極小（画面の15%以下）に制限。
-        "4. MINIATURE CHARACTER SCALE: Position the character guide randomly. "
+        # 4. 【キャラクターを「極小ステッカーサイズ」に固定（ここを最強化！）】
+        # 「1/4」でもデカすぎたから「1/8」以下、リストの1行より小さく指示！情報の邪魔をしない。
+        "4. MINIATURE CHARACTER SCALE: Position the character guide randomly (Left, Right, etc.). "
         "CRITICAL SCALE RULE: The character MUST be rendered in a MINIATURE, sticker-like scale, occupying less than 15% (1/8) of the total image area. "
-        "The character MUST be clearly smaller than any individual text scrap to ensure the information is the main subject. "
+        "The character MUST be clearly smaller than any individual text scrap (e.g., smaller than the '1.我慢するのやだ' block). Position it as an accent, not a main subject. "
 
-        # 5. 【視線ロック（小粒でもしっかりガイド）】
-        "5. GAZE-TO-LIST LOCK: Even at a small size, the character's eyes and posture MUST function as a literal visual arrow, pointing DIRECTLY at the core information list to guide the visual flow. "
+        # 5. 【視線ロック（小粒でも仕事はさせる）】
+        "5. GAZE-LOCK: Even at a small size, the character's eyes and posture MUST function as a literal visual arrow, pointing DIRECTLY at the '1.2.3.' list to guide the visual flow. Expression synchronizes with TITLE content. "
 
         # 6. 【多種多様な装飾の「融合」と渋滞解消】
-        "6. REFINED ACCENTS: Add exactly ONE clip, ONE pin, and a few leaves/stamps. No redundancy. Focus on high-quality textures. "
-    ),
-   "余白重視（極限のネガティブスペース・対角線構図・背景ランダム）": (
-        "ULTIMATE MINIMALIST DIAGONAL RULE: "
-        # 👇【圧倒的な余白】画面の85%以上を完全な「無」にする。中央揃えは禁止。
-        "1. MASSIVE EMPTY VOID: At least 85-90% of the canvas MUST be pure, uninterrupted empty space. ABSOLUTELY PROHIBITED: Do not place elements in the center. Avoid 'Hinomaru' (centered) composition. "
-
-        # 👇【対角線配置：情報ブロック vs 被写体】
-        # 👇【2. 対角線配置と下敷き禁止】情報ブロックとキャラを正反対の隅に。背景に直接置くこと！
-        "2. DIAGONAL OPPOSITE LAYOUT (NO BOXES): Place the complete information block (TITLE + details) and the single character at opposite extreme ends (e.g., TOP-LEFT vs BOTTOM-RIGHT). ABSOLUTELY PROHIBITED: Do NOT use any white boxes, text panels, frames, or collage elements. Everything must sit directly on the minimalist background. "
-        # 👇【修正】テキストブロックの掟に「背景色に合わせた文字色の自動選択」を追加
-        "3. REFINED TEXT CLUSTER with CRITICAL READABILITY: The 'TITLE' and all detail text (teroppu) must be perfectly LEFT-ALIGNED in one corner. The AI MUST automatically and completely ADJUST the text color to be WHITE or a very bright cream color if the background tone is dark (e.g., dusk, moody deep colors). Black text is ONLY allowed on very bright/light backgrounds. "
-        # 👇【被写体は1名・極小・孤立】被写体は1名のみ！タイトルの反対側で、完全に独りぼっち。サイズは米粒のように極小。
-        "4. MICROSCOPIC SINGLE SUBJECT: Generate EXACTLY ONE character. It must be tiny (under 10% of canvas) and stand completely ALONE in its corner. No boxes, no nearby text. "
-
-        # 👇【5. 感情のタイトル・ミラーリング】笑顔固定は禁止！タイトルの喜怒哀楽を鏡のように映すこと。テロップには釣られない。
-        "5. PURE EMOTION MIRROR: The character's expression MUST sync 100% with the overall 'TITLE' mood only. If the title is sad, the character is sad; if happy, the character is happy. IGNORE any individual positive or negative words in the detail text. "
-
-        # 👇【6. 背景色のランダム化と視認性の確保】
-        # 背景を毎回ランダム（昼、夕暮れ、深夜など）に変えつつ、文字色を背景に合わせて白か黒に自動調整させる！
-        "6. RANDOMIZED EMOTIONAL VOID TONE WITH VISIBILITY: The background color and tone MUST be completely RANDOMIZED for each generation (e.g., bright daylight, subdued dusk, dark moody silence). CRITICAL: The AI MUST automatically adjust the text color to WHITE for dark backgrounds and BLACK for light backgrounds to ensure 100% legibility. Readability is the absolute highest priority."
+        # 水彩、葉っぱ、ピンなどを1つずつ厳選。重複禁止。渋滞解消。エモさの融合。
+        "6. RICHLY DECORATED SCENARIO (WITHOUT REDUNDANCY): Integrate diverse background elements like subtle watercolor doodles, leaves, vintage pins, or logic stamps. "
+        "Strictly PROHIBIT repeating the same icon theme (e.g., no two compasses, no multiple lightbulbs). Focus on high-quality textures. "
     ),
    "洗練されたシンメトリー（左右対称 × 強弱コントラスト × 感情同期）": (
         "STRICT VERTICAL SYMMETRY WITH DYNAMIC CONTRAST & EMOTIONAL LOCK: "
