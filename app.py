@@ -218,34 +218,33 @@ composition_dict = {
         "CRITICAL ANTI-REDUNDANCY: Absolutely zero word-for-word repetition. The total count of labels must equal the list length plus new categories. "
         "The main character should be interacting with the tree. NO REPEATING TEXT."
     ),
-  "ステップ型（順序解説 × 視線誘導の徹底 × 形状バリエーション）": (
-        "ELITE SEQUENTIAL STEP-FLOW WITH DYNAMIC SHAPES & UNMISTAKABLE START-POINT: "
+  "ステップ型（順序解説 × 視線誘導の徹底 × 障害物除去）": (
+        "ELITE SEQUENTIAL STEP-FLOW WITH DYNAMIC QUANTITY & START-POINT FOCUS: "
         
         # 1. 【中央のアンカー：1番（左上）への強制誘導】
         "1. CENTRAL STARTING SIGNAL: The center element MUST act as a clear signpost pointing to Step 1 (Top-Left). "
-        "Render a prominent arrow emerging FROM the center title AND pointing DIRECTLY at the Top-Left block. This is the only entry point for the eye. "
+        "CRITICAL: Render a prominent arrow emerging FROM the center title AND pointing DIRECTLY at the Top-Left block. This is the non-negotiable entry point. "
 
-        # 2. 【数に合わせた柔軟な時計回り配置（ここを強化！）】
-        # 4固定じゃなく、リストの数（3〜5）に合わせて等間隔に並べる指示
-        "2. DYNAMIC CLOCKWISE LAYOUT: Distribute the provided number of detail blocks (3 to 5) evenly in a circular or curved path. "
-        "The sequence MUST start at the Top-Left position and proceed strictly clockwise. The spacing must automatically adjust based on the total count to maintain visual balance. "
+        # 2. 【数（N）に合わせた時計回り配置】
+        # 「4個」という固定を捨て、3〜5個の数に合わせて等間隔に配置させる
+        "2. DYNAMIC GEOGRAPHICAL LAYOUT: Distribute the provided number of detail blocks (3 to 5) evenly in a clockwise circular or curved path. "
+        "Regardless of the count, Step 1 MUST be at the Top-Left. Subsequent blocks follow clockwise (e.g., for 3 blocks: TL, TR, Bottom-Center). "
 
-        # 3. 【論理的なステップ矢印と障害物除去】
-        # 矢印を最前面に。最後から1への逆流は絶対に許さない。
-        "3. FORWARD-ONLY CONNECTORS & CLEAR PATHS: Connect blocks ONLY in sequence (1->2, 2->3, etc.). "
-        "LAYER PRIORITY: Arrows MUST be rendered in the absolute foreground. No character or prop may obscure any part of the arrow. "
-        "NO REVERSE LOOP: ABSOLUTELY PROHIBIT any arrow pointing from the final block back to Step 1. The journey must end at the final block with a 'Goal' icon. "
+        # 3. 【論理的なステップ矢印（最後から1への逆流を完全に封じる）】
+        # 「最後のブロック」をターゲットにする指示に書き換え！
+        "3. FORWARD-ONLY CONNECTORS: Connect blocks ONLY in numerical sequence (1->2, 2->3, etc., up to N). "
+        "CRITICAL ERROR AVOIDANCE: ABSOLUTELY PROHIBIT any arrow pointing from the FINAL block in the sequence (the highest number) back to Step 1. "
+        "The path MUST end definitively at the final block. Render a 'GOAL' icon (e.g., a flag or medal) next to the final block to signify the conclusion. "
 
-        # 4. 【個別ボックスごとの感情同期と避難配置】
-        # 猫が矢印を塞がないように端っこに寄せる
-        "4. INDIVIDUAL BOX EMOTION SYNC & SAFE POSITIONING: Each character guide next to a box MUST match that specific content. "
-        "Character guides MUST be positioned at the outer margins of the blocks to ensure they do NOT cross or obscure the path of the logical arrows. "
+        # 4. 【猫の「避難」配置（矢印の絶対保護）】
+        "4. SAFE POSITIONING & LAYER PRIORITY: Arrows MUST be in the absolute foreground. "
+        "Character guides MUST be positioned at the outer margins, completely avoiding the logical path of the arrows. No part of a character may obscure any arrow. "
 
-        # 5. 【強弱と視認性】文字は大きく、太く！
-        "5. CLEAR VISUAL HIERARCHY: Title is massive and bold. Detail text must be medium size and weight for 100% legibility on mobile. "
+        # 5. 【強弱と視認性】
+        "5. CLEAR VISUAL HIERARCHY: Title is massive and bold. Detail text is medium size and weight for 100% legibility on mobile. "
 
         # 6. 【形状のバリエーション】
-        "6. DYNAMIC SHAPE VARIETY: Ensure visual rhythm by using diverse silhouettes (e.g., stylized panels, bubbles). Each box gets ONE high-quality icon. "
+        "6. DYNAMIC SHAPE VARIETY: Use diverse silhouettes (bubbles, panels, arrows) to maintain rhythm. ONE high-quality icon per box. "
     ),
     "ルービックキューブ（立体ブロック）（複雑な要素の組み合わせを表現）": (
         "A 3D Rubik's cube structure composition where the individual block panels are SIGNIFICANTLY ENLARGED to maximize surface area. " # 👈 ブロックサイズを「大幅に拡大」する！
