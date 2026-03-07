@@ -218,31 +218,29 @@ composition_dict = {
         "CRITICAL ANTI-REDUNDANCY: Absolutely zero word-for-word repetition. The total count of labels must equal the list length plus new categories. "
         "The main character should be interacting with the tree. NO REPEATING TEXT."
     ),
-   "サイクル型（循環・ステップ図解 × 個別感情同期）": (
-        "VERSATILE CIRCULAR FLOW (STEP-BY-STEP) WITH ADJUSTABLE CONNECTORS: "
+   "ステップ型（順序解説 × 個別感情同期 × 視線誘導の徹底）": (
+        "ELITE SEQUENTIAL STEP-FLOW WITH DYNAMIC SHAPES & START-POINT FOCUS: "
         
-        # 1. 【中央のテーマアンカー】
-        "1. CENTRAL THEME ANCHOR: Place the core subject or starting question precisely in the center. "
+        # 1. 【中央のアンカーとスタートへの誘導】
+        # 真ん中から「左上（1番）」へ明確に矢印や視線を向ける指示
+        "1. CENTRAL STARTING ANCHOR: Place the core subject in the center. "
+        "CRITICAL: The center element MUST have a clear visual pointer or arrow directed towards the TOP-LEFT block (Step 1) to announce the start of the story. "
 
-        # 2. 【ステップ数に合わせた円状配置】
-        # 4つに固定せず、提供されたブロックの数に合わせて等間隔に配置させる
-        "2. EQUIDISTANT CIRCULAR LAYOUT: Distribute the provided number of detail blocks (3 to 5) evenly in a circular path around the center. "
-        "The flow MUST start from Top-Left and move clockwise. "
+        # 2. 【順序に基づいた時計回り配置】
+        "2. SEQUENTIAL CLOCKWISE LAYOUT: Arrange 3 to 5 detail blocks in a numerical sequence starting FROM THE TOP-LEFT and moving clockwise. "
 
-        # 3. 【論理的な誘導矢印（ループは内容次第）】
-        "3. LOGICAL FLOW CONNECTORS: Connect the blocks with bold, stylized arrows following the sequence (1->2->3...). "
-        # 🔄 ループの有無をAIに判断させる指示
-        "CLOSING LOOP RULE: Only connect the final block back to the first block IF the content implies a repeating cycle. "
-        "IF it's a linear process with a clear goal, do NOT add a closing arrow to the start. "
+        # 3. 【論理的なステップ矢印（逆流・ループ厳禁）】
+        "3. FORWARD-ONLY CONNECTORS: Connect blocks with bold, stylized arrows in a 1->2->3 sequence. "
+        "STRICT RULE: DO NOT connect the final block back to Step 1. To avoid looking 'empty' or 'cheap', render a large 'Goal/Result' icon or a celebratory accent at the end of the final block to mark a clear conclusion. "
 
         # 4. 【個別ボックスごとの感情同期】
-        "4. INDIVIDUAL BOX EMOTION SYNC: Each character guide MUST 100% reflect the adjacent text box's context. "
+        "4. INDIVIDUAL BOX EMOTION SYNC: Each character guide next to a box MUST 100% reflect that box's specific context (e.g., confused for questions, happy for solutions). "
 
         # 5. 【強弱と視認性】
-        "5. CLEAR VISUAL HIERARCHY: Title must be massive and bold. Detail text must be medium size and weight for 100% legibility. "
+        "5. CLEAR VISUAL HIERARCHY: Title must be massive and bold. Detail text must be medium size and weight for 100% legibility on mobile. "
 
         # 6. 【文脈に合わせた形状と装飾】
-        "6. DYNAMIC SHAPE VARIETY: Use diverse silhouettes (bubbles, panels, arrows) to keep the layout interesting. Ensure each box has ONE high-quality icon. "
+        "6. DYNAMIC SHAPE VARIETY: Use diverse silhouettes (arrows, bubbles, scrolls). Each box gets ONE high-quality icon as a visual metaphor. "
     ),
     "ルービックキューブ（立体ブロック）（複雑な要素の組み合わせを表現）": (
         "A 3D Rubik's cube structure composition where the individual block panels are SIGNIFICANTLY ENLARGED to maximize surface area. " # 👈 ブロックサイズを「大幅に拡大」する！
