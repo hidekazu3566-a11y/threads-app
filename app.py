@@ -122,31 +122,32 @@ composition_dict = {
         "The number of tiles must exactly match the total count of non-empty text blocks. Ensure structural unity."
         # ↑【整合性】マスの数をブロックの総数とピッタリ一致させる指示だよ。
     ),
-  "コラージュ型（雑誌風・カオス×高コントラスト×猫【極小】固定）": (
+ "コラージュ型（雑誌風・カオス×高コントラスト×キャラ【極小】固定）": (
         "EXTREME MAGAZINE COLLAGE WITH DARK CONTRAST & MINI-SUBJECT: "
         
-        # 1. 【タイトル（プライマリメッセージ）の巨大化】
-        "1. PRIMARY MESSAGE SUPREMACY: Render the 'title text' from the content list in a MASSIVE, bold, textured font. It must be at least 3x larger than the detail text. "
-        "CRITICAL: Do NOT render the word 'TITLE' or 'Subject'. "
+        # 1. 【メインメッセージの巨大化・文字化の厳禁】
+        "1. PRIMARY MESSAGE SUPREMACY: The 'title text' from the content list MUST be the single most dominant visual anchor, rendered in a MASSIVE, bold, textured font. "
+        "CRITICAL: Do NOT under any circumstances render the word 'TITLE' or 'Subject' as a functional label. "
 
-        # 2. 【重なりと「超」ビリビリ感】
-        "2. ARTISTIC ANGLED LAYERING: PROHIBIT all vertical/horizontal alignment. Every paper scrap MUST be tilted. "
-        "Overlap them heavily with deep Drop Shadows. Use extreme Biribiri-kan (rough-torn edges showing paper fibers). "
+        # 2. 【意図的な「崩し」と強い重なり（カオスな美学）】
+        "2. ARTISTIC ANGLED LAYERING: PROHIBIT perfectly vertical or horizontal alignment. Every paper scrap MUST be slightly tilted or rotated. "
+        "Overlap elements heavily with realistic Drop Shadows to create 3D depth. Use extreme Biribiri-kan (rough-torn edges). "
 
-        # 3. 【背景を「強制的に」暗くする（視認性最優先）】
-        # 「淡い色」の余地をゼロにして、暗い色を指定！
-        "3. DARK BASE LAYER FOR MAXIMUM POP: The background base MUST be a very DARK color (e.g., Midnight Navy, Charcoal, or Dark Burnt Wood). "
-        "The text-holding scraps MUST be bright off-white. This extreme dark-to-light contrast is the absolute priority for legibility. "
+        # 3. 【背景を「強制的にダーク」にする（コントラスト最優先）】
+        # 「暗い背景」こそが視認性の鍵。
+        "3. DARK BASE LAYER FOR MAXIMUM POP: The background base MUST be a textured paper spread in a very DARK color (e.g., Midnight Navy, Charcoal, or Dark Distressed Walnut Wood). "
+        "Text holder paper scraps MUST be in a bright off-white or cream tone to create dramatic contrast against the dark base for maximum legibility. "
 
-        # 4. 【猫を「極小」サイズに固定する（ここがガチ！）】
-        # 「1/4」でもデカすぎたから「1/8」以下、リストの1行より小さく指示！
-        "4. MINIATURE CHARACTER SCALE: The character MUST be rendered in a MINIATURE scale, occupying less than 15% (1/8) of the total image area. "
-        "CRITICAL: The character MUST be smaller than any of the numbered list items. Position it as a small 'sticker-like' accent at the edge, not a main subject. "
+        # 4. 【キャラクターを「極小ステッカーサイズ」に固定】
+        # 猫に限らず、ガイド役を極小（画面の15%以下）に制限。
+        "4. MINIATURE CHARACTER SCALE: Position the character guide randomly. "
+        "CRITICAL SCALE RULE: The character MUST be rendered in a MINIATURE, sticker-like scale, occupying less than 15% (1/8) of the total image area. "
+        "The character MUST be clearly smaller than any individual text scrap to ensure the information is the main subject. "
 
-        # 5. 【視線ロック（小粒でも仕事はさせる）】
-        "5. GAZE-LOCK: Even at a small size, the character's eyes and posture MUST point directly at the '1.2.3.' list to guide the visual flow. "
+        # 5. 【視線ロック（小粒でもしっかりガイド）】
+        "5. GAZE-TO-LIST LOCK: Even at a small size, the character's eyes and posture MUST function as a literal visual arrow, pointing DIRECTLY at the core information list to guide the visual flow. "
 
-        # 6. 【装飾の渋滞解消】
+        # 6. 【多種多様な装飾の「融合」と渋滞解消】
         "6. REFINED ACCENTS: Add exactly ONE clip, ONE pin, and a few leaves/stamps. No redundancy. Focus on high-quality textures. "
     ),
    "余白重視（極限のネガティブスペース・対角線構図・背景ランダム）": (
