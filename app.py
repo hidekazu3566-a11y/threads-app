@@ -19,11 +19,12 @@ composition_dict = {
         "2. CLEAR VISUAL HIERARCHY: The 'TITLE' MUST be massive, bold, and heavy. "
         "Each detail box MUST contain clearly legible text with medium size and medium font weight for 100% mobile visibility. "
 
-        # 3. 【柔軟な形状の多様性とリズム】全部同じ形にせず、文脈に合わせて自由に形を選ぶ
-        "3. DYNAMIC & MEANINGFUL SHAPES: PROHIBIT repetitive box shapes. The AI MUST analyze the text and select from a wide variety of silhouettes. "
-        "Prioritize visual rhythm by ensuring each adjacent box has a distinct shape (e.g., stylized panels, organic forms, bubbles, or functional arrows for flow). "
-        "Do NOT restrict to a specific set; be creative while keeping it functional and clean. "
-
+       # 3. 【意図的な「崩し」とダイナミックな傾き】
+    # 「わずかに」を廃止。はっきりと意図的に傾ける！
+    "3. ARTISTIC ANGLED LAYERING: PROHIBIT perfectly vertical or horizontal alignment. "
+    "Each unified paper scrap MUST be DISTINCTLY and DYNAMICALLY tilted at diverse angles to look intentionally artistic, NOT just a layout mistake. "
+    "Ensure the angle is bold enough to be dynamic, but keeps the text easily readable. Overlap them with deep Drop Shadows. "
+        
         # 4. 【個別ボックスごとの感情同期】キャラの表情を隣のテロップの内容に100%合わせる
         "4. INDIVIDUAL BOX EMOTION SYNC: Each character guide MUST have an expression and pose that reflects the specific content of its adjacent text box. "
         "If the text is serious, the character is serious; if it's positive, the character smiles. Use diverse poses (pointing, sleeping, etc.) to match. "
