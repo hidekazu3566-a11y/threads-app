@@ -136,9 +136,11 @@ composition_dict = {
         "CRITICAL: Do NOT cut or split sentences, numbered lists (1. 2. 3.), or consecutive lines into separate paper scraps just because of a line break. "
         "ONLY create a separate paper scrap if there is a distinct new block or a clear empty line separating the text in the prompt. "
 
-        # 3. 【意図的な「崩し」と奥行き】
-        "3. ARTISTIC ANGLED LAYERING: PROHIBIT perfectly vertical alignment. "
-        "Each unified paper scrap MUST be slightly tilted at different angles. Overlap them with deep Drop Shadows. "
+        # 3. 【意図的な「崩し」とダイナミックな傾き】
+    # 「わずかに」を廃止。はっきりと意図的に傾ける！
+    "3. ARTISTIC ANGLED LAYERING: PROHIBIT perfectly vertical or horizontal alignment. "
+    "Each unified paper scrap MUST be DISTINCTLY and DYNAMICALLY tilted at diverse angles to look intentionally artistic, NOT just a layout mistake. "
+    "Ensure the angle is bold enough to be dynamic, but keeps the text easily readable. Overlap them with deep Drop Shadows. "
 
         # 4. 【背景を「深みのあるネイビー」などに固定（高コントラスト）】
         "4. DEEP DARK BASE LAYER: The background base MUST be a textured paper in a DEEP, RICH color (e.g., Deep Navy, Dark Teal, or Charcoal Black). "
