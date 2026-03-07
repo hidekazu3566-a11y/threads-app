@@ -122,27 +122,29 @@ composition_dict = {
         "The number of tiles must exactly match the total count of non-empty text blocks. Ensure structural unity."
         # ↑【整合性】マスの数をブロックの総数とピッタリ一致させる指示だよ。
     ),
-   "雑誌風コラージュ（あえて崩しておしゃれ感や動きを出す）": (
-        "STRICT COLLAGE COMPOSITION RULE (CRITICAL): "
-        # 👇 【変更点2】タイトルの目立ち度を「最大」に設定！
-        "1. TITLE DOMINANCE: The 'TITLE' text MUST be the single most dominant visual element, rendered significantly larger than any other text and positioned to attract maximum attention (e.g., top-center or prominent side). "
+   "コラージュ型（雑誌風・自由配置 × 究極の切り貼り）": (
+        "ELITE MAGAZINE-STYLE COLLAGE WITH DYNAMIC PLACEMENT & INTENSE TORN TEXTURES: "
+        
+        # 1. 【主役の自由配置と相互作用】中央固定を廃止！
+        # キャラをランダムな位置に置き、そこから情報の主役（リスト）へ視線を送らせる
+        "1. DYNAMIC SUBJECT POSITIONING: Place the main character guide RANDOMLY (Left, Right, Top, or Bottom) to create an organic, non-symmetrical scrapbook feel. "
+        "CRITICAL: Regardless of their position, the character MUST interact with the main message (e.g., pointing at a scrap of paper, peeking from behind a clip, or looking towards the text). "
 
-        "2. Elements MUST be arranged in an editorial 'broken grid' style with layered, non-uniform edges (scraps, tape, etc.). DO NOT add clean grid-lines. "
+        # 2. 【究極のビリビリ感と実在感】
+        "2. EXTREME TORN PAPER TEXTURES: Every text container MUST look like realistic, hand-torn scrap paper with rough, fibrous, and uneven edges (Biribiri-kan). "
+        "Layer elements physically using realistic masking tape, vintage paper clips, and push pins. The overlapping must look natural and tactile. "
 
-        "3. ALL VISUAL ELEMENTS AND TEXT BOXES MUST HEAVILY OVERLAP to create depth, resembling a creative, layered scrapbook. "
+        # 3. 【装飾の「引き算」とシンボル厳選】
+        "3. REFINED SYMBOLIC ACCENTS: Strictly PROHIBIT redundant or multiple icons of the same theme. "
+        "Select only ONE high-quality, detailed visual metaphor per concept. Eliminate all unnecessary clutter to keep the focus on the core message. "
 
-        "4. VARIABLE CHARACTER DENSITY: The AI MUST decide the optimal number of characters (1 or a few scattered subjects). "
+        # 4. 【メッセージの主役化（1. 2. 3. の強調）】
+        "4. DOMINANT MESSAGE HIERARCHY: The main list (1. 2. 3.) MUST be the largest and most distinct piece of torn paper. "
+        "The text MUST be bold and highly legible, standing out clearly from the artistic background elements. "
 
-        # 👇 【変更点1】1匹の時の感情遵守を「最強レベル」に強化！
-        "5. SCENARIO A (Single Subject): If only ONE character is generated, its expression and pose MUST be derived EXCLUSIVELY and absolutely from the 'TITLE' text itself. complètement ignore the emotional tone of ANY other elements (DETAILS, ACTIONS, HIGHLIGHTS). "
-        # ↑【最強強化】「独占的に」「完全に無視しろ」という言葉で、タイトル以外の感情混入を根絶！
-        "Crucially, DO NOT let action keywords (e.g., '喜びの舞') influence the subject's emotional state. "
-        # ↑【事故防止】アクションキーワードに感情を引っ張られるのを明確に禁止したよ！
-
-        "6. SCENARIO B (Multiple Subjects): If MULTIPLE characters are generated, randomized count. Each instance MUST be placed in close proximity to a text block and reflect THAT block's emotion only. Title proximity still commands title emotion. "
-        # ↑【複数の時】こっちは変わらず、文字と顔をセットで独立させるロジック。
-
-        "7. DECORATION: Integrate background with watercolor doodles, leaves, pins, or stamps. Ensure a creative feel. No repetition."
+        # 5. 【エモさと抜け感のバランス】
+        "5. SOPHISTICATED ARTISTIC WHITESPACE: Maintain an elegant balance between the collage elements. "
+        "Avoid filling every corner. Use subtle paper textures or faint stains in the background to create depth without distracting from the text. "
     ),
    "余白重視（極限のネガティブスペース・対角線構図・背景ランダム）": (
         "ULTIMATE MINIMALIST DIAGONAL RULE: "
