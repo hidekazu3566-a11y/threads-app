@@ -123,32 +123,31 @@ composition_dict = {
         # ↑【整合性】マスの数をブロックの総数とピッタリ一致させる指示だよ。
     ),
    "コラージュ型（雑誌風・カオスと洗練の黄金比）": (
-        "ELITE MAGAZINE-STYLE COLLAGE WITH INTENSE LAYERING & GAZE-DIRECTED FLOW: "
+        "ELITE MAGAZINE-STYLE COLLAGE WITH INTENSE LAYERING & DIVERSE DECORATIONS: "
         
-        # 1. 【タイトルの絶対主役化】
-        "1. TITLE DOMINANCE: The 'TITLE' text MUST be the single most dominant visual anchor, significantly larger and bolder than ANY other text. "
+        # 1. 【高コントラスト配置（ここを最強化！）】
+        # 背景を「暗く」、手前の紙を「明るく」して物理的に目立たせる
+        "1. VISUAL CONTRAST SEPARATION: Create a deep contrast between the foreground and background. "
+        "The background base (e.g., dark distressed walnut wood or deep teal map) MUST be rendered significantly darker and richer. "
+        "Text holder paper scraps MUST be in a distinct, bright cream or clean off-white tone to pop visually against the dark base. "
 
-        # 2. 【意図的な崩しと「超」ビリビリ感】
-        "2. HEAVILY OVERLAPPED, ARTISTIC LAYERING: PROHIBIT perfectly vertical or horizontal alignment. "
-        "Every scrap of paper MUST be slightly tilted. Use Drop Shadows and extreme Biribiri-kan (rough, hand-torn edges). "
+        # 2. 【タイトルの絶対主役化】
+        "2. TITLE DOMINANCE: The 'TITLE' text MUST be rendered significantly larger and bolder than ANY other text. "
+        "Render in massive, textured ink to act as the single most dominant visual anchor. "
 
-        # 3. 【多種多様な装飾の「融合」】水彩画、葉、ピン、スタンプを1つずつ厳選
-        "3. RICHLY DECORATED SCENARIO (WITHOUT REDUNDANCY): Integrate diverse background elements like watercolor doodles, leaves, and vintage pins. "
-        "Strictly PROHIBIT repeating the same icon theme. Each accent must be unique and high-quality. "
+        # 3. 【意図的な崩しと「超」ビリビリ感】
+        "3. HEAVILY OVERLAPPED, ARTISTIC LAYERING: PROHIBIT perfectly vertical or horizontal alignment. "
+        "Use Drop Shadows under EVERY scrap for maximum depth. The Biribiri-kan (rough, hand-torn edges) MUST be extreme. "
 
-        # 4. 【猫の「職人」化 ＆ リストへの視線ロック（ここを最強化！）】
-        # 猫の目が「1. 2. 3.」のリストを物理的に指し示すように固定
-        "4. DYNAMIC POSITIONING & GAZE-TO-LIST LOCK: Position the character guide randomly (Left, Right, etc.). "
-        "CRITICAL VISUAL FLOW: The character's eyes and posture MUST function as a literal visual arrow, pointing DIRECTLY at the '1. 2. 3.' list scrap. "
-        "Even if they are 'peeking' or 'holding' a paper, their gaze MUST be locked onto the list text to guide the reader's eye to the core information. "
+        # 4. 【多種多様な装飾の「融合」】水彩画、葉、ピン、スタンプを1つずつ厳選（渋滞解消）
+        "4. RICHLY DECORATED SCENARIO (WITHOUT REDUNDANCY): Integrate diverse background elements like watercolor doodles, leaves, vintage pins, or stamps. Select only ONE high-quality example of each. "
 
-        # 5. 【リストの視認性とタイトルとのコントラスト】
-        # タイトルは「巨大・黒」、リストは「中サイズ・背景あり」で差別化
-        "5. MESSAGING CLARITY & CONTRAST: The list (1. 2. 3.) must be on a distinct piece of torn paper. "
-        "Ensure a strong contrast between the massive 'TITLE' and the 'LIST' to make the hierarchy obvious at a glance. "
+        # 5. 【猫の「職人」化 ＆ リストへの視線ロック】（前の掟継承）
+        "5. DYNAMIC POSITIONING & GAZE-TO-LIST LOCK: Position the single character guide randomly. Their gaze MUST be locked onto the '1. 2. 3.' list scrap to guide the eye. "
 
-        # 6. 【背景のストーリー性】
-        "6. TEXTURED BACKGROUND DEPTH: The base layer must look like a textured magazine spread with subtle vintage stains. "
+        # 6. 【リストの視認性とタイトルとのコントラスト】
+        # タイトルは巨大・黒、リストは中サイズ・背景あり（前回の掟継承）
+        "6. MESSAGING CLARITY & CONTRAST: Ensure clear contrast between the massive 'TITLE' and the 'LIST'. "
     ),
    "余白重視（極限のネガティブスペース・対角線構図・背景ランダム）": (
         "ULTIMATE MINIMALIST DIAGONAL RULE: "
