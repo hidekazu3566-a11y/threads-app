@@ -43,7 +43,7 @@ composition_dict = {
 
         "ABSOLUTELY NO VISIBLE GRID LINES OR CROSSHAIRS."
     ),
- "洗練された中央集中型（日の丸構図 × 視認性重視 × 密度強化）": (
+ "日の丸構図（視認性重視 × 密度強化）": (
         "PRECISE CENTERED COMPOSITION (HINOMARU STYLE) WITH RICH DECORATIVE ACCENTS & CONTEXTUAL FLAIR: "
         
         # 1. 【中央のアンカー】メインキャラを中央に配置。
