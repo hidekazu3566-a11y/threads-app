@@ -125,32 +125,50 @@ composition_dict = {
 "コラージュ型（雑誌風・ブロック構造完全同期×ダーク背景×キャラ極小）": (
         "ELITE MAGAZINE COLLAGE WITH STRICT LOGICAL TEXT GROUPING & DEEP DARK CONTRAST: "
         
-        # 1. 【メインメッセージの巨大化】
+        # 1. 【メインメッセージの巨大化とラベル化禁止】
+        # AIに対して「タイトル文字は一番デカく太くしろ」と命令。
+        # 同時に「絶対に『TITLE』や『Subject』という余計な単語を勝手に書き足すな」と厳しく禁止してるよ。
         "1. PRIMARY MESSAGE SUPREMACY: Render the 'title text' from the content list in a MASSIVE, bold, textured font. "
         "CRITICAL: DO NOT render the word 'TITLE' or 'Subject'. "
 
-        # 2. 【塊の死守と、空白での分離（あんたの指示を完全反映！）】
-        # 改行で切るな！1つのブロックは1枚の紙。空行や別ブロック指定の時だけ紙を分ける。
+        # 2. 【テキストの「塊」の死守と、空白での分離】
+        # AIが勝手に改行で紙を切り刻むのを防ぐための最重要ルール！
+        # 「入力された文字のまとまり（ブロック）は、絶対に1枚の紙にまとめろ」
+        # 「1. 2. 3. のようなリストや、ただの改行だけで勝手に紙を分けるな」
+        # 「明確な空行があるか、別のブロックとして指定された時だけ、別の紙を作れ」と徹底的に命令してるよ。
         "2. STRICT TEXT GROUPING BY INPUT: Treat each provided text block in the input as ONE solid unit. "
         "Render all text within a single block onto ONE single piece of torn paper. "
         "CRITICAL: Do NOT cut or split sentences, numbered lists (1. 2. 3.), or consecutive lines into separate paper scraps just because of a line break. "
         "ONLY create a separate paper scrap if there is a distinct new block or a clear empty line separating the text in the prompt. "
 
-        # 3. 【意図的な「崩し」とダイナミックな傾き】
-    # 「わずかに」を廃止。はっきりと意図的に傾ける！
-    "3. ARTISTIC ANGLED LAYERING: PROHIBIT perfectly vertical or horizontal alignment. "
-    "Each unified paper scrap MUST be DISTINCTLY and DYNAMICALLY tilted at diverse angles to look intentionally artistic, NOT just a layout mistake. "
-    "Ensure the angle is bold enough to be dynamic, but keeps the text easily readable. Overlap them with deep Drop Shadows. "
+        # 3. 【意図的な「崩し」とダイナミックな傾き ＆ ビリビリ感】
+        # 「わずかに傾ける」という中途半端な指示を廃止！
+        # 「配置ミスに見えないように、はっきりとダイナミックに角度をつけて傾けろ（でも読める範囲で）」と命令。
+        # さらに「すべての紙の端っこは、繊維が見えるくらい激しくビリビリに破いて、深い影を落とせ」と質感を強調してるよ。
+        "3. ARTISTIC ANGLED LAYERING & TORN TEXTURE: PROHIBIT perfectly vertical or horizontal alignment. "
+        "Each unified paper scrap MUST be DISTINCTLY and DYNAMICALLY tilted at diverse angles to look intentionally artistic, NOT just a layout mistake. "
+        "Ensure the angle is bold enough to be dynamic, but keeps the text easily readable. "
+        "CRITICAL TEXTURE: Overlap them with deep Drop Shadows and use extreme Biribiri-kan (rough-torn, fibrous paper edges) for every scrap. "
 
         # 4. 【背景を「深みのあるネイビー」などに固定（高コントラスト）】
+        # 視認性を爆上げするためのルール。
+        # 「背景はディープネイビーやダークティール、チャコールブラックなど、深くリッチな暗い色にしろ」
+        # 「手前の文字を書く紙は、明るいオフホワイトにして、バキッと目立たせろ」と命令してるよ。
         "4. DEEP DARK BASE LAYER: The background base MUST be a textured paper in a DEEP, RICH color (e.g., Deep Navy, Dark Teal, or Charcoal Black). "
         "Text scraps MUST be bright off-white to create maximum pop and legibility. "
 
-        # 5. 【キャラの極小サイズと視線ロック】
+        # 5. 【キャラの極小サイズと視線誘導ロック】
+        # ガイド役のキャラが主役になって情報を邪魔しないためのルール。
+        # 「キャラは画面の15%以下の極小（ステッカーサイズ）で描け」
+        # 「文字が書かれた紙より明らかに小さくしろ」
+        # 「そして、そのキャラの視線とポーズは、必ずメインのテキストブロックを指し示す矢印の役割を果たさせろ」と命令してるよ。
         "5. MINIATURE SCALE & GAZE-LOCK: Render the character in a MINIATURE scale (less than 15% of the area). "
         "The character MUST be clearly smaller than the text scraps. The character's gaze and posture MUST point DIRECTLY at the main text block scrap. "
 
-        # 6. 【装飾の渋滞解消】
+        # 6. 【装飾の渋滞解消（シンプルで洗練された小物）】
+        # 画面がごちゃごちゃするのを防ぐルール。
+        # 「クリップ1つ、ピン1つ、あとはスタンプや葉っぱを少しだけ追加しろ」
+        # 「同じ種類のアイコン（例えば電球2個とか）を重複して置くことは絶対に禁止」と命令してるよ。
         "6. REFINED SYMBOLIC ACCENTS: Add exactly ONE clip, ONE pin, and a few unique stamps/leaves. PROHIBIT redundancy. "
     ),
    "洗練されたシンメトリー（左右対称 × 強弱コントラスト × 感情同期）": (
