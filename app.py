@@ -218,29 +218,34 @@ composition_dict = {
         "CRITICAL ANTI-REDUNDANCY: Absolutely zero word-for-word repetition. The total count of labels must equal the list length plus new categories. "
         "The main character should be interacting with the tree. NO REPEATING TEXT."
     ),
-   "ステップ型（順序解説 × 個別感情同期 × 視線誘導の徹底）": (
-        "ELITE SEQUENTIAL STEP-FLOW WITH DYNAMIC SHAPES & START-POINT FOCUS: "
+  "ステップ型（順序解説 × 視線誘導の徹底 × 形状バリエーション）": (
+        "ELITE SEQUENTIAL STEP-FLOW WITH DYNAMIC SHAPES & UNMISTAKABLE START-POINT: "
         
-        # 1. 【中央のアンカーとスタートへの誘導】
-        # 真ん中から「左上（1番）」へ明確に矢印や視線を向ける指示
-        "1. CENTRAL STARTING ANCHOR: Place the core subject in the center. "
-        "CRITICAL: The center element MUST have a clear visual pointer or arrow directed towards the TOP-LEFT block (Step 1) to announce the start of the story. "
+        # 1. 【中央のアンカー：1番（左上）への強制誘導】
+        "1. CENTRAL STARTING SIGNAL: The center element MUST act as a clear signpost pointing to Step 1 (Top-Left). "
+        "Render a prominent arrow emerging FROM the center title AND pointing DIRECTLY at the Top-Left block. This is the only entry point for the eye. "
 
-        # 2. 【順序に基づいた時計回り配置】
-        "2. SEQUENTIAL CLOCKWISE LAYOUT: Arrange 3 to 5 detail blocks in a numerical sequence starting FROM THE TOP-LEFT and moving clockwise. "
+        # 2. 【数に合わせた柔軟な時計回り配置（ここを強化！）】
+        # 4固定じゃなく、リストの数（3〜5）に合わせて等間隔に並べる指示
+        "2. DYNAMIC CLOCKWISE LAYOUT: Distribute the provided number of detail blocks (3 to 5) evenly in a circular or curved path. "
+        "The sequence MUST start at the Top-Left position and proceed strictly clockwise. The spacing must automatically adjust based on the total count to maintain visual balance. "
 
-        # 3. 【論理的なステップ矢印（逆流・ループ厳禁）】
-        "3. FORWARD-ONLY CONNECTORS: Connect blocks with bold, stylized arrows in a 1->2->3 sequence. "
-        "STRICT RULE: DO NOT connect the final block back to Step 1. To avoid looking 'empty' or 'cheap', render a large 'Goal/Result' icon or a celebratory accent at the end of the final block to mark a clear conclusion. "
+        # 3. 【論理的なステップ矢印と障害物除去】
+        # 矢印を最前面に。最後から1への逆流は絶対に許さない。
+        "3. FORWARD-ONLY CONNECTORS & CLEAR PATHS: Connect blocks ONLY in sequence (1->2, 2->3, etc.). "
+        "LAYER PRIORITY: Arrows MUST be rendered in the absolute foreground. No character or prop may obscure any part of the arrow. "
+        "NO REVERSE LOOP: ABSOLUTELY PROHIBIT any arrow pointing from the final block back to Step 1. The journey must end at the final block with a 'Goal' icon. "
 
-        # 4. 【個別ボックスごとの感情同期】
-        "4. INDIVIDUAL BOX EMOTION SYNC: Each character guide next to a box MUST 100% reflect that box's specific context (e.g., confused for questions, happy for solutions). "
+        # 4. 【個別ボックスごとの感情同期と避難配置】
+        # 猫が矢印を塞がないように端っこに寄せる
+        "4. INDIVIDUAL BOX EMOTION SYNC & SAFE POSITIONING: Each character guide next to a box MUST match that specific content. "
+        "Character guides MUST be positioned at the outer margins of the blocks to ensure they do NOT cross or obscure the path of the logical arrows. "
 
-        # 5. 【強弱と視認性】
-        "5. CLEAR VISUAL HIERARCHY: Title must be massive and bold. Detail text must be medium size and weight for 100% legibility on mobile. "
+        # 5. 【強弱と視認性】文字は大きく、太く！
+        "5. CLEAR VISUAL HIERARCHY: Title is massive and bold. Detail text must be medium size and weight for 100% legibility on mobile. "
 
-        # 6. 【文脈に合わせた形状と装飾】
-        "6. DYNAMIC SHAPE VARIETY: Use diverse silhouettes (arrows, bubbles, scrolls). Each box gets ONE high-quality icon as a visual metaphor. "
+        # 6. 【形状のバリエーション】
+        "6. DYNAMIC SHAPE VARIETY: Ensure visual rhythm by using diverse silhouettes (e.g., stylized panels, bubbles). Each box gets ONE high-quality icon. "
     ),
     "ルービックキューブ（立体ブロック）（複雑な要素の組み合わせを表現）": (
         "A 3D Rubik's cube structure composition where the individual block panels are SIGNIFICANTLY ENLARGED to maximize surface area. " # 👈 ブロックサイズを「大幅に拡大」する！
