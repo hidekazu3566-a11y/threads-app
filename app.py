@@ -122,32 +122,38 @@ composition_dict = {
         "The number of tiles must exactly match the total count of non-empty text blocks. Ensure structural unity."
         # ↑【整合性】マスの数をブロックの総数とピッタリ一致させる指示だよ。
     ),
-   "コラージュ型（雑誌風・カオスと洗練の黄金比）": (
-        "ELITE MAGAZINE-STYLE COLLAGE WITH INTENSE LAYERING & DIVERSE DECORATIONS: "
+   "コラージュ型（雑誌風・自由配置 × 究極の切り貼り）": (
+        "ELITE MAGAZINE-STYLE COLLAGE WITH DYNAMIC PLACEMENT & CONTRASTING TONES: "
         
-        # 1. 【高コントラスト配置（ここを最強化！）】
-        # 背景を「暗く」、手前の紙を「明るく」して物理的に目立たせる
-        "1. VISUAL CONTRAST SEPARATION: Create a deep contrast between the foreground and background. "
-        "The background base (e.g., dark distressed walnut wood or deep teal map) MUST be rendered significantly darker and richer. "
-        "Text holder paper scraps MUST be in a distinct, bright cream or clean off-white tone to pop visually against the dark base. "
+        # 1. 【メインメッセージの絶対主役化（「TITLE」の文字化を禁止！）】
+        # AIが「TITLE」という単語そのものを描かないよう、指示語を明確化
+        "1. PRIMARY MESSAGE DOMINANCE: The 'title text' from the content list MUST be the single most dominant visual anchor, rendered significantly larger and bolder than any other text. "
+        "Render in massive, textured ink. DO NOT explicitly render the word 'TITLE' or 'Subject' as a label. "
 
-        # 2. 【タイトルの絶対主役化】
-        "2. TITLE DOMINANCE: The 'TITLE' text MUST be rendered significantly larger and bolder than ANY other text. "
-        "Render in massive, textured ink to act as the single most dominant visual anchor. "
+        # 2. 【意図的な「崩し」と強い重なり（カオスな美学）】
+        # 垂直・水平を禁止。ナナメに重ねて奥行き（Drop Shadows）を出す
+        "2. ARTISTIC ANGLED LAYERING: PROHIBIT perfectly vertical or horizontal alignment. "
+        "Every scrap of paper MUST be slightly tilted or rotated at diverse angles. Overlapping is CRITICAL: let papers partially cover each other with realistic Drop Shadows to create 3D depth. "
 
-        # 3. 【意図的な崩しと「超」ビリビリ感】
-        "3. HEAVILY OVERLAPPED, ARTISTIC LAYERING: PROHIBIT perfectly vertical or horizontal alignment. "
-        "Use Drop Shadows under EVERY scrap for maximum depth. The Biribiri-kan (rough, hand-torn edges) MUST be extreme. "
+        # 3. 【視認性を守る背景色の差別化（同系色禁止！）】
+        # 手前の紙と背景を、明度や色相でハッキリ分ける指示
+        "3. NON-MONOCHROMATIC BACKGROUND: The background base layer MUST be a distinct color that provides clear visual contrast with the foreground text scraps. "
+        "Avoid using a same-tone background; if scraps are light/warm, use a pale contrasting color (e.g., cool-toned paper or dark textured wood) to ensure the '1.2.3.' list pops out. "
 
-        # 4. 【多種多様な装飾の「融合」】水彩画、葉、ピン、スタンプを1つずつ厳選（渋滞解消）
-        "4. RICHLY DECORATED SCENARIO (WITHOUT REDUNDANCY): Integrate diverse background elements like watercolor doodles, leaves, vintage pins, or stamps. Select only ONE high-quality example of each. "
+        # 4. 【「超」ビリビリ感と物理的な実在感】
+        # 紙の端っこをボロボロにする（Biribiri-kan）。マステやピンを多用
+        "4. HYPER-REALISTIC TORN TEXTURES: Every text container MUST look like realistic, hand-torn scrap paper with rough, fibrous edges (Biribiri-kan). "
+        "Layer elements physically using realistic masking tape, clips, and push pins. The composition must feel like a physical, tactile scrapbook. "
 
-        # 5. 【猫の「職人」化 ＆ リストへの視線ロック】（前の掟継承）
-        "5. DYNAMIC POSITIONING & GAZE-TO-LIST LOCK: Position the single character guide randomly. Their gaze MUST be locked onto the '1. 2. 3.' list scrap to guide the eye. "
+        # 5. 【キャラの配置と「視線ロック」】
+        # キャラはどこにいてもいいけど、目は絶対に「リスト（1.2.3.）」を見させる
+        "5. DYNAMIC SUBJECT POSITIONING & GAZE-LOCK: Position the character guide randomly (Left, Right, etc.) to create an organic layout. "
+        "CRITICAL VISUAL FLOW: The character's gaze and posture MUST function as a literal visual arrow, pointing DIRECTLY at the '1. 2. 3.' list scrap to guide the reader's eye. "
 
-        # 6. 【リストの視認性とタイトルとのコントラスト】
-        # タイトルは巨大・黒、リストは中サイズ・背景あり（前回の掟継承）
-        "6. MESSAGING CLARITY & CONTRAST: Ensure clear contrast between the massive 'TITLE' and the 'LIST'. "
+        # 6. 【多種多様な装飾の「融合」と渋滞解消】
+        # スタンプや水彩、葉っぱなどを1つずつ厳選して配置
+        "6. REFINED SYMBOLIC ACCENTS: Integrate diverse background elements like subtle watercolor doodles, leaves, and vintage stamps. "
+        "Strictly PROHIBIT redundant or multiple icons of the same theme. Each accent must be unique and high-quality to enhance the editorial feel. "
     ),
    "余白重視（極限のネガティブスペース・対角線構図・背景ランダム）": (
         "ULTIMATE MINIMALIST DIAGONAL RULE: "
