@@ -218,7 +218,29 @@ composition_dict = {
         "CRITICAL ANTI-REDUNDANCY: Absolutely zero word-for-word repetition. The total count of labels must equal the list length plus new categories. "
         "The main character should be interacting with the tree. NO REPEATING TEXT."
     ),
-    "放射型（中心から外に広がる）": "A concentric circles infographic layout, like ripples expanding outwards, to clearly show influence, scope, or importance.",
+   "サイクル型（循環・ステップ図解 × 個別感情同期）": (
+        "CYCLIC STEP-BY-STEP FLOW (LOOP) WITH INDIVIDUAL EMOTION & VISUAL CONNECTORS: "
+        
+        # 1. 【中央のテーマアンカー】真ん中に「最大の問い」や「主役」を配置する
+        "1. CENTRAL THEME ANCHOR: Place the core subject, main character, or 'starting question' precisely in the center. All steps must revolve around this anchor to tell a single story. "
+
+        # 2. 【循環するステップ配置】1→2→3と時計回りに視線が流れるように配置する
+        "2. CIRCULAR STEP SEQUENCE: Arrange the detail blocks in a clear, looping sequence around the center (typically clockwise). The layout must feel like a continuous journey. "
+
+        # 3. 【大きな誘導矢印の義務化】ブロック同士を「太く、特徴的なデザインの矢印」で繋ぐ
+        "3. MANDATORY STYLIZED ARROWS: Connect each block with large, colorful, and stylized directional arrows. These arrows must act as a primary visual skeleton to guide the eye. "
+
+        # 4. 【各ブロックの内容に100%同期（ここを修正！）】
+        # ステップの順序に関係なく、そのボックスに書いてある「内容」に表情を合わせる
+        "4. INDIVIDUAL BLOCK EMOTION SYNC: The character's expression and pose next to each box MUST 100% reflect the specific content of THAT adjacent text box. "
+        "Analyze each step independently: If a box is about 'struggle', the character looks pensive; if it's about 'self-permission', the character looks gentle or relieved. Do not force a fixed progression; prioritize the immediate context. "
+
+        # 5. 【強弱と視認性】タイトルは巨大、本文はスマホで読めるサイズと太さ
+        "5. CLEAR VISUAL HIERARCHY: The 'TITLE' MUST be massive and bold. Each detail box MUST contain clearly legible text with medium size and medium font weight for 100% mobile visibility. "
+
+        # 6. 【リッチな文脈装飾】各ステップの内容に合わせた小道具を添える
+        "6. CONTEXTUAL PROPS & DENSITY: Surround each step with subtle 'visual accents' that act as metaphors for that specific phase. Maintain a high-quality, professional density. "
+    ),
     "ルービックキューブ（立体ブロック）（複雑な要素の組み合わせを表現）": (
         "A 3D Rubik's cube structure composition where the individual block panels are SIGNIFICANTLY ENLARGED to maximize surface area. " # 👈 ブロックサイズを「大幅に拡大」する！
         "Prioritize text readability above all. Render all detail text (from the content list) in a VERY LARGE, BOLD, highly legible font (e.g., ゴシック体) within the enlarged panels. " # 👈 「文字の大きさ、太さ、読みやすさ」を最優先！
