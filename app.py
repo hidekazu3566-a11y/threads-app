@@ -158,7 +158,6 @@ composition_dict = {
     # 6. 【装飾の渋滞解消（シンプルで洗練された小物）】
     # 余計な装飾を省き、クリップやピンを1つずつだけ置いて、洗練された印象にするよ。
     "6. REFINED SYMBOLIC ACCENTS: Add exactly ONE clip, ONE pin, and a few unique stamps/leaves. PROHIBIT redundancy. "
-)
     ),
    "洗練されたシンメトリー（左右対称 × 強弱コントラスト × 感情同期）": (
         "STRICT VERTICAL SYMMETRY WITH DYNAMIC CONTRAST & EMOTIONAL LOCK: "
@@ -203,7 +202,7 @@ composition_dict = {
         "A central protagonist is integrated tightly with each step's corresponding text box. " # 👈 一体感を維持！
         "Clear labels for '0%' and '100%' must be visible. Include subtle emotional icons. DO NOT repeat any text. "
         "Prioritize seamless, tight character-text proximity. The overall feel is balanced and instructional." # 👈 密着と分かりやすさを強調！
-        ),
+    ),
 "深掘りツリー（「なぜ？」「どうやる？」を枝分けして解説）": (
         "An organic, tree-like infographic with a strict visual hierarchy. "
         "The Title is the root/trunk. "
