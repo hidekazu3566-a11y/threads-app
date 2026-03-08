@@ -122,79 +122,48 @@ composition_dict = {
         "The number of tiles must exactly match the total count of non-empty text blocks. Ensure structural unity."
         # ↑【整合性】マスの数をブロックの総数とピッタリ一致させる指示だよ。
     ),
-"コラージュ型（雑誌風・ブロック構造完全同期×ダーク背景×キャラ極小）": (
-    "ELITE MAGAZINE COLLAGE WITH ABSOLUTE PHYSICAL SEGMENTATION & DEEP DARK CONTRAST: "
+"コラージュ型（雑誌風・空白行完全同期×ダーク背景×キャラ極小）": (
+    "ELITE MAGAZINE COLLAGE WITH PURE EMPTY-LINE SEGMENTATION: "
     
     # 1. 【メインメッセージの巨大化とラベル化禁止】
-    # タイトルを一番目立たせ、「TITLE」などの余計な文字を入れないルール。
+    # タイトルを一番大きく描く。余計な「TITLE」などのラベル文字は絶対に入れない。
     "1. PRIMARY MESSAGE SUPREMACY: Render the 'title text' from the content list in a MASSIVE, bold, textured font. "
     "CRITICAL: DO NOT render the word 'TITLE' or 'Subject'. "
 
-    # 2. 【空白行による「物理的切断」の絶対命令（ここを最強に強化！）】
-    # 「論理的な繋がり」よりも「空白行」を優先。空白があったら、前の紙を強制終了して新しい紙を作る指示だよ。
-    "2. MANDATORY PHYSICAL FRAGMENTATION BY EMPTY LINES: Every single EMPTY LINE in the prompt is an absolute command to TERMINATE the current paper scrap and START a brand-new, physically separate scrap. "
-    "CRITICAL: PROHIBIT merging separate paragraphs or blocks into a single scrap, even if they are logically related or part of a sequence. "
-    "Each scrap MUST be a distinct, individual object with its own boundaries. "
+    # 2. 【空白行（空行）のみを分離のトリガーにする：最優先ルール】
+    # ここが今回の修正の核心！
+    # 連続している行（空行がない行）は、どんな内容でも必ず「同じ1枚の紙」に描くこと。
+    # 逆に、プロンプトに「明確な空白行」がある場合のみ、そこで紙を切り離して別の破片にすること。
+    # 「1. 2. 3.」などの番号の有無は一切関係なく、空行の有無だけで判断してねっていうルール。
+    "2. MANDATORY SEGMENTATION BY EMPTY LINES ONLY: "
+    "MANDATORY: Render any sequence of text WITHOUT an empty line onto a SINGLE paper scrap. "
+    "CRITICAL: The ONLY signal to separate text into different paper scraps is a CLEAR EMPTY LINE. "
+    "If there is no empty line, keep the lines together. If there IS an empty line, you MUST terminate the current scrap and start a new one. "
+    "Do not ignore empty lines, and do not create new scraps without an empty line. "
 
-    # 3. 【意図的な「崩し」と「角度同期の厳禁」 ＆ 紙の質感】
-    # それぞれの紙をバラバラの角度にして、重なりと影を強調。これで「別の紙」であることを強調するよ。
+    # 3. 【意図的な「崩し」と角度のバラバラ化 ＆ 紙の質感】
+    # 紙の破片をそれぞれバラバラのダイナミックな角度で配置。
+    # 角度を揃えるのは禁止。手でちぎったような「ビリビリ感（繊維が見える縁）」と影をしっかりつけるよ。
     "3. ARTISTIC ANGLED LAYERING & TORN TEXTURE: PROHIBIT perfectly vertical or horizontal alignment. "
-    "CRITICAL: PROHIBIT synchronizing the angles of different paper scraps. "
-    "Each scrap MUST be tilted at a UNIQUE, DYNAMIC angle to ensure they look like individual, scattered fragments. "
-    "Overlap them with deep, realistic Drop Shadows. "
-    "EVERY scrap MUST have extreme rough-torn edges with visible paper fibers for high tactile texture. "
+    "Each scrap MUST be tilted at a UNIQUE, DYNAMIC angle to ensure they look like scattered fragments. "
+    "PROHIBIT synchronizing the angles of different scraps. Overlap them with deep Drop Shadows. "
+    "EVERY scrap MUST have extreme rough-torn, fibrous edges for a tactile texture. "
 
     # 4. 【背景を「深みのあるネイビー」に固定 ＆ ヴィンテージの汚れ感】
-    # 暗い背景に明るい紙を置くことで、コントラストを最大化して文字を読みやすくするルール。
+    # ダークネイビーや黒系の背景に、ヴィンテージ風のシミや擦れを足す。
+    # 文字が書いてある紙は「明るいオフホワイト」にして、読みやすさを最大にするよ。
     "4. DEEP DARK BASE LAYER & VINTAGE TEXTURE: The background base MUST be a textured paper in a DEEP, RICH color (e.g., Deep Navy, Dark Teal, or Charcoal Black). "
-    "CRITICAL VINTAGE VIBE: Add subtle vintage distress (faint stains, scuffs, or aged magazine spread texture). "
-    "Text scraps MUST be bright off-white for maximum contrast and legibility. "
+    "CRITICAL VINTAGE VIBE: Add subtle vintage distress (faint stains, scuffs). "
+    "Text scraps MUST be bright off-white for maximum legibility. "
 
     # 5. 【キャラの極小サイズと視線誘導ロック】
-    # キャラのサイズを画面の15%以下に抑えて、主役（テキスト）を邪魔しないように配置。
+    # キャラのサイズは画面の15%以下。視線とポーズはメインテキストを指し示すように固定。
     "5. MINIATURE SCALE & GAZE-LOCK: Render the character in a MINIATURE scale (less than 15% of the area). "
-    "The character MUST be clearly smaller than the text scraps. The character's gaze and posture MUST point DIRECTLY at the main text block scrap. "
+    "The character's gaze and posture MUST point DIRECTLY at the main text scrap. "
 
-    # 6. 【装飾の渋滞解消（シンプルで洗練された小物）】
-    # 余計な装飾を省き、クリップやピンを1つずつだけ置いて、洗練された印象にするよ。
+    # 6. 【装飾の厳選】
+    # 装飾は控えめに。クリップ1個、ピン1個、スタンプ数枚だけを置くよ。
     "6. REFINED SYMBOLIC ACCENTS: Add exactly ONE clip, ONE pin, and a few unique stamps/leaves. PROHIBIT redundancy. "
-    ),
-   "洗練されたシンメトリー（左右対称 × 強弱コントラスト × 感情同期）": (
-        "STRICT VERTICAL SYMMETRY WITH DYNAMIC CONTRAST & EMOTIONAL LOCK: "
-        
-        # 1. 【垂直軸の完璧な整列】すべての要素（タイトル、ボックス、キャラ）を中央の縦ラインに完璧に揃える。
-        "1. CENTRAL AXIS ALIGNMENT: Every single element (Title, all text blocks, and the character) MUST be perfectly centered on the vertical axis to maintain absolute bilateral symmetry. "
-
-        # 2. 【圧倒的な強弱（コントラスト）】タイトルは巨大・極太、ボックス内は最小・極細にし、視覚的な優先順位を作る。
-        "2. EXTREME SCALE & WEIGHT CONTRAST: The 'TITLE' MUST be massive, bold, and heavy, dominating the top of the image. In sharp contrast, all text inside the boxes MUST be significantly smaller and use a very thin, light font weight. This visual hierarchy is critical for a high-end feel. "
-
-        # 3. 【可変ボックス・等分配置】空行で区切られた各ブロックを、すべて同じサイズのボックスに収めて縦に並べる。
-        "3. FLEXIBLE EQUAL-SIZED BLOCKS: Render each provided text block in its own box. All boxes MUST have EXACTLY the same width and height to maintain symmetry. Stack these boxes vertically with consistent spacing. "
-
-        # 4. 【条件付きの感情ミラーリング（タイトル連動）】表情とポーズを、タイトルの感情のみと100%同期させる。
-        "4. CONDITIONAL EMOTION MIRROR (TITLE-ONLY): The character's expression and full body pose MUST be a 100% emotional mirror of the 'TITLE' text content ONLY. "
-        "IF the TITLE implies negative emotions (struggle, worry, pain, wistfulness), ZERO TOLERANCE for smiles. The character must look pensive, quiet, or wistful. "
-        "IF the TITLE implies positive emotions (joy, relief, success, happy), the character SHOULD display a bright, genuine smile. "
-        "CRITICAL: ABSOLUTELY IGNORE any emotional keywords in the detail text or box content. ONLY the TITLE dictates the character's heart. "
-
-        # 5. 【被写体の配置：極小コントラスト】キャラを画面最下部の中央に、米粒のような極小サイズで配置する。
-        "5. MICROSCOPIC CHARACTER PLACEMENT: Place the single character at the very bottom center. It MUST be tiny (less than 7% of the canvas). This scale difference against the large title creates a sophisticated, high-end editorial feel."
-    ),
-    "トライアングル（三角構図）（圧倒的な安定感や成長を出す）": "CRITICAL RULE: Strict implied triangle composition created ONLY by the non-linear, dynamic placement of elements. ABSOLUTELY NO VISIBLE TRIANGLE SHAPES, OUTLINES, ARROWS, OR CONNECTING LINES. The connection between elements must be completely invisible and purely psychological. Conveying extreme stability through powerful diagonal flow. Focal point character MUST BE PLACED at a dynamically staggered apex, and supporting elements (e.g., text blocks) MUST BE ARRANGED to form a distinct, wide base. DO NOT draw any lines between the character and the text. DO NOT align character and text blocks vertically; use strong diagonal angles to create a visual pyramid flow.",
-    "4分割・ブロック配置（情報を4つのエリアに分ける）": "A clean, structured infographic layout divided into four distinct, equal quadrants. TEXT ELEMENTS are ARRANGED sequentially. CRITICAL: DO NOT add any extra numbering icons or labels if the input text already includes numbers. Place the provided text exactly as it is within each block.",
-   "サクセス・ストーリー（成功への道のりと感情の変化）": (
-        "A strict linear, horizontal (left-to-right) infographic journey toward a successful goal. " # 👈 「厳格な水平（左から右）」に修正！
-        "The number of steps MUST EXACTLY MATCH the content list. CRITICAL LAYOUT RULE: Elements MUST NEVER cross back over previous steps. " # 👈 「絶対に前のステップを横切らない」という禁止ルールを追加！
-        "Arrange the character-text pairs sequentially along a clean, smooth wavy path that progresses clearly from left to right across the screen. "
-        "Each character and text pair must be tightly integrated as a single visual unit, especially at the start and end of the path. "
-        "Include emotional sun/cloud/heart icons and a 'SUCCESS!' element at the final point. NO REPEATING TEXT. Reiterate: STRICT left-to-right horizontal linear sequence."
-       ),
-    "ステータス画面風（ゲームみたいに能力を可視化）": (
-        "A game-inspired character status screen layout where the character is the protagonist. "
-        "CRITICAL GAUGE RULE: The length (fill-level) of each horizontal status bar MUST strictly correlate with the numerical value provided at the end of each text item (e.g., 'Power 80' or 'Speed (5)'). Higher numbers produce longer, fuller bars. "
-        "TEXT RENDERING RULE: DO NOT render the numerical values, percentages, or parentheses used for control on the image. " # 👈 ここで「数字は書くな」と指示！
-        "ONLY render the label text itself. For example, if the input is 'Power 80', the image should show a bar at 80% length but ONLY display the word 'Power'. "
-        "Use vibrant, distinct colors for each bar and ensure a clean, modern gaming UI feel. NO REPEATING TEXT."
     ),
    "スペクトル・グラデーション（0〜100%など段階的な変化を表現）": (
         "A full-background gradient infographic on textured paper, flowing smoothly from cool blue (representing low/0%) on the far left to hot red (representing high/100%) on the far right. " # 👈 「背景全体を青から赤へ」に修正！
