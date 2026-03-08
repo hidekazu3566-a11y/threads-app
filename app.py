@@ -126,32 +126,41 @@ composition_dict = {
         "ELITE MAGAZINE COLLAGE WITH STRICT LOGICAL TEXT GROUPING & DEEP DARK CONTRAST: "
         
         # 1. 【メインメッセージの巨大化とラベル化禁止】
+        # タイトルを一番目立たせ、「TITLE」などの余計な文字を入れないルール。
         "1. PRIMARY MESSAGE SUPREMACY: Render the 'title text' from the content list in a MASSIVE, bold, textured font. "
         "CRITICAL: DO NOT render the word 'TITLE' or 'Subject'. "
 
-        # 2. 【テキストの「塊」の死守と、空白での分離】
-        "2. STRICT TEXT GROUPING BY INPUT: Treat each provided text block in the input as ONE solid unit. "
-        "Render all text within a single block onto ONE single piece of torn paper. "
-        "CRITICAL: Do NOT cut or split sentences, numbered lists (1. 2. 3.), or consecutive lines into separate paper scraps just because of a line break. "
-        "ONLY create a separate paper scrap if there is a distinct new block or a clear empty line separating the text in the prompt. "
+        # 2. 【テキストの「塊」の死守と、空白での物理的分離（ここが質問の回答！）】
+        # 「空白行（empty line）」をハサミを入れる絶対の合図にする。
+        # 入力されたブロックごとに1枚の紙を作り、勝手に合体させるのを物理的に禁止してるよ。
+        "2. STRICT TEXT GROUPING & PHYSICAL SEPARATION: Treat each provided text block as ONE solid unit. "
+        "Render text within a block onto ONE single paper scrap. "
+        "CRITICAL: ONLY create a separate paper scrap if there is a distinct new block or a clear EMPTY LINE in the prompt. "
+        "Every separate scrap MUST be physically distinct from others. "
 
-        # 3. 【意図的な「崩し」とダイナミックな傾き ＆ ビリビリ感】
+        # 3. 【意図的な「崩し」と「角度同期の厳禁」 ＆ 紙の質感（ここも質問の回答！）】
+        # 「隣り合う紙の角度を揃える」のをハッキリ禁止（PROHIBIT synchronizing）。
+        # それぞれの紙にバラバラでダイナミックな角度を強制して、「配置ミス」に見えない芸術的なカオスを作るよ。
+        # 質感も「rough-torn edges（荒く引き裂かれた縁）」で物理的に説明してある！
         "3. ARTISTIC ANGLED LAYERING & TORN TEXTURE: PROHIBIT perfectly vertical or horizontal alignment. "
-        "Each unified paper scrap MUST be DISTINCTLY and DYNAMICALLY tilted at diverse angles to look intentionally artistic, NOT just a layout mistake. "
-        "Ensure the angle is bold enough to be dynamic, but keeps the text easily readable. "
-        "CRITICAL TEXTURE: Overlap them with deep Drop Shadows and use extreme Biribiri-kan (rough-torn, fibrous paper edges) for every scrap. "
+        "CRITICAL: PROHIBIT synchronizing the angles of different paper scraps. "
+        "Each scrap (Title, List, and separate phrases) MUST be tilted at a UNIQUE, DYNAMIC angle to ensure they look like individual scraps. "
+        "Ensure the angle is bold, diverse, and keeps the text readable. Overlap them with deep Drop Shadows. "
+        "EVERY scrap MUST have extreme rough-torn edges with visible paper fibers for high tactile texture. "
 
-        # 4. 【背景を「深みのあるネイビー」に固定 ＆ ヴィンテージの汚れ感（追加！）】
-        # 背景をただの暗い色にするだけじゃなく、「古い雑誌の見開き」みたいなかすれやシミ（ヴィンテージ感）を足すように指示！
+        # 4. 【背景を「深みのあるネイビー」に固定 ＆ ヴィンテージの汚れ感】
+        # 背景を暗くして文字を目立たせ、古い雑誌のようなシミやかすれを足すルール。
         "4. DEEP DARK BASE LAYER & VINTAGE TEXTURE: The background base MUST be a textured paper in a DEEP, RICH color (e.g., Deep Navy, Dark Teal, or Charcoal Black). "
-        "CRITICAL VINTAGE VIBE: Add subtle vintage distress (e.g., faint stains, scuffs, or the texture of an aged magazine spread) to the dark background to enhance the aesthetic. "
-        "Text scraps MUST be bright off-white to create maximum pop and legibility against the dark background. "
+        "CRITICAL VINTAGE VIBE: Add subtle vintage distress (faint stains, scuffs, or aged magazine spread texture). "
+        "Text scraps MUST be bright off-white for maximum contrast. "
 
         # 5. 【キャラの極小サイズと視線誘導ロック】
+        # キャラのサイズを画面の15%以下に抑えて、視線をテキストに固定させるルール。
         "5. MINIATURE SCALE & GAZE-LOCK: Render the character in a MINIATURE scale (less than 15% of the area). "
         "The character MUST be clearly smaller than the text scraps. The character's gaze and posture MUST point DIRECTLY at the main text block scrap. "
 
         # 6. 【装飾の渋滞解消（シンプルで洗練された小物）】
+        # 余計な装飾を省き、クリップやピンを1つずつ厳選して置くルール。
         "6. REFINED SYMBOLIC ACCENTS: Add exactly ONE clip, ONE pin, and a few unique stamps/leaves. PROHIBIT redundancy. "
     ),
    "洗練されたシンメトリー（左右対称 × 強弱コントラスト × 感情同期）": (
