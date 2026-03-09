@@ -42,25 +42,21 @@ composition_dict = {
         "Avoid scattered speech bubbles; use clean, structured list panels for a professional editorial feel."
     ),
  "三分割法・黄金比・白銀比（安定と美しさの比率）": (
-        "Strict composition adherence to the Rule of Thirds logic. "
-        "CRITICAL LAYOUT RULE: "
-        # 👇 ここを最強レベルに強化！禁止ルールを追加。
-        "1. STRICT SINGLE CHARACTER LIMIT: Under NO circumstances are multiple depictions of the character allowed in the same image frame. Exactly one instance of the main character MUST be present. DO NOT use multiple poses or frames of the same character. "
-        "2. Position this single main character dynamically on ONE of the four grid intersection points (power points: top-left, top-right, bottom-left, bottom-right). This single location MUST be selected randomly for each generated image. "
-        "3. Group and arrange ALL text elements neatly within the vertical third section opposite the chosen single character placement to perfectly balance the composition. Utilize remaining areas as clean, breathable negative space. "
+    "Strict composition adherence to the Rule of Thirds logic. "
+    "CRITICAL LAYOUT RULE: "
+    # 👇 ここを修正：コントラスト強化を導入し、1匹制限を削除
+    "1. DRAMATIC TEXT CONTRAST: Render the title text in a MASSIVE, bold, heavy font. Render all body/detail text in a significantly SMALLER, light, and clean font to ensure an undeniable size hierarchy. "
+    "2. Position the character(s) dynamically on the grid intersection points (power points). "
+    "3. Group and arrange ALL text elements neatly within the vertical third section opposite the character placement. Utilize remaining areas as clean, breathable negative space. "
 
-        # 👇 表情同期の指示も「1匹に合わせる」ように再調整！
-        # 【1. 表情同期の指示】
-        "EMOTION SYNC RULE: DRAMATICALLY adapt the single character's facial expressions, body language, and poses to perfectly match the mood. "
-        # 【2. タイトルと強調文字の指示】
-        "HIGHLIGHT ANALYSIS RULE: The AI MUST deeply analyze the SPECIFIC meaning of BOTH the LOCAL TITLE TEXT and LOCAL HIGHLIGHTED TEXT. "
-        # 【3. 具体的意味に基づく表情の出し分け】
-        "SPECIFIC MEANING RULE: "
-        "- If the SPECIFIC meaning implies struggle (e.g., 'not rewarded', 'tired'), depict visible internal conflict and knitted brows. ZERO TOLERANCE for smiles. "
-        "- If the SPECIFIC meaning implies relief or joy (e.g., 'praise', 'warm drink'), depict a genuinely joyful smile. "
+    "EMOTION SYNC RULE: DRAMATICALLY adapt the character's facial expressions, body language, and poses to perfectly match the mood. "
+    "HIGHLIGHT ANALYSIS RULE: The AI MUST deeply analyze the SPECIFIC meaning of BOTH the LOCAL TITLE TEXT and LOCAL HIGHLIGHTED TEXT. "
+    "SPECIFIC MEANING RULE: "
+    "- If the SPECIFIC meaning implies struggle (e.g., 'not rewarded', 'tired'), depict visible internal conflict and knitted brows. ZERO TOLERANCE for smiles. "
+    "- If the SPECIFIC meaning implies relief or joy (e.g., 'praise', 'warm drink'), depict a genuinely joyful smile. "
 
-        "ABSOLUTELY NO VISIBLE GRID LINES OR CROSSHAIRS."
-    ),
+    "ABSOLUTELY NO VISIBLE GRID LINES OR CROSSHAIRS."
+),
  "日の丸構図（視認性重視 × 密度強化）": (
         "PRECISE CENTERED COMPOSITION (HINOMARU STYLE) WITH RICH DECORATIVE ACCENTS & CONTEXTUAL FLAIR: "
         
