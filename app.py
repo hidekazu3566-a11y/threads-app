@@ -47,7 +47,7 @@ composition_dict = {
     # 👇 ここに「1匹制限」を完全復活！
     "1. STRICT SINGLE CHARACTER LIMIT: Under NO circumstances are multiple depictions of the character allowed in the same image frame. Exactly one instance of the main character MUST be present. DO NOT use multiple poses or frames of the same character. "
    # 👇 ここに「文字コントラスト」の指示を追加！（本文が小さくなりすぎないよう調整）
-    "2. BALANCED TEXT CONTRAST: Render the title text in a MASSIVE, bold, heavy font. Render all body/detail text in a smaller, light, and clean font to ensure a clear size hierarchy, but CRITICAL: DO NOT make the body text too small. It MUST remain highly legible. "
+    "2. BALANCED TEXT CONTRAST: Render the title text in a MASSIVE, bold, heavy font. Render all body/detail text in a smaller, font to ensure a clear size hierarchy, but CRITICAL: DO NOT make the body text too small. It MUST remain highly legible. "
     # 👇 ここから下は「single」を含め、元の文章を一言一句そのまま復活させたよ！
     "3. Position this single main character dynamically on ONE of the four grid intersection points (power points: top-left, top-right, bottom-left, bottom-right). This single location MUST be selected randomly for each generated image. "
     "4. Group and arrange ALL text elements neatly within the vertical third section opposite the chosen single character placement to perfectly balance the composition. Utilize remaining areas as clean, breathable negative space. "
